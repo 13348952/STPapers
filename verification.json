@@ -1,0 +1,39 @@
+{
+  "checked_on": "2026-11-04",
+  "records": 86,
+  "categories": 13,
+  "year_counts": {
+    "2015": 1,
+    "2017": 3,
+    "2018": 3,
+    "2019": 5,
+    "2020": 9,
+    "2021": 7,
+    "2022": 10,
+    "2023": 17,
+    "2024": 11,
+    "2025": 9,
+    "2026": 11
+  },
+  "category_counts": {
+    "survey": 4,
+    "urban": 3,
+    "graph": 14,
+    "attention": 6,
+    "efficient": 11,
+    "pretrain": 5,
+    "transfer": 4,
+    "foundation": 5,
+    "probabilistic": 2,
+    "grid": 8,
+    "weather": 10,
+    "benchmark": 8,
+    "related": 6
+  },
+  "repository_verified_paper_count": 62,
+  "preprint_record_count": 13,
+  "related_count": 7,
+  "structure_checks_passed": true,
+  "errors": [],
+  "limits": "Metadata, deduplication and export consistency checked. No training runs. Link retrieval evidence is described in SEARCH_NOTES.md; no claim that all remote links remain accessible."
+}
