@@ -1,5 +1,10 @@
 # 版本记录
 
+## 2026-11-04 · Codex 贡献署名
+
+- 在 Contributors 与 README 中明确以 Codex（OpenAI）列出 AI 辅助贡献。
+- 本次维护提交记录 Codex 共同作者署名；论文条目未变更。
+
 ## 2026-11-04 · 持续维护配置
 
 - 增加 ChatGPT（OpenAI，通过 Codex）的 AI 整理与维护贡献说明。

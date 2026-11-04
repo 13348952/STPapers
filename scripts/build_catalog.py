@@ -102,7 +102,7 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 ## 贡献者
 
 - [13348952](https://github.com/13348952)：项目发起与维护。
-- **ChatGPT（OpenAI，通过 Codex）**：AI 辅助文献检索、来源与代码链接核验、分类摘要、目录生成和持续维护。详见 [贡献说明](CONTRIBUTORS.md)。
+- **Codex（OpenAI）**：AI 辅助文献检索、来源与代码链接核验、分类摘要、目录生成和持续维护。详见 [贡献说明](CONTRIBUTORS.md)。
 
 本目录只整理文献信息、链接及原创简短说明；论文、数据、代码和模型分别遵循原作者及发布方许可。组织形式参考 RSPapers，内容按时空预测任务重新检索和组织。
 '''
