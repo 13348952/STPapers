@@ -18,7 +18,7 @@
 
 ## 数据与变更记录
 
-以 `papers.json` 为单一数据源，更新相关记录的 `verified_on`。只有检索成功完成后，才推进 `catalog_meta.json` 的 `last_successful_search_date`。失败或仅完成部分扫描时保留原截止日期，并记录未覆盖范围。
+以 `papers.json` 为单一数据源，更新相关记录的 `verified_on`。新增和修订条目同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`，保持中英文 README 的方法概括、版本说明和证据范围一致；新增主题或代码状态时补齐英文映射。只有检索成功完成后，才推进 `catalog_meta.json` 的 `last_successful_search_date`。失败或仅完成部分扫描时保留原截止日期，并记录未覆盖范围。
 
 每次在 `updates/YYYY-MM-DD.md` 保存报告；同日多次执行时使用时间后缀，避免覆盖已有记录。报告包括：
 
@@ -32,7 +32,7 @@
 
 ## 生成与发布
 
-运行 `python scripts/build_catalog.py`，检查 JSON/CSV/Markdown/BibTeX 一致性、标题及标识符重复、内部链接和 `git diff --check`。`RECENT.md` 随检索年份滚动；`RECENT_2025_2026.md` 保留固定年份索引。
+运行 `python scripts/build_catalog.py`，同步生成 `README.md` 和 `README.en.md`，检查 JSON/CSV/Markdown/BibTeX 一致性、中英文条目与来源链接一致性、标题及标识符重复、内部链接和 `git diff --check`。`RECENT.md` 随检索年份滚动；`RECENT_2025_2026.md` 保留固定年份索引。
 
 检查提交内容只包含公开目录、脚本及更新报告，不包含访问令牌、机器路径、聊天记录、全文下载缓存或私人文件。每周用独立提交推送到 `main`，不强推、不覆盖维护者修改。远端发生变化时先整合；无法安全整合或认证失败时保存本地成果并报告具体阻碍。
 

@@ -1,5 +1,7 @@
 # STPapers · 时空序列预测论文目录
 
+**简体中文** | [English](README.en.md)
+
 A curated reading list for spatio-temporal forecasting.
 
 参考 [RSPapers](https://github.com/hongleizhang/RSPapers) 的主题分类和贡献方式，整理时空序列预测论文、数据集与代码入口。中文方法定位为本目录概括，论文保留英文原题。
@@ -876,7 +878,7 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 ## 维护
 
-以 `papers.json` 为单一数据源。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成本 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 每周检索新论文、核验论文与官方代码链接，去重后更新目录，并在 [更新记录](updates/README.md) 中保存每次新增、修订和待核验项。检索截止日期由 `catalog_meta.json` 记录，只有完成检索后才推进。
 

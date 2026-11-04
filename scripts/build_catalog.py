@@ -2,6 +2,7 @@
 import csv,json,re,collections
 from pathlib import Path
 from datetime import date
+from readme_en import build_english
 ROOT=Path(__file__).resolve().parents[1]
 papers=json.loads((ROOT/'papers.json').read_text(encoding='utf8'))
 cats=json.loads((ROOT/'categories.json').read_text(encoding='utf8'))
@@ -35,6 +36,8 @@ last_year=max(r['year'] for r in papers)
 nrepo=sum(r['code_verification_level']=='repository' for r in papers)
 npre=sum(r['venue']=='arXiv' for r in papers)
 header=f'''# STPapers · 时空序列预测论文目录
+
+**简体中文** | [English](README.en.md)
 
 A curated reading list for spatio-temporal forecasting.
 
@@ -95,7 +98,7 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 ## 维护
 
-以 `papers.json` 为单一数据源。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成本 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 每周检索新论文、核验论文与官方代码链接，去重后更新目录，并在 [更新记录](updates/README.md) 中保存每次新增、修订和待核验项。检索截止日期由 `catalog_meta.json` 记录，只有完成检索后才推进。
 
@@ -106,7 +109,9 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 本目录只整理文献信息、链接及原创简短说明；论文、数据、代码和模型分别遵循原作者及发布方许可。组织形式参考 RSPapers，内容按时空预测任务重新检索和组织。
 '''
+body_en=build_english(papers,cats,as_of,author,anchor)
 (ROOT/'README.md').write_text(body,encoding='utf8')
+(ROOT/'README.en.md').write_text(body_en,encoding='utf8')
 for name,items,title in [('BY_YEAR.md',papers,'按年份浏览'),('RECENT.md',recent,f'近期论文（{recent_start}—{as_of.year}）'),('RECENT_2025_2026.md',[r for r in papers if 2025<=r['year']<=2026],'2025—2026 年论文')]:
     txt=f'# {title}\n\n[返回主目录](README.md)\n\n年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。\n'
     for y in sorted({r['year'] for r in items},reverse=True):
@@ -140,7 +145,9 @@ for r in papers:
     if r['category'] not in cats:errors.append(r['id']+': unknown category')
     if r['venue']=='arXiv' and '预印本' not in r['publication_status']:errors.append(r['id']+': status mismatch')
     if len(re.findall('id="'+re.escape(anchor(r))+'"',body))!=1:errors.append(r['id']+': anchor count')
+    if len(re.findall('id="'+re.escape(anchor(r))+'"',body_en))!=1:errors.append(r['id']+': English anchor count')
 if body.count('<a id="paper-')!=len(papers):errors.append('README record count')
+if body_en.count('<a id="paper-')!=len(papers):errors.append('English README record count')
 with (ROOT/'papers.csv').open(encoding='utf-8-sig',newline='') as f:
     csvrows=list(csv.DictReader(f))
 if len(csvrows)!=len(papers):errors.append('CSV count')

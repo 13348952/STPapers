@@ -33,7 +33,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Surveys spatio-temporal foundation models and their roles in sensing, management, and mining, providing broader background.",
+    "notes_en": ""
   },
   {
     "id": "Urban-STGNN-survey",
@@ -67,7 +69,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Reviews spatio-temporal graph construction, model design, and predictive applications in urban computing.",
+    "notes_en": ""
   },
   {
     "id": "Traffic-survey",
@@ -96,7 +100,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Reviews graph neural networks for traffic forecasting through graph construction, models, tasks, and open resources.",
+    "notes_en": ""
   },
   {
     "id": "STTP-survey",
@@ -128,7 +134,9 @@
     "code_verification_level": "none",
     "notes": " 当前列出已核验的 arXiv 版本；不据此断言没有正式发表版本。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Organizes short-term traffic forecasting research by input representation, network architecture, applications, and data resources.",
+    "notes_en": "The verified arXiv version is listed here; this does not imply that no formally published version exists."
   },
   {
     "id": "DeepSTN",
@@ -160,7 +168,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines long-range spatial dependencies, regional functions, and temporal context to forecast urban crowd inflows and outflows.",
+    "notes_en": ""
   },
   {
     "id": "STG2Seq",
@@ -192,7 +202,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses long- and short-term encoders, graph convolutions, and attention for multi-step passenger demand forecasting.",
+    "notes_en": ""
   },
   {
     "id": "ST-ResNet",
@@ -222,7 +234,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Models recent, periodic, and trend components of urban grid inflows and outflows, integrating external factors.",
+    "notes_en": ""
   },
   {
     "id": "DGCRN",
@@ -255,7 +269,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Generates graph structures from dynamic node information and provides a unified evaluation framework and implementation for traffic forecasting.",
+    "notes_en": ""
   },
   {
     "id": "D2STGNN",
@@ -289,7 +305,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Separates traffic signals into diffusion and inherent components, modeling them with dynamic graph learning.",
+    "notes_en": ""
   },
   {
     "id": "DSTAGNN",
@@ -322,7 +340,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines dynamic spatio-temporal relationship modeling with graph networks for traffic forecasting.",
+    "notes_en": ""
   },
   {
     "id": "STGNCDE",
@@ -353,7 +373,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines spatial and temporal neural controlled differential equations for continuous-time modeling.",
+    "notes_en": ""
   },
   {
     "id": "GTS",
@@ -383,7 +405,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Learns a discrete graph distribution with differentiable sampling, jointly optimized with a forecasting model for multiple time series.",
+    "notes_en": ""
   },
   {
     "id": "STFGNN",
@@ -412,7 +436,9 @@
     "code_verification_level": "repository",
     "notes": "作者 README 对部分数据集结果作了更正说明；比较数字前应检查最新论文与仓库。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Fuses spatial graphs with data-driven temporal relationship graphs and combines them with gated convolutions.",
+    "notes_en": "The authors' README corrects results for some datasets; check the latest paper and repository before comparing numbers."
   },
   {
     "id": "STGODE",
@@ -443,7 +469,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Models spatio-temporal dynamics using tensor-based ordinary differential equations, considering both spatial and semantic relationships.",
+    "notes_en": ""
   },
   {
     "id": "AGCRN",
@@ -475,7 +503,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines node-adaptive parameter learning with adaptive graph generation to capture distinct forecasting patterns across nodes.",
+    "notes_en": ""
   },
   {
     "id": "MTGNN",
@@ -508,7 +538,9 @@
     "code_verification_level": "repository",
     "notes": "通用多变量模型，因明确包含交通任务与图学习而收录主目录。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Jointly learns a directed graph among variables, mix-hop propagation, and temporal convolutions for general multivariate series and traffic tasks.",
+    "notes_en": "A general multivariate model included in the main catalog because it explicitly covers traffic tasks and graph learning."
   },
   {
     "id": "STSGCN",
@@ -539,7 +571,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Connects nodes across adjacent time steps into local spatio-temporal graphs to jointly model local relationships and heterogeneity.",
+    "notes_en": ""
   },
   {
     "id": "ASTGCN",
@@ -571,7 +605,9 @@
     "code_verification_level": "repository",
     "notes": "关联的作者 PyTorch 仓库说明仅实现近期分支；不能默认等于完整三分支 ASTGCN。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Forecasts traffic flow using spatio-temporal attention, graph convolutions, and recent, daily, and weekly branches.",
+    "notes_en": "The linked author-maintained PyTorch repository states that it implements only the recent branch; do not assume it is the full three-branch ASTGCN."
   },
   {
     "id": "Graph-WaveNet",
@@ -603,7 +639,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Learns adaptive adjacency through node embeddings and models historical sequences with dilated temporal convolutions.",
+    "notes_en": ""
   },
   {
     "id": "DCRNN",
@@ -634,7 +672,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines directed graph diffusion convolutions with a recurrent encoder-decoder, offering a starting point for road-network forecasting.",
+    "notes_en": ""
   },
   {
     "id": "STGCN",
@@ -664,7 +704,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Builds a fully convolutional spatio-temporal forecasting network from graph and temporal convolutions.",
+    "notes_en": ""
   },
   {
     "id": "FAST-SSM",
@@ -699,7 +741,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines temporal attention with a Mamba spatial module; it is a different paper from FaST at KDD 2026.",
+    "notes_en": ""
   },
   {
     "id": "SpecLST",
@@ -729,7 +773,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines frequency-domain representations of long histories with weather and incident context, using a sparse mixture of experts in a multimodal setting.",
+    "notes_en": ""
   },
   {
     "id": "PDFormer",
@@ -760,7 +806,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Models dynamic spatial relationships using short- and long-range graph masks and propagation-delay-aware transformations.",
+    "notes_en": ""
   },
   {
     "id": "STAEformer",
@@ -794,7 +842,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Studies how spatio-temporal adaptive embeddings improve a standard Transformer for traffic forecasting.",
+    "notes_en": ""
   },
   {
     "id": "GMAN",
@@ -825,7 +875,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Directly produces multi-step traffic forecasts using multiple spatio-temporal attention mechanisms and transformation attention from history to the future.",
+    "notes_en": ""
   },
   {
     "id": "STTN",
@@ -859,7 +911,9 @@
     "code_verification_level": "none",
     "notes": " 当前列出已核验的 arXiv 版本；不据此断言没有正式发表版本。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses spatial and temporal Transformers to model dynamic directed spatial relationships and long-range temporal dependencies.",
+    "notes_en": "The verified arXiv version is listed here; this does not imply that no formally published version exists."
   },
   {
     "id": "FaST",
@@ -894,7 +948,9 @@
     "code_verification_level": "repository",
     "notes": "关注长跨度与大图；不把论文摘要的性能表述当成跨设置的统一排名。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses adaptive graph proxy attention and a heterogeneity-aware mixture of experts for large spatio-temporal graphs and long forecasting horizons.",
+    "notes_en": "Focuses on long horizons and large graphs; performance claims in the abstract are not treated as a ranking across different experimental settings."
   },
   {
     "id": "HieraMix",
@@ -926,7 +982,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Builds an MLP architecture for large road networks through hierarchical spatio-temporal mixing and adaptive regional mixing.",
+    "notes_en": ""
   },
   {
     "id": "LoReST",
@@ -960,7 +1018,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines relation-aware local aggregation with regional pooling, interaction, and redistribution to model local heterogeneity and cross-region context.",
+    "notes_en": ""
   },
   {
     "id": "MiniST",
@@ -992,7 +1052,9 @@
     "code_verification_level": "project",
     "notes": "仓库示例 seq_len=720；与短历史基线比较时需对齐输入窗口。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Projects long traffic histories onto a compact orthogonal basis and combines this with a template update module to handle long historical inputs.",
+    "notes_en": "The repository example uses seq_len=720; align input windows when comparing with short-history baselines."
   },
   {
     "id": "SAGT",
@@ -1022,7 +1084,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Studies forecasting cost using a learned low-rank directed spatial operator, local graph diffusion, and frequency reweighting.",
+    "notes_en": ""
   },
   {
     "id": "SqLinear",
@@ -1057,7 +1121,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Studies efficient large-scale traffic forecasting through balanced spatial partitioning and hierarchical linear interactions.",
+    "notes_en": ""
   },
   {
     "id": "GraphSparseNet",
@@ -1088,7 +1154,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Reduces the cost of relationship modeling in large road networks through feature extraction and relation compression modules.",
+    "notes_en": ""
   },
   {
     "id": "PatchSTG",
@@ -1123,7 +1191,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses a KDTree to construct irregular spatial patches, learning local and global relationships through within-patch and cross-patch attention.",
+    "notes_en": ""
   },
   {
     "id": "BigST",
@@ -1156,7 +1226,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Precomputes long-history representations and uses linearized global spatial modeling to scale to large road networks.",
+    "notes_en": ""
   },
   {
     "id": "STID",
@@ -1188,7 +1260,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Adds node and temporal identity embeddings to a simple MLP, providing a baseline for assessing the benefits of complex spatial modules.",
+    "notes_en": ""
   },
   {
     "id": "STNorm",
@@ -1220,7 +1294,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses spatial and temporal normalization to handle different components of multivariate sequences in a simple forecasting module.",
+    "notes_en": ""
   },
   {
     "id": "HGAurban",
@@ -1253,7 +1329,9 @@
     "code_verification_level": "none",
     "notes": "arXiv 当前题名为 HGAurban；早期检索记录出现 Graph Masked Autoencoder，按同一标识符合并。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Learns regional representations with a heterogeneous graph masked autoencoder for urban spatio-temporal tasks, including tasks beyond forecasting.",
+    "notes_en": "The current arXiv title is HGAurban. Earlier search records used Graph Masked Autoencoder; these are merged under the same identifier."
   },
   {
     "id": "STDMAE",
@@ -1286,7 +1364,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Performs masked reconstruction separately along spatial and temporal dimensions, using pretrained representations for downstream forecasting.",
+    "notes_en": ""
   },
   {
     "id": "STSSL",
@@ -1321,7 +1401,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Learns heterogeneous traffic patterns through adaptive graph augmentation and spatial and temporal self-supervised tasks.",
+    "notes_en": ""
   },
   {
     "id": "STEP",
@@ -1352,7 +1434,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Pretrains on long historical sequences to provide temporal context and structural information for downstream graph forecasting models.",
+    "notes_en": ""
   },
   {
     "id": "STGCL",
@@ -1385,7 +1469,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Systematically compares ways to integrate spatio-temporal graph contrastive learning, augmentation strategies, and negative-sample selection.",
+    "notes_en": ""
   },
   {
     "id": "PIMCST",
@@ -1415,7 +1501,9 @@
     "code_verification_level": "repository",
     "notes": "标题使用 PIMCST，而摘要/仓库使用 MCPST；保留该命名差异。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Builds multi-stage consensus from diffusion, synchronization, and spectral representations, using meta-learning for few-shot cross-city forecasting.",
+    "notes_en": "The title uses PIMCST, while the abstract and repository use MCPST; this naming difference is retained."
   },
   {
     "id": "UrbanPG",
@@ -1444,7 +1532,9 @@
     "code_verification_level": "repository",
     "notes": "GitHub About 仍出现 AAAI 2025 字样，README 与正式会议页为 AAAI 2026；以会议页为准。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Separates personalized context from a general backbone to study large-scale forecasting, few-shot transfer, and continual learning.",
+    "notes_en": "GitHub About still mentions AAAI 2025, whereas the README and official conference page specify AAAI 2026; the conference page takes precedence."
   },
   {
     "id": "HimNet",
@@ -1478,7 +1568,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Learns model parameters that vary across space and time through spatio-temporal embeddings and meta-parameter pools.",
+    "notes_en": ""
   },
   {
     "id": "MegaCRN",
@@ -1514,7 +1606,9 @@
     "code_verification_level": "repository",
     "notes": "采用 AAAI 2023 对应的 arXiv:2211.14701；不使用已撤回的扩展稿 arXiv:2212.05989。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses meta-node memory and meta-graph learning to capture heterogeneity across traffic nodes and temporal patterns.",
+    "notes_en": "Uses arXiv:2211.14701, corresponding to AAAI 2023, rather than the withdrawn extended manuscript arXiv:2212.05989."
   },
   {
     "id": "FactoST-v2",
@@ -1551,7 +1645,9 @@
     "code_verification_level": "unavailable",
     "notes": "2026 扩展稿，不等同于其 NeurIPS 2025 会议版本；论文给出的仓库本次返回 404。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Separates general temporal pretraining from domain-specific spatial adaptation, extending to variable-length and probabilistic quantile forecasting.",
+    "notes_en": "This 2026 extension is distinct from the NeurIPS 2025 conference version; the repository linked in the paper returned HTTP 404 during verification."
   },
   {
     "id": "ST-VFM",
@@ -1583,7 +1679,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Adapts a frozen vision foundation model to spatio-temporal forecasting through temporal adaptation and coordinated dual-branch prompts.",
+    "notes_en": ""
   },
   {
     "id": "STLLM",
@@ -1617,7 +1715,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Feeds spatio-temporal embeddings into a large language model and adapts it to traffic forecasting with partially frozen attention.",
+    "notes_en": ""
   },
   {
     "id": "UniST",
@@ -1649,7 +1749,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Explores a unified urban spatio-temporal forecasting model through multi-scenario pretraining and knowledge-guided prompting.",
+    "notes_en": ""
   },
   {
     "id": "UrbanGPT",
@@ -1684,7 +1786,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines a spatio-temporal dependency encoder with instruction tuning to explore zero-shot generalization across urban tasks.",
+    "notes_en": ""
   },
   {
     "id": "SpecSTG",
@@ -1715,7 +1819,9 @@
     "code_verification_level": "paper-link",
     "notes": " 当前列出已核验的 arXiv 版本；不据此断言没有正式发表版本。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Generates future sequences in the spectral domain, incorporating spatial dependencies and spectral graph convolutions.",
+    "notes_en": "The verified arXiv version is listed here; this does not imply that no formally published version exists."
   },
   {
     "id": "DiffSTG",
@@ -1749,7 +1855,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Extends denoising diffusion models to spatio-temporal graphs for non-autoregressive probabilistic forecasting.",
+    "notes_en": ""
   },
   {
     "id": "TAU",
@@ -1783,7 +1891,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Splits temporal attention into within-frame and across-frame components to improve parallel spatio-temporal frame prediction.",
+    "notes_en": ""
   },
   {
     "id": "SimVP",
@@ -1814,7 +1924,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Provides a simple video and grid forecasting baseline using a convolutional encoder, a temporal processing module, and a decoder.",
+    "notes_en": ""
   },
   {
     "id": "PhyDNet",
@@ -1843,7 +1955,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Separates interpretable physical dynamics from unknown residual factors for future-frame prediction.",
+    "notes_en": ""
   },
   {
     "id": "MIM",
@@ -1876,7 +1990,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses memory modules to handle higher-order nonstationary changes in spatio-temporal sequences.",
+    "notes_en": ""
   },
   {
     "id": "PredRNNpp",
@@ -1908,7 +2024,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses causal LSTMs and gradient pathways to ease optimization in deep recurrent prediction.",
+    "notes_en": ""
   },
   {
     "id": "PredRNN",
@@ -1940,7 +2058,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Models future frames using spatio-temporal LSTMs and dual memory states, providing general spatio-temporal prediction background.",
+    "notes_en": ""
   },
   {
     "id": "TrajGRU",
@@ -1974,7 +2094,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Learns location-dependent recurrent connections for precipitation nowcasting and provides a corresponding benchmark.",
+    "notes_en": ""
   },
   {
     "id": "ConvLSTM",
@@ -2007,7 +2129,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Introduces convolutions into LSTM state transitions, providing a foundational architecture for grid sequences and precipitation nowcasting.",
+    "notes_en": ""
   },
   {
     "id": "Aurora",
@@ -2052,7 +2176,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Pretrains on diverse Earth-system data and adapts to tasks including weather, air quality, and ocean waves.",
+    "notes_en": ""
   },
   {
     "id": "FengWu",
@@ -2093,7 +2219,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses a multimodal, multitask architecture, cross-modal fusion, and a replay buffer for medium-range weather modeling.",
+    "notes_en": ""
   },
   {
     "id": "GenCast",
@@ -2132,7 +2260,9 @@
     "code_verification_level": "repository",
     "notes": "采用 Nature 2025 卷期年；2024-12-04 在线发表，预印本首发于 2023。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses diffusion to generate ensemble forecasts that capture joint uncertainty in future global weather states.",
+    "notes_en": "Uses the Nature volume year, 2025; published online on 2024-12-04, with the preprint first released in 2023."
   },
   {
     "id": "ClimaX",
@@ -2164,7 +2294,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Pretrains on heterogeneous climate data and adapts to different weather variables and forecasting tasks.",
+    "notes_en": ""
   },
   {
     "id": "GraphCast",
@@ -2209,7 +2341,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses a graph neural network to learn the evolution of global weather fields and produce medium-range multivariate forecasts.",
+    "notes_en": ""
   },
   {
     "id": "NowcastNet",
@@ -2243,7 +2377,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Combines physical evolution constraints with generative modeling for extreme precipitation nowcasting.",
+    "notes_en": ""
   },
   {
     "id": "Pangu-Weather",
@@ -2276,7 +2412,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses a three-dimensional Earth-specific Transformer and hierarchical temporal aggregation for global weather forecasting.",
+    "notes_en": ""
   },
   {
     "id": "Earthformer",
@@ -2310,7 +2448,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Exchanges information through local Cuboid Attention and global vectors for precipitation and Earth-system forecasting.",
+    "notes_en": ""
   },
   {
     "id": "FourCastNet",
@@ -2350,7 +2490,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses an adaptive Fourier neural operator for high-resolution global weather forecasting.",
+    "notes_en": ""
   },
   {
     "id": "DGMR",
@@ -2397,7 +2539,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses a deep generative model to produce probabilistic precipitation nowcasts with spatio-temporal consistency.",
+    "notes_en": ""
   },
   {
     "id": "TraffiDent",
@@ -2433,7 +2577,9 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Aligns traffic states, incidents, and road attributes to support post-incident traffic forecasting and related analysis.",
+    "notes_en": ""
   },
   {
     "id": "BasicTS",
@@ -2473,7 +2619,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses a unified evaluation pipeline and spatio-temporal heterogeneity analysis to examine why multivariate forecasting results are difficult to compare directly.",
+    "notes_en": ""
   },
   {
     "id": "WeatherBench2",
@@ -2518,7 +2666,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Updates the medium-range weather evaluation framework with benchmark data, physical and data-driven baselines, and evaluation protocols.",
+    "notes_en": ""
   },
   {
     "id": "LargeST",
@@ -2555,7 +2705,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Provides large-scale, multi-year traffic sensor data and metadata for studying forecasting accuracy and computational cost.",
+    "notes_en": ""
   },
   {
     "id": "LibCity",
@@ -2587,7 +2739,9 @@
     "code_verification_level": "repository",
     "notes": "此条对应 2023 扩展预印本；不将早期工具论文的发表信息套用到扩展稿。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Organizes urban forecasting models, data formats, and evaluation pipelines into a unified library; this entry covers the extended manuscript.",
+    "notes_en": "This entry covers the 2023 extended preprint; publication details of the earlier tool paper are not applied to the extension."
   },
   {
     "id": "OpenSTL",
@@ -2622,7 +2776,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Unifies multiple spatio-temporal frame prediction models and evaluation tasks across video, traffic grids, and weather.",
+    "notes_en": ""
   },
   {
     "id": "SEVIR",
@@ -2652,7 +2808,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Provides spatio-temporally aligned radar and satellite imagery of storm events for precipitation forecasting and cross-sensor tasks.",
+    "notes_en": ""
   },
   {
     "id": "WeatherBench",
@@ -2685,7 +2843,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Provides data, baselines, and common metrics for data-driven weather forecasting.",
+    "notes_en": ""
   },
   {
     "id": "iTransformer",
@@ -2719,7 +2879,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Treats variables rather than time steps as tokens, serving as a general baseline for cross-variable modeling.",
+    "notes_en": ""
   },
   {
     "id": "DLinear",
@@ -2750,7 +2912,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Revisits long-sequence forecasting using decomposition and linear layers, providing a simple temporal baseline for complex models.",
+    "notes_en": ""
   },
   {
     "id": "PatchTST",
@@ -2781,7 +2945,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Splits time series into patches and uses a channel-independent Transformer as a general temporal baseline.",
+    "notes_en": ""
   },
   {
     "id": "TimesNet",
@@ -2814,7 +2980,9 @@
     "code_verification_level": "repository",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Maps periodic variations into two-dimensional structures to jointly model within-period and across-period changes.",
+    "notes_en": ""
   },
   {
     "id": "CSDI",
@@ -2845,7 +3013,9 @@
     "code_verification_level": "repository",
     "notes": "主任务为插补；不计入直接时空预测方法。",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Primarily studies conditional diffusion for time-series imputation; included as missing-data background rather than a direct spatio-temporal forecasting model.",
+    "notes_en": "The primary task is imputation; it is not counted as a direct spatio-temporal forecasting method."
   },
   {
     "id": "TimeGrad",
@@ -2876,6 +3046,8 @@
     "code_verification_level": "none",
     "notes": "",
     "verified_on": "2026-11-04",
-    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现"
+    "inspection_level": "主源元数据/摘要；代码检查限公开页面，未训练复现",
+    "summary_en": "Uses autoregressive denoising diffusion for multivariate probabilistic forecasting, providing a probabilistic modeling reference.",
+    "notes_en": ""
   }
 ]
