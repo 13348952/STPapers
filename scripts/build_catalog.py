@@ -1,9 +1,13 @@
 """Regenerate Markdown/CSV/BibTeX from papers.json. Python 3, standard library only."""
 import csv,json,re,collections
 from pathlib import Path
+from datetime import date
 ROOT=Path(__file__).resolve().parents[1]
 papers=json.loads((ROOT/'papers.json').read_text(encoding='utf8'))
 cats=json.loads((ROOT/'categories.json').read_text(encoding='utf8'))
+meta=json.loads((ROOT/'catalog_meta.json').read_text(encoding='utf8'))
+as_of=date.fromisoformat(meta['last_successful_search_date'])
+recent_start=as_of.year-1
 def author(r):
     a=r['authors'][0]
     if ', ' in a:
@@ -24,8 +28,10 @@ def entry(r,anchors=True):
     if r['notes']:lines.append('  版本/使用说明：'+r['notes'])
     return '\n\n'.join(x for x in lines if x)+'\n'
 counts=collections.Counter(r['category'] for r in papers)
-recent=[r for r in papers if r['year']>=2025]
-n2026=sum(r['year']==2026 for r in papers)
+recent=[r for r in papers if recent_start<=r['year']<=as_of.year]
+current_year_count=sum(r['year']==as_of.year for r in papers)
+first_year=min(r['year'] for r in papers)
+last_year=max(r['year'] for r in papers)
 nrepo=sum(r['code_verification_level']=='repository' for r in papers)
 npre=sum(r['venue']=='arXiv' for r in papers)
 header=f'''# STPapers · 时空序列预测论文目录
@@ -34,16 +40,17 @@ A curated reading list for spatio-temporal forecasting.
 
 参考 [RSPapers](https://github.com/hongleizhang/RSPapers) 的主题分类和贡献方式，整理时空序列预测论文、数据集与代码入口。中文方法定位为本目录概括，论文保留英文原题。
 
-**本次检索截止：2026-11-04（Asia/Shanghai）。共 {len(papers)} 个独立条目、{len(cats)} 个主题，覆盖 2015—2026；其中 {n2026} 篇按核验口径归入 2026，{nrepo} 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
+**本次检索截止：{as_of.isoformat()}（Asia/Shanghai）。共 {len(papers)} 个独立条目、{len(cats)} 个主题，覆盖 {first_year}—{last_year}；其中 {current_year_count} 篇按核验口径归入 {as_of.year}，{nrepo} 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
 
 这是代表性精选目录，重点为交通/城市图预测，同时覆盖网格序列、降水和天气。并非全领域穷尽综述，也不是性能排行榜。{npre} 条采用已核验的预印本记录，其中一部分可能已有本次未确认的正式版本。
 
 ## 快速入口
 
-- [按年份浏览](BY_YEAR.md) · [2025—2026 专区](RECENT_2025_2026.md)
+- [按年份浏览](BY_YEAR.md) · [近期论文（{recent_start}—{as_of.year}）](RECENT.md) · [2025—2026 索引](RECENT_2025_2026.md)
 - [数据集与工具](DATASETS.md) · [检索和核验说明](SEARCH_NOTES.md) · [贡献规范](CONTRIBUTING.md)
 - [CSV 表格](papers.csv) · [JSON 原始目录](papers.json) · [BibTeX 引用草稿](references.bib)
 - [版本记录](CHANGELOG.md) · [结构检查结果](verification.json)
+- [每周更新记录](updates/README.md) · [更新流程](MONITORING.md) · [贡献者](CONTRIBUTORS.md)
 
 ## 收录范围与标记
 
@@ -90,10 +97,17 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 以 `papers.json` 为单一数据源。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成本 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
+每周检索新论文、核验论文与官方代码链接，去重后更新目录，并在 [更新记录](updates/README.md) 中保存每次新增、修订和待核验项。检索截止日期由 `catalog_meta.json` 记录，只有完成检索后才推进。
+
+## 贡献者
+
+- [13348952](https://github.com/13348952)：项目发起与维护。
+- **ChatGPT（OpenAI，通过 Codex）**：AI 辅助文献检索、来源与代码链接核验、分类摘要、目录生成和持续维护。详见 [贡献说明](CONTRIBUTORS.md)。
+
 本目录只整理文献信息、链接及原创简短说明；论文、数据、代码和模型分别遵循原作者及发布方许可。组织形式参考 RSPapers，内容按时空预测任务重新检索和组织。
 '''
 (ROOT/'README.md').write_text(body,encoding='utf8')
-for name,items,title in [('BY_YEAR.md',papers,'按年份浏览'),('RECENT_2025_2026.md',recent,'2025—2026 年论文')]:
+for name,items,title in [('BY_YEAR.md',papers,'按年份浏览'),('RECENT.md',recent,f'近期论文（{recent_start}—{as_of.year}）'),('RECENT_2025_2026.md',[r for r in papers if 2025<=r['year']<=2026],'2025—2026 年论文')]:
     txt=f'# {title}\n\n[返回主目录](README.md)\n\n年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。\n'
     for y in sorted({r['year'] for r in items},reverse=True):
         selected=[r for r in items if r['year']==y]
@@ -120,7 +134,7 @@ for f in ['id','title','paper_url']:unique(f)
 for r in papers:
     for f in ['authors','title','year','category','paper_url','publication_evidence_url','summary_zh','verified_on']:
         if not r.get(f):errors.append(r['id']+': missing '+f)
-    if not 2015<=r['year']<=2026:errors.append(r['id']+': year outside catalogue')
+    if not 2015<=r['year']<=as_of.year:errors.append(r['id']+': year outside catalogue')
     for f in ['paper_url','publication_url','code_url','publication_evidence_url']:
         if r[f] and not r[f].startswith('https://'):errors.append(r['id']+': malformed '+f)
     if r['category'] not in cats:errors.append(r['id']+': unknown category')
@@ -132,7 +146,7 @@ with (ROOT/'papers.csv').open(encoding='utf-8-sig',newline='') as f:
 if len(csvrows)!=len(papers):errors.append('CSV count')
 for a,b in zip(papers,csvrows):
     if a['title']!=b['title'] or str(a['year'])!=b['year']:errors.append('CSV content mismatch '+a['id'])
-result={'checked_on':'2026-11-04','records':len(papers),'categories':len(cats),'year_counts':dict(sorted(collections.Counter(r['year'] for r in papers).items())),'category_counts':dict(counts),'repository_verified_paper_count':nrepo,'preprint_record_count':npre,'related_count':sum(r['scope']=='related' for r in papers),'structure_checks_passed':not errors,'errors':errors,'limits':'Metadata, deduplication and export consistency checked. No training runs. Link retrieval evidence is described in SEARCH_NOTES.md; no claim that all remote links remain accessible.'}
+result={'checked_on':as_of.isoformat(),'records':len(papers),'categories':len(cats),'year_counts':dict(sorted(collections.Counter(r['year'] for r in papers).items())),'category_counts':dict(counts),'repository_verified_paper_count':nrepo,'preprint_record_count':npre,'related_count':sum(r['scope']=='related' for r in papers),'structure_checks_passed':not errors,'errors':errors,'limits':'Metadata, deduplication and export consistency checked. No training runs. Link retrieval evidence is described in SEARCH_NOTES.md; no claim that all remote links remain accessible.'}
 (ROOT/'verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 print(json.dumps(result,ensure_ascii=False,indent=2))
 if errors:raise SystemExit(1)

@@ -2,6 +2,8 @@
 
 感谢补充或纠正与时空序列预测直接相关的论文。
 
+现有整理与维护贡献见 [CONTRIBUTORS.md](CONTRIBUTORS.md)。每周增量更新按 [MONITORING.md](MONITORING.md) 执行，记录在 [updates/README.md](updates/README.md)。
+
 1. 在 `papers.json` 添加或修改记录，再运行 `python scripts/build_catalog.py`。不要分别手工编辑多个派生清单。
 2. 提供完整标题、作者、正式发表年/预印本首发年、会议/期刊或预印本状态、稳定论文 URL、主分类和一句中文方法定位。
 3. 以 DOI/arXiv 标识符和完整标题去重。会议版与扩展版仅在内容有实质区别且清楚说明版本关系时分列。

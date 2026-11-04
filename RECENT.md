@@ -1,0 +1,144 @@
+# 近期论文（2025—2026）
+
+[返回主目录](README.md)
+
+年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。
+
+## 2026（11 篇）
+
+- **FAST-SSM** — Xinjin Li et al. **[FAST: A Synergistic Framework of Attention and State-space Models for Spatiotemporal Traffic Prediction](https://arxiv.org/abs/2604.13453)**. 2026 · ICME.
+
+  结合时间注意力与 Mamba 空间模块；与 KDD 2026 的 FaST 是不同论文。
+
+  [发表证据](https://arxiv.org/abs/2604.13453) · 代码：未核验到作者代码
+
+- **SpecLST** — Kenan Kang et al. **[SpecLST: Spectral-Enhanced Long-Short Term Spatio-Temporal Multimodal Modeling for Traffic Forecasting](https://arxiv.org/abs/2610.36393)**. 2026 · arXiv；正式发表状态未核验.
+
+  以频域长历史表示融合天气、事故等上下文，并采用稀疏 MoE；属于多模态设置。
+
+  [发表证据](https://arxiv.org/abs/2610.36393) · 代码：未核验到作者代码
+
+- **FaST** — Yiji Zhao et al. **[FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts](https://arxiv.org/abs/2601.05174)**. 2026 · KDD.
+
+  以自适应图代理注意力和异质性感知 MoE，面向大规模、长预测跨度的时空图。
+
+  [发表证据](https://github.com/yijizhao/FaST) · [代码](https://github.com/yijizhao/FaST)（作者/项目仓库已核验）
+
+  版本/使用说明：关注长跨度与大图；不把论文摘要的性能表述当成跨设置的统一排名。
+
+- **HieraMix** — Yongyao Wang et al. **[HieraMix: A Hierarchical MLP-Mixer for Large-Scale Traffic Forecasting](https://ijcai.org/proceedings/2026/729)**. 2026 · IJCAI.
+
+  通过分层时空混合及自适应区域混合，构建面向大规模路网的 MLP 架构。
+
+  [正式版本](https://ijcai.org/proceedings/2026/729) · [发表证据](https://ijcai.org/proceedings/2026/729) · 代码：未核验到作者代码
+
+- **LoReST** — Qi Feng et al. **[Learning Local Heterogeneity and Cross-Region Context for Large-Scale Traffic Forecasting](https://arxiv.org/abs/2609.27637)**. 2026 · arXiv；正式发表状态未核验.
+
+  结合关系感知局部聚合与区域汇聚、交互和回传，建模局部异质性及跨区域上下文。
+
+  [发表证据](https://arxiv.org/abs/2609.27637) · 代码：未核验到作者代码
+
+- **MiniST** — Sheng Huang et al. **[MiniST: Unlocking Input Window Length in Traffic Flow Forecasting with Compact Parameters](https://ijcai.org/proceedings/2026/298)**. 2026 · IJCAI.
+
+  将长交通历史投影为紧凑正交基，并结合模板更新模块处理长历史输入。
+
+  [正式版本](https://ijcai.org/proceedings/2026/298) · [发表证据](https://ijcai.org/proceedings/2026/298) · [代码](https://github.com/enheng66/MiniST)（项目仓库可访问，归属链待补强）
+
+  版本/使用说明：仓库示例 seq_len=720；与短历史基线比较时需对齐输入窗口。
+
+- **SAGT** — Amirhossein Ghaffari et al. **[Spectral Adaptive Graph Transformer for Efficient and Scalable Traffic Forecasting](https://arxiv.org/abs/2610.25140)**. 2026 · arXiv；正式发表状态未核验.
+
+  结合学习式低秩有向空间算子、局部图扩散和频率重加权，研究预测开销。
+
+  [发表证据](https://arxiv.org/abs/2610.25140) · [代码](https://github.com/Ahghaffari/sagt)（作者/项目仓库已核验）
+
+- **SqLinear** — Yongfeng Su et al. **[SqLinear: Balanced Square Partitioning Makes Linear Interaction Sufficient for Large-Scale Traffic Forecasting](https://arxiv.org/abs/2606.21072)**. 2026 · arXiv；正式发表状态未核验.
+
+  以均衡空间划分配合分层线性交互，研究大规模交通预测的效率。
+
+  [发表证据](https://arxiv.org/abs/2606.21072) · 代码：未核验到作者代码
+
+- **PIMCST** — Abdul Joseph Fofanah et al. **[PIMCST: Physics-Informed Multi-Phase Consensus and Spatio-Temporal Few-Shot Learning for Traffic Flow Forecasting](https://arxiv.org/abs/2602.01936)**. 2026 · arXiv；正式发表状态未核验.
+
+  以扩散、同步和谱表示构建多阶段共识，并用元学习适配少样本跨城市预测。
+
+  [发表证据](https://arxiv.org/abs/2602.01936) · [代码](https://github.com/afofanah/MCPST)（作者/项目仓库已核验）
+
+  版本/使用说明：标题使用 PIMCST，而摘要/仓库使用 MCPST；保留该命名差异。
+
+- **UrbanPG** — Aoyu Liu et al. **[UrbanPG: An Efficient Framework with Personalized Context and General Backbone Interaction for Urban Spatio-Temporal Learning](https://ojs.aaai.org/index.php/AAAI/article/view/38554)**. 2026 · AAAI.
+
+  分离个性化上下文与通用骨干，研究大规模预测、少样本迁移和持续学习。
+
+  [正式版本](https://ojs.aaai.org/index.php/AAAI/article/view/38554) · [发表证据](https://ojs.aaai.org/index.php/AAAI/article/view/38554) · [代码](https://github.com/Aoyu-Liu/UrbanPG)（作者/项目仓库已核验）
+
+  版本/使用说明：GitHub About 仍出现 AAAI 2025 字样，README 与正式会议页为 AAAI 2026；以会议页为准。
+
+- **FactoST-v2** — Siru Zhong et al. **[Learning to Factorize and Adapt: A Versatile Approach Toward Universal Spatio-Temporal Foundation Models](https://arxiv.org/abs/2601.12083)**. 2026 · arXiv；正式发表状态未核验.
+
+  分离通用时间预训练与领域空间适配，扩展至可变长度和概率分位数预测。
+
+  [发表证据](https://arxiv.org/abs/2601.12083) · [代码](https://github.com/CityMind-Lab/FactoST)（论文提供链接，本次返回 404）
+
+  版本/使用说明：2026 扩展稿，不等同于其 NeurIPS 2025 会议版本；论文给出的仓库本次返回 404。
+
+
+## 2025（9 篇）
+
+- **STFM-survey** — Yuxuan Liang et al. **[Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey](https://arxiv.org/abs/2503.13502)**. 2025 · arXiv；正式发表状态未核验.
+
+  梳理时空基础模型及其在感知、管理、挖掘中的作用，作为广义背景。
+
+  [发表证据](https://arxiv.org/abs/2503.13502) · 代码：未核验到作者代码
+
+- **GraphSparseNet** — Weiyang Kong et al. **[GraphSparseNet: a Novel Method for Large Scale Traffic Flow Prediction](https://arxiv.org/abs/2502.19823)**. 2025 · PVLDB.
+
+  通过特征提取与关系压缩模块，降低大规模路网关系建模成本。
+
+  [发表证据](https://arxiv.org/abs/2502.19823) · 代码：未核验到作者代码
+
+- **PatchSTG** — Yuchen Fang et al. **[Efficient Large-Scale Traffic Forecasting with Transformers: A Spatial Data Management Perspective](https://arxiv.org/abs/2412.09972)**. 2025 · KDD；arXiv 首发 2024.
+
+  利用 KDTree 构造不规则空间分块，以块内与跨块注意力学习局部和全局关系。
+
+  [发表证据](https://arxiv.org/abs/2412.09972) · [代码](https://github.com/LMissher/PatchSTG)（作者/项目仓库已核验）
+
+- **HGAurban** — Qianru Zhang et al. **[HGAurban: Heterogeneous Graph Autoencoding for Urban Spatial-Temporal Learning](https://arxiv.org/abs/2410.10915)**. 2025 · CIKM；arXiv 首发 2024.
+
+  以异质图掩码自编码学习区域表示，服务城市时空任务；包含预测以外的任务。
+
+  [发表证据](https://arxiv.org/abs/2410.10915) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 当前题名为 HGAurban；早期检索记录出现 Graph Masked Autoencoder，按同一标识符合并。
+
+- **ST-VFM** — Changlu Chen et al. **[Reprogramming Vision Foundation Models for Spatio-Temporal Forecasting](https://arxiv.org/abs/2507.11558)**. 2025 · arXiv；正式发表状态未核验.
+
+  通过时序适配与双分支提示协调，将冻结视觉基础模型用于时空预测。
+
+  [发表证据](https://arxiv.org/abs/2507.11558) · 代码：未核验到作者代码
+
+- **Aurora** — Cristian Bodnar et al. **[A foundation model for the Earth system](https://arxiv.org/abs/2405.13063)**. 2025 · Nature；arXiv 首发 2024.
+
+  在多源地球系统数据上预训练，并适配天气、空气质量、海浪等任务。
+
+  [正式版本](https://doi.org/10.1038/s41586-025-09005-y) · [发表证据](https://doi.org/10.1038/s41586-025-09005-y) · [代码](https://github.com/microsoft/aurora)（作者/项目仓库已核验）
+
+- **FengWu** — Kang Chen et al. **[FengWu: Pushing the Skillful Global Medium-range Weather Forecast beyond 10 Days Lead](https://arxiv.org/abs/2304.02948)**. 2025 · Communications Earth & Environment；arXiv 首发 2023.
+
+  以多模态、多任务结构、跨模态融合和回放缓冲提升中期天气建模。
+
+  [发表证据](https://github.com/OpenEarthLab/FengWu) · [代码](https://github.com/OpenEarthLab/FengWu)（作者/项目仓库已核验）
+
+- **GenCast** — Ilan Price et al. **[Probabilistic weather forecasting with machine learning](https://arxiv.org/abs/2312.15796)**. 2025 · Nature；arXiv 首发 2023.
+
+  使用扩散生成集合预报，刻画未来全球天气状态的联合不确定性。
+
+  [正式版本](https://doi.org/10.1038/s41586-024-08252-9) · [发表证据](https://doi.org/10.1038/s41586-024-08252-9) · [代码](https://github.com/google-deepmind/graphcast)（作者/项目仓库已核验）
+
+  版本/使用说明：采用 Nature 2025 卷期年；2024-12-04 在线发表，预印本首发于 2023。
+
+- **TraffiDent** — Xiaochuan Gou et al. **[TraffiDent: A Dataset for Understanding the Interplay Between Traffic Dynamics and Incidents](https://proceedings.neurips.cc/paper_files/paper/2025/hash/7813e19a86fd73d40f7e811ab15f6d5f-Abstract-Datasets_and_Benchmarks_Track.html)**. 2025 · NeurIPS Datasets and Benchmarks.
+
+  对齐交通状态、事故及道路属性，支持事故后的交通预测和相关分析。
+
+  [正式版本](https://proceedings.neurips.cc/paper_files/paper/2025/hash/7813e19a86fd73d40f7e811ab15f6d5f-Abstract-Datasets_and_Benchmarks_Track.html) · [发表证据](https://proceedings.neurips.cc/paper_files/paper/2025/hash/7813e19a86fd73d40f7e811ab15f6d5f-Abstract-Datasets_and_Benchmarks_Track.html) · 代码：未核验到作者代码

@@ -10,10 +10,11 @@ A curated reading list for spatio-temporal forecasting.
 
 ## 快速入口
 
-- [按年份浏览](BY_YEAR.md) · [2025—2026 专区](RECENT_2025_2026.md)
+- [按年份浏览](BY_YEAR.md) · [近期论文（2025—2026）](RECENT.md) · [2025—2026 索引](RECENT_2025_2026.md)
 - [数据集与工具](DATASETS.md) · [检索和核验说明](SEARCH_NOTES.md) · [贡献规范](CONTRIBUTING.md)
 - [CSV 表格](papers.csv) · [JSON 原始目录](papers.json) · [BibTeX 引用草稿](references.bib)
 - [版本记录](CHANGELOG.md) · [结构检查结果](verification.json)
+- [每周更新记录](updates/README.md) · [更新流程](MONITORING.md) · [贡献者](CONTRIBUTORS.md)
 
 ## 收录范围与标记
 
@@ -876,5 +877,12 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 ## 维护
 
 以 `papers.json` 为单一数据源。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成本 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+
+每周检索新论文、核验论文与官方代码链接，去重后更新目录，并在 [更新记录](updates/README.md) 中保存每次新增、修订和待核验项。检索截止日期由 `catalog_meta.json` 记录，只有完成检索后才推进。
+
+## 贡献者
+
+- [13348952](https://github.com/13348952)：项目发起与维护。
+- **ChatGPT（OpenAI，通过 Codex）**：AI 辅助文献检索、来源与代码链接核验、分类摘要、目录生成和持续维护。详见 [贡献说明](CONTRIBUTORS.md)。
 
 本目录只整理文献信息、链接及原创简短说明；论文、数据、代码和模型分别遵循原作者及发布方许可。组织形式参考 RSPapers，内容按时空预测任务重新检索和组织。
