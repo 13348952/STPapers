@@ -2,3 +2,10 @@ __pycache__/
 *.py[cod]
 .DS_Store
 Thumbs.db
+.env
+.env.*
+*.dpapi
+budget.json
+budget.lock
+*.evidence.json
+*.proposal.json

@@ -6,9 +6,11 @@ A curated reading list for spatio-temporal forecasting.
 
 参考 [RSPapers](https://github.com/hongleizhang/RSPapers) 的主题分类和贡献方式，整理时空序列预测论文、数据集与代码入口。中文方法定位为本目录概括，论文保留英文原题。
 
-**本次检索截止：2026-11-04（Asia/Shanghai）。共 86 个独立条目、13 个主题，覆盖 2015—2026；其中 11 篇按核验口径归入 2026，62 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
+**本次检索截止：2026-11-04（Asia/Shanghai）。共 97 个独立条目、13 个主题，覆盖 2015—2026；其中 13 篇按核验口径归入 2026，70 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
 
-这是代表性精选目录，重点为交通/城市图预测，同时覆盖网格序列、降水和天气。并非全领域穷尽综述，也不是性能排行榜。13 条采用已核验的预印本记录，其中一部分可能已有本次未确认的正式版本。
+目录更新：2026-11-05。定向补录不推进完整检索截止日期；实际范围见 [更新记录](updates/README.md)。
+
+这是代表性精选目录，重点为交通/城市图预测，同时覆盖网格序列、降水和天气。并非全领域穷尽综述，也不是性能排行榜。16 条采用已核验的预印本记录，其中一部分可能已有本次未确认的正式版本。
 
 ## 快速入口
 
@@ -17,12 +19,13 @@ A curated reading list for spatio-temporal forecasting.
 - [CSV 表格](papers.csv) · [JSON 原始目录](papers.json) · [BibTeX 引用草稿](references.bib)
 - [版本记录](CHANGELOG.md) · [结构检查结果](verification.json)
 - [每周更新记录](updates/README.md) · [更新流程](MONITORING.md) · [贡献者](CONTRIBUTORS.md)
+- [独立主题页面](topics/README.md) · [教程式阅读指南](TUTORIALS.md)
 
 ## 收录范围与标记
 
 **核心对象**：有明确空间位置、区域、图结构或二维/三维空间场，同时预测未来时间段的任务。图学习中的“变量关系”可以是统计依赖，不自动等同于地理关系或因果传播。
 
-**相关背景单列**：纯时间序列基线、插补方法和广义城市表示学习。CSDI 的主任务是插补；视频预测架构作为网格预测背景收录。没有将轨迹规划、推荐系统、静态图分类等并入核心目录。
+**相关背景单列**：纯时间序列基线、插补方法和空间外推。CSDI 的主任务是插补；STGNP 根据周围观测推断目标位置；视频预测架构作为网格预测背景收录。没有将轨迹规划、推荐系统、静态图分类等并入核心目录。
 
 年份优先采用已核验的正式版本年份；未确认正式版本则使用 arXiv 首发年。期刊在线年与卷期年不同时保留说明。正文使用一个主分类，同一论文不会因跨主题而重复计数。
 
@@ -46,18 +49,18 @@ A curated reading list for spatio-temporal forecasting.
 | 编号 | 主题 | 条目数 |
 | --- | --- | ---: |
 | 01 | [综述与入门](#topic-survey) | 4 |
-| 02 | [城市网格流量与需求预测](#topic-urban) | 3 |
-| 03 | [图卷积、动态图与连续时间建模](#topic-graph) | 14 |
-| 04 | [注意力、Transformer 与状态空间模型](#topic-attention) | 6 |
-| 05 | [简洁基线、高效与大规模预测](#topic-efficient) | 11 |
+| 02 | [城市网格流量与需求预测](#topic-urban) | 6 |
+| 03 | [图卷积、动态图与连续时间建模](#topic-graph) | 16 |
+| 04 | [注意力、Transformer 与状态空间模型](#topic-attention) | 7 |
+| 05 | [简洁基线、高效与大规模预测](#topic-efficient) | 12 |
 | 06 | [自监督与预训练](#topic-pretrain) | 5 |
-| 07 | [异质性、元学习与迁移](#topic-transfer) | 4 |
+| 07 | [异质性、元学习与迁移](#topic-transfer) | 5 |
 | 08 | [基础模型、语言模型与跨模态迁移](#topic-foundation) | 5 |
-| 09 | [概率时空图预测](#topic-probabilistic) | 2 |
+| 09 | [概率时空图预测](#topic-probabilistic) | 3 |
 | 10 | [通用网格与时空帧预测](#topic-grid) | 8 |
 | 11 | [降水、天气与地球系统预测](#topic-weather) | 10 |
 | 12 | [数据集、基准与工具](#topic-benchmark) | 8 |
-| 13 | [相关时间序列基线与插补背景](#topic-related) | 6 |
+| 13 | [相关任务与时间序列背景](#topic-related) | 8 |
 
 <a id="topic-survey"></a>
 
@@ -122,6 +125,36 @@ A curated reading list for spatio-temporal forecasting.
 
   [发表证据](https://github.com/LeiBAI/STG2Seq) · [代码](https://github.com/LeiBAI/STG2Seq)（作者/项目仓库已核验）
 
+<a id="paper-stdn"></a>
+
+- **STDN** — Huaxiu Yao et al. **[Revisiting Spatial-Temporal Similarity: A Deep Learning Framework for Traffic Prediction](https://arxiv.org/abs/1803.01254)**. 2019 · AAAI；arXiv 首发 2018.
+
+  这篇论文提出 STDN，通过流门控机制学习动态空间相似性，并用周期偏移注意力处理非严格周期的时间动态。它直接回应了交通预测里“空间关系静态、时间规律严格周期化”的常见假设。
+
+  [正式版本](https://doi.org/10.1609/aaai.v33i01.33015668) · [发表证据](https://api.crossref.org/works/10.1609/aaai.v33i01.33015668) · [代码](https://github.com/tangxianfeng/STDN)（作者/项目仓库已核验）
+
+  版本/使用说明：arXiv 首发于 2018 年，正式 AAAI 版本为 2019 年；已检查作者仓库 main.py 与运行说明，未训练复现。
+
+<a id="paper-st-mgcn"></a>
+
+- **ST-MGCN** — Xu Geng et al. **[Spatiotemporal Multi-Graph Convolution Network for Ride-Hailing Demand Forecasting](https://doi.org/10.1609/aaai.v33i01.33013656)**. 2019 · AAAI.
+
+  这篇论文提出 ST-MGCN，用多张图建模区域间非欧式相关性，并结合上下文门控循环网络建模时间依赖。它适用于网约车/出行需求的区域级预测，而不仅是相邻栅格或传感器的局部建模。
+
+  [正式版本](https://doi.org/10.1609/aaai.v33i01.33013656) · [发表证据](https://api.crossref.org/works/10.1609/aaai.v33i01.33013656) · 代码：未核验到作者代码
+
+  版本/使用说明：出版者登记的 Crossref 元数据与摘要已核对；出版者页面本次访问受限，未核验到作者代码。
+
+<a id="paper-dmvst-net"></a>
+
+- **DMVST-Net** — Huaxiu Yao et al. **[Deep Multi-View Spatial-Temporal Network for Taxi Demand Prediction](https://arxiv.org/abs/1802.08714)**. 2018 · AAAI.
+
+  这篇论文提出 DMVST-Net，用时间视图、局部空间视图和语义视图联合建模出租车需求的时空相关性。它针对区域级需求预测中仅用 CNN 或 LSTM 难以同时刻画空间与时间依赖的问题。
+
+  [正式版本](https://doi.org/10.1609/aaai.v32i1.11836) · [发表证据](https://api.crossref.org/works/10.1609/aaai.v32i1.11836) · [代码](https://github.com/huaxiuyao/DMVST-Net)（作者/项目仓库已核验）
+
+  版本/使用说明：作者仓库明确仅提供模型部分，原始数据未公开；已读 model.py，不能视为完整复现包。
+
 <a id="paper-st-resnet"></a>
 
 - **ST-ResNet** — Junbo Zhang et al. **[Deep Spatio-Temporal Residual Networks for Citywide Crowd Flows Prediction](https://arxiv.org/abs/1610.00081)**. 2017 · AAAI；arXiv 首发 2016.
@@ -136,6 +169,26 @@ A curated reading list for spatio-temporal forecasting.
 ## 03 · 图卷积、动态图与连续时间建模
 
 以道路或传感器节点为对象，研究空间依赖和时间动态。
+
+<a id="paper-strp"></a>
+
+- **STRP** — Shuhao Li et al. **[From Coarse to Fine: Managing Temporal Granularity in Spatio-Temporal Data for Fine-Grained Traffic Prediction](https://arxiv.org/abs/2606.09392)**. 2026 · arXiv；正式发表状态未核验.
+
+  研究不同时间粒度之间的交通预测：从粗采样历史预测细粒度未来，采用 Tree Convolution 做空间建模，并用 Inverse Dilated Convolution 做逐步时间外推，同时区分 window-based 与 duration-based 设定。
+
+  [发表证据](https://arxiv.org/abs/2606.09392) · 代码：未核验到作者代码
+
+  版本/使用说明：输入与输出时间粒度不同于常规同分辨率预测；保留 arXiv 预印本记录，未核验到正式发表版本或作者代码。
+
+<a id="paper-igstgnn"></a>
+
+- **IGSTGNN** — Lixiang Fan et al. **[Incident-Guided Spatiotemporal Traffic Forecasting](https://arxiv.org/abs/2602.02528)**. 2026 · KDD.
+
+  结合事故上下文的空间融合（ICSF）与时间事故影响衰减（TIID）来建模交通历史与外部事故信息，并附带交通/事故对齐数据集。
+
+  [正式版本](https://doi.org/10.1145/3770854.3780215) · [发表证据](https://github.com/fanlixiang/IGSTGNN) · [代码](https://github.com/fanlixiang/IGSTGNN)（作者/项目仓库已核验）
+
+  版本/使用说明：KDD 2026 信息依据作者仓库引用，出版者页面本次未成功访问。使用事故上下文，比较时需对齐事故信息的可用时点和输入范围；已检查训练入口，未运行实验。
 
 <a id="paper-dgcrn"></a>
 
@@ -278,6 +331,16 @@ A curated reading list for spatio-temporal forecasting.
 
   [发表证据](https://arxiv.org/abs/2610.36393) · 代码：未核验到作者代码
 
+<a id="paper-stg-mamba"></a>
+
+- **STG-Mamba** — Lincan Li et al. **[STG-Mamba: Spatial-Temporal Graph Learning via Selective State Space Model](https://arxiv.org/abs/2403.12418)**. 2024 · arXiv；正式发表状态未核验.
+
+  本文提出 STG-Mamba，将选择性状态空间模型引入时空图学习，用 ST-S3M 建模跨时间的动态状态演化，并结合 KFGN 做多时间粒度的图表示融合。
+
+  [发表证据](https://arxiv.org/abs/2403.12418) · [代码](https://github.com/LincanLi-X/STG-Mamba)（作者/项目仓库已核验）
+
+  版本/使用说明：保留 arXiv 2024 记录，正式发表状态未核验。论文链接的旧仓库地址重定向至 LincanLi-X；已检查 main.py，未训练复现。
+
 <a id="paper-pdformer"></a>
 
 - **PDFormer** — Jiawei Jiang et al. **[PDFormer: Propagation Delay-Aware Dynamic Long-Range Transformer for Traffic Flow Prediction](https://arxiv.org/abs/2301.07945)**. 2023 · AAAI.
@@ -386,6 +449,16 @@ A curated reading list for spatio-temporal forecasting.
   利用 KDTree 构造不规则空间分块，以块内与跨块注意力学习局部和全局关系。
 
   [发表证据](https://arxiv.org/abs/2412.09972) · [代码](https://github.com/LMissher/PatchSTG)（作者/项目仓库已核验）
+
+<a id="paper-stgformer"></a>
+
+- **STGformer** — Hongjun Wang et al. **[STGformer: Efficient Spatiotemporal Graph Transformer for Traffic Forecasting](https://arxiv.org/abs/2410.00385)**. 2024 · arXiv；正式发表状态未核验.
+
+  提出面向交通预测的高效时空图 Transformer，将图卷积与 Transformer 结合，用单个 STG attention block 捕捉高阶时空交互，并在 LargeST 等设置上评估效率与效果。
+
+  [发表证据](https://arxiv.org/abs/2410.00385) · [代码](https://github.com/Dreamzz5/STGformer)（作者/项目仓库已核验）
+
+  版本/使用说明：论文直接链接作者仓库，已检查 model/train.py 与运行说明，未运行实验。保留 arXiv 2024；与同名的人体姿态、轨迹及稀疏感知论文区分，不将速度报告泛化为跨设置结论。
 
 <a id="paper-bigst"></a>
 
@@ -505,6 +578,16 @@ A curated reading list for spatio-temporal forecasting.
 
   版本/使用说明：采用 AAAI 2023 对应的 arXiv:2211.14701；不使用已撤回的扩展稿 arXiv:2212.05989。
 
+<a id="paper-st-metanet"></a>
+
+- **ST-MetaNet** — Zheyi Pan et al. **[Urban Traffic Prediction from Spatio-Temporal Data Using Deep Meta Learning](https://doi.org/10.1145/3292500.3330884)**. 2019 · KDD.
+
+  利用地理属性生成元图注意力和元循环网络的参数，刻画城市交通节点与连接的异质性。
+
+  [正式版本](https://doi.org/10.1145/3292500.3330884) · [发表证据](https://api.crossref.org/works/10.1145/3292500.3330884) · [代码](https://github.com/panzheyi/ST-MetaNet)（作者/项目仓库已核验）
+
+  版本/使用说明：元学习根据地理属性生成节点/边相关参数；不据此推断少样本跨城市适配。已检查 MXNet 作者实现的训练入口，未运行。
+
 
 <a id="topic-foundation"></a>
 
@@ -578,6 +661,16 @@ A curated reading list for spatio-temporal forecasting.
   将去噪扩散模型推广到时空图，进行非自回归概率预测。
 
   [发表证据](https://arxiv.org/abs/2301.13629) · 代码：未核验到作者代码
+
+<a id="paper-stgp-spde"></a>
+
+- **STGP-SPDE** — Alexander V. Nikitin et al. **[Non-separable Spatio-temporal Graph Kernels via SPDEs](https://arxiv.org/abs/2111.08524)**. 2022 · AISTATS；arXiv 首发 2021.
+
+  本文利用 SPDE 与图上的高斯过程联系，推导出非可分的时空图核，用于描述扩散、振荡等跨时空耦合现象。
+
+  [正式版本](https://proceedings.mlr.press/v151/nikitin22a.html) · [发表证据](https://proceedings.mlr.press/v151/nikitin22a.html) · [代码](https://github.com/AaltoPML/spatiotemporal-graph-kernels)（作者/项目仓库已核验）
+
+  版本/使用说明：正式版本为 AISTATS 2022，arXiv 首发 2021。仓库同时包含插值和外推设置，比较时需区分；已检查时空核实现，未运行实验。
 
 
 <a id="topic-grid"></a>
@@ -815,9 +908,9 @@ A curated reading list for spatio-temporal forecasting.
 
 <a id="topic-related"></a>
 
-## 13 · 相关时间序列基线与插补背景
+## 13 · 相关任务与时间序列背景
 
-这些方法不天然具备物理空间结构，单独列出避免混淆。
+时间序列基线、插补和空间外推等相关任务；明确区分任务与物理空间假设。
 
 <a id="paper-itransformer"></a>
 
@@ -851,6 +944,26 @@ A curated reading list for spatio-temporal forecasting.
 
   [发表证据](https://github.com/thuml/TimesNet) · [代码](https://github.com/thuml/TimesNet)（作者/项目仓库已核验）
 
+<a id="paper-stgnp"></a>
+
+- **STGNP** — Junfeng Hu et al. **[Graph Neural Processes for Spatio-Temporal Extrapolation](https://arxiv.org/abs/2305.18719)**. 2023 · KDD.
+
+  这项工作把 Neural Processes 扩展到图上的时空外推任务，显式建模不确定性，并通过 Graph Bayesian Aggregation 融合上下文节点信息。
+
+  [正式版本](https://doi.org/10.1145/3580305.3599372) · [发表证据](https://api.crossref.org/works/10.1145/3580305.3599372) · [代码](https://github.com/hjf1997/STGNP)（作者/项目仓库已核验）
+
+  版本/使用说明：相关任务：依据周围观测推断目标位置，不能等同于未来时间预测。已检查作者仓库层级模型实现和运行说明，未运行实验。
+
+<a id="paper-graphdf"></a>
+
+- **GraphDF** — Hongjie Chen et al. **[Graph Deep Factors for Probabilistic Time-series Forecasting](https://arxiv.org/abs/2010.07373)**. 2023 · ACM TKDD；arXiv 首发 2020.
+
+  结合图关系驱动的全局与局部概率模型，描述相关时间序列；正式期刊版本还研究在线增量学习。
+
+  [正式版本](https://doi.org/10.1145/3543511) · [发表证据](https://api.crossref.org/works/10.1145/3543511) · 代码：未核验到作者代码
+
+  版本/使用说明：相关背景：图相关的概率时间序列预测，不预设地理空间。2023 年 TKDD 正式版本扩展了 2020 年预印本并加入在线增量学习；以一个条目记录版本关系，未核验作者代码。
+
 <a id="paper-csdi"></a>
 
 - **CSDI** — Yusuke Tashiro et al. **[CSDI: Conditional Score-based Diffusion Models for Probabilistic Time Series Imputation](https://arxiv.org/abs/2107.03502)**. 2021 · NeurIPS.
@@ -878,7 +991,7 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 ## 维护
 
-以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、独立主题页面、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 每周检索新论文、核验论文与官方代码链接，去重后更新目录，并在 [更新记录](updates/README.md) 中保存每次新增、修订和待核验项。检索截止日期由 `catalog_meta.json` 记录，只有完成检索后才推进。
 

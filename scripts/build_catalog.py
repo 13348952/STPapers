@@ -8,6 +8,7 @@ papers=json.loads((ROOT/'papers.json').read_text(encoding='utf8'))
 cats=json.loads((ROOT/'categories.json').read_text(encoding='utf8'))
 meta=json.loads((ROOT/'catalog_meta.json').read_text(encoding='utf8'))
 as_of=date.fromisoformat(meta['last_successful_search_date'])
+updated_on=max(as_of,date.fromisoformat(meta.get('last_catalog_update_date',as_of.isoformat())))
 recent_start=as_of.year-1
 def author(r):
     a=r['authors'][0]
@@ -45,6 +46,8 @@ A curated reading list for spatio-temporal forecasting.
 
 **本次检索截止：{as_of.isoformat()}（Asia/Shanghai）。共 {len(papers)} 个独立条目、{len(cats)} 个主题，覆盖 {first_year}—{last_year}；其中 {current_year_count} 篇按核验口径归入 {as_of.year}，{nrepo} 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
 
+目录更新：{updated_on.isoformat()}。定向补录不推进完整检索截止日期；实际范围见 [更新记录](updates/README.md)。
+
 这是代表性精选目录，重点为交通/城市图预测，同时覆盖网格序列、降水和天气。并非全领域穷尽综述，也不是性能排行榜。{npre} 条采用已核验的预印本记录，其中一部分可能已有本次未确认的正式版本。
 
 ## 快速入口
@@ -54,12 +57,13 @@ A curated reading list for spatio-temporal forecasting.
 - [CSV 表格](papers.csv) · [JSON 原始目录](papers.json) · [BibTeX 引用草稿](references.bib)
 - [版本记录](CHANGELOG.md) · [结构检查结果](verification.json)
 - [每周更新记录](updates/README.md) · [更新流程](MONITORING.md) · [贡献者](CONTRIBUTORS.md)
+- [独立主题页面](topics/README.md) · [教程式阅读指南](TUTORIALS.md)
 
 ## 收录范围与标记
 
 **核心对象**：有明确空间位置、区域、图结构或二维/三维空间场，同时预测未来时间段的任务。图学习中的“变量关系”可以是统计依赖，不自动等同于地理关系或因果传播。
 
-**相关背景单列**：纯时间序列基线、插补方法和广义城市表示学习。CSDI 的主任务是插补；视频预测架构作为网格预测背景收录。没有将轨迹规划、推荐系统、静态图分类等并入核心目录。
+**相关背景单列**：纯时间序列基线、插补方法和空间外推。CSDI 的主任务是插补；STGNP 根据周围观测推断目标位置；视频预测架构作为网格预测背景收录。没有将轨迹规划、推荐系统、静态图分类等并入核心目录。
 
 年份优先采用已核验的正式版本年份；未确认正式版本则使用 arXiv 首发年。期刊在线年与卷期年不同时保留说明。正文使用一个主分类，同一论文不会因跨主题而重复计数。
 
@@ -98,7 +102,7 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 ## 维护
 
-以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、独立主题页面、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 每周检索新论文、核验论文与官方代码链接，去重后更新目录，并在 [更新记录](updates/README.md) 中保存每次新增、修订和待核验项。检索截止日期由 `catalog_meta.json` 记录，只有完成检索后才推进。
 
@@ -109,9 +113,28 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 本目录只整理文献信息、链接及原创简短说明；论文、数据、代码和模型分别遵循原作者及发布方许可。组织形式参考 RSPapers，内容按时空预测任务重新检索和组织。
 '''
-body_en=build_english(papers,cats,as_of,author,anchor)
+body_en=build_english(papers,cats,as_of,author,anchor,updated_on)
 (ROOT/'README.md').write_text(body,encoding='utf8')
 (ROOT/'README.en.md').write_text(body_en,encoding='utf8')
+topic_dir=ROOT/'topics'
+topic_dir.mkdir(exist_ok=True)
+topic_index='# 主题目录 · Topic index\n\n[中文主目录](../README.md) · [English catalog](../README.en.md)\n\n所有主题页面由同一论文数据生成；独立页面不额外增加论文数。\nAll topic pages share the same catalog; papers are counted only once.\n\n| 编号 / No. | 中文 | English | 条目 / Entries |\n| --- | --- | --- | ---: |\n'
+from readme_en import CATEGORIES
+category_keys=list(cats)
+for i,(c,(num,name,desc)) in enumerate(cats.items()):
+    marker=f'<a id="topic-{c}"></a>'
+    next_marker=f'<a id="topic-{category_keys[i+1]}"></a>' if i+1<len(cats) else None
+    for lang,full,ending in [('zh',body,'## 比较论文时先对齐的条件'),('en',body_en,'## Conditions to align before comparing papers')]:
+        start=full.index(marker)
+        stop=full.index(next_marker,start) if next_marker else full.index(ending,start)
+        section=full[start:stop].strip()
+        filename=f'{c}.md' if lang=='zh' else f'{c}.en.md'
+        title=name if lang=='zh' else CATEGORIES[c][0]
+        links=f'[简体中文]({c}.md) | [English]({c}.en.md) · [主题导航 / Topics](README.md)'
+        home='[返回主目录](../README.md)' if lang=='zh' else '[Full catalog](../README.en.md)'
+        (topic_dir/filename).write_text(f'# {title}\n\n{links} · {home}\n\n{section}\n',encoding='utf8')
+    topic_index+=f'| {num} | [{name}]({c}.md) | [{CATEGORIES[c][0]}]({c}.en.md) | {counts[c]} |\n'
+(topic_dir/'README.md').write_text(topic_index,encoding='utf8')
 for name,items,title in [('BY_YEAR.md',papers,'按年份浏览'),('RECENT.md',recent,f'近期论文（{recent_start}—{as_of.year}）'),('RECENT_2025_2026.md',[r for r in papers if 2025<=r['year']<=2026],'2025—2026 年论文')]:
     txt=f'# {title}\n\n[返回主目录](README.md)\n\n年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。\n'
     for y in sorted({r['year'] for r in items},reverse=True):
@@ -153,7 +176,7 @@ with (ROOT/'papers.csv').open(encoding='utf-8-sig',newline='') as f:
 if len(csvrows)!=len(papers):errors.append('CSV count')
 for a,b in zip(papers,csvrows):
     if a['title']!=b['title'] or str(a['year'])!=b['year']:errors.append('CSV content mismatch '+a['id'])
-result={'checked_on':as_of.isoformat(),'records':len(papers),'categories':len(cats),'year_counts':dict(sorted(collections.Counter(r['year'] for r in papers).items())),'category_counts':dict(counts),'repository_verified_paper_count':nrepo,'preprint_record_count':npre,'related_count':sum(r['scope']=='related' for r in papers),'structure_checks_passed':not errors,'errors':errors,'limits':'Metadata, deduplication and export consistency checked. No training runs. Link retrieval evidence is described in SEARCH_NOTES.md; no claim that all remote links remain accessible.'}
+result={'checked_on':updated_on.isoformat(),'search_cutoff':as_of.isoformat(),'records':len(papers),'categories':len(cats),'year_counts':dict(sorted(collections.Counter(r['year'] for r in papers).items())),'category_counts':dict(counts),'repository_verified_paper_count':nrepo,'preprint_record_count':npre,'related_count':sum(r['scope']=='related' for r in papers),'structure_checks_passed':not errors,'errors':errors,'limits':'Metadata, deduplication and export consistency checked. No training runs. Link retrieval evidence is described in SEARCH_NOTES.md and dated updates; no claim that all remote links remain accessible.'}
 (ROOT/'verification.json').write_text(json.dumps(result,ensure_ascii=False,indent=2)+'\n',encoding='utf8')
 print(json.dumps(result,ensure_ascii=False,indent=2))
 if errors:raise SystemExit(1)

@@ -6,9 +6,11 @@ A curated reading list for spatio-temporal forecasting.
 
 Inspired by the topic organization and contribution model of [RSPapers](https://github.com/hongleizhang/RSPapers), this repository collects papers, datasets, and code resources for spatio-temporal forecasting. Method summaries are editorial descriptions written for this catalog; paper titles retain their original English wording.
 
-**Search cutoff: 2026-11-04 (Asia/Shanghai). 86 unique entries across 13 topics, covering 2015–2026; 11 papers are assigned to 2026 under the verified year convention, and 62 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
+**Search cutoff: 2026-11-04 (Asia/Shanghai). 97 unique entries across 13 topics, covering 2015–2026; 13 papers are assigned to 2026 under the verified year convention, and 70 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
 
-This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 13 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
+Catalog updated: 2026-11-05. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
+
+This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 16 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
 
 ## Quick links
 
@@ -17,14 +19,15 @@ This is a representative collection centered on traffic and urban graph forecast
 - [CSV table](papers.csv) · [JSON catalog](papers.json) · [Draft BibTeX references](references.bib)
 - [Changelog](CHANGELOG.md) · [Structural validation results](verification.json)
 - [Weekly update log](updates/README.md) · [Monitoring workflow](MONITORING.md) · [Contributors](CONTRIBUTORS.md)
+- [Standalone topic pages](topics/README.md) · [Tutorial-style reading guide](TUTORIALS.en.md)
 
-The English README covers every catalog entry. Linked supporting guides and secondary indexes are currently in Chinese; paper titles and source links are shared across both versions.
+The English README, topic pages, and reading guide cover the same catalog as their Chinese counterparts. Other supporting guides and secondary indexes are currently in Chinese; paper titles and source links are shared across both versions.
 
 ## Scope and labels
 
 **Core scope:** tasks that forecast future time intervals and have explicit spatial locations, regions, graph structures, or two- or three-dimensional spatial fields. Relationships learned among variables may represent statistical dependencies; they do not automatically establish geographic relationships or causal propagation.
 
-**Related background is listed separately:** general time-series baselines, imputation methods, and broader urban representation learning. CSDI primarily addresses imputation. Video prediction architectures are included as background for grid forecasting. Trajectory planning, recommender systems, and static graph classification are outside the core catalog.
+**Related background is listed separately:** general time-series baselines, imputation methods, and spatial extrapolation. CSDI primarily addresses imputation; STGNP infers target locations from surrounding observations. Video prediction architectures are included as background for grid forecasting. Trajectory planning, recommender systems, and static graph classification are outside the core catalog.
 
 Years follow a verified formal publication when available, otherwise the first arXiv release. Differences between online publication and volume years are noted. Each paper has one primary category and is counted once, even if it spans multiple topics.
 
@@ -48,18 +51,18 @@ These are editorial suggestions, not rankings of model performance.
 | No. | Topic | Entries |
 | --- | --- | ---: |
 | 01 | [Surveys and introductions](#topic-survey) | 4 |
-| 02 | [Urban grid flow and demand forecasting](#topic-urban) | 3 |
-| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 14 |
-| 04 | [Attention, Transformers, and state-space models](#topic-attention) | 6 |
-| 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 11 |
+| 02 | [Urban grid flow and demand forecasting](#topic-urban) | 6 |
+| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 16 |
+| 04 | [Attention, Transformers, and state-space models](#topic-attention) | 7 |
+| 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 12 |
 | 06 | [Self-supervised learning and pretraining](#topic-pretrain) | 5 |
-| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 4 |
+| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 5 |
 | 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 5 |
-| 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 2 |
+| 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 3 |
 | 10 | [General grid and spatio-temporal frame prediction](#topic-grid) | 8 |
 | 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 10 |
 | 12 | [Datasets, benchmarks, and tools](#topic-benchmark) | 8 |
-| 13 | [Related time-series baselines and imputation](#topic-related) | 6 |
+| 13 | [Related tasks and time-series background](#topic-related) | 8 |
 
 <a id="topic-survey"></a>
 
@@ -124,6 +127,36 @@ Regional inflows, outflows, and passenger demand, represented as grids or region
 
   [Publication evidence](https://github.com/LeiBAI/STG2Seq) · [Code](https://github.com/LeiBAI/STG2Seq) (author/project repository checked)
 
+<a id="paper-stdn"></a>
+
+- **STDN** — Huaxiu Yao et al. **[Revisiting Spatial-Temporal Similarity: A Deep Learning Framework for Traffic Prediction](https://arxiv.org/abs/1803.01254)**. 2019 · AAAI; first arXiv release: 2018.
+
+  This paper proposes STDN, using a flow gating mechanism for dynamic spatial similarity and a shifted attention mechanism for non-strictly periodic temporal patterns. It directly addresses the common assumptions that spatial dependence is static and temporal patterns are perfectly periodic.
+
+  [Published version](https://doi.org/10.1609/aaai.v33i01.33015668) · [Publication evidence](https://api.crossref.org/works/10.1609/aaai.v33i01.33015668) · [Code](https://github.com/tangxianfeng/STDN) (author/project repository checked)
+
+  Version / usage notes: First released on arXiv in 2018 and published at AAAI in 2019. The author repository main.py and usage instructions were inspected; no training was run.
+
+<a id="paper-st-mgcn"></a>
+
+- **ST-MGCN** — Xu Geng et al. **[Spatiotemporal Multi-Graph Convolution Network for Ride-Hailing Demand Forecasting](https://doi.org/10.1609/aaai.v33i01.33013656)**. 2019 · AAAI.
+
+  This paper proposes ST-MGCN, which models non-Euclidean inter-region dependencies with multiple graphs and uses a contextual gated recurrent network for temporal dynamics. It is designed for region-level ride-hailing demand forecasting rather than only local adjacency-based modeling.
+
+  [Published version](https://doi.org/10.1609/aaai.v33i01.33013656) · [Publication evidence](https://api.crossref.org/works/10.1609/aaai.v33i01.33013656) · Code: author code not verified
+
+  Version / usage notes: Publisher-deposited Crossref metadata and abstract were checked. Direct publisher-page access was restricted during this check; author code was not verified.
+
+<a id="paper-dmvst-net"></a>
+
+- **DMVST-Net** — Huaxiu Yao et al. **[Deep Multi-View Spatial-Temporal Network for Taxi Demand Prediction](https://arxiv.org/abs/1802.08714)**. 2018 · AAAI.
+
+  This paper proposes DMVST-Net, which combines temporal, local spatial, and semantic views to model taxi demand dynamics. It targets the limitation of using only CNN or LSTM to capture both spatial and temporal dependencies in citywide demand prediction.
+
+  [Published version](https://doi.org/10.1609/aaai.v32i1.11836) · [Publication evidence](https://api.crossref.org/works/10.1609/aaai.v32i1.11836) · [Code](https://github.com/huaxiuyao/DMVST-Net) (author/project repository checked)
+
+  Version / usage notes: The author repository explicitly provides only the model component and does not release the raw data. model.py was inspected; this is not a complete reproduction package.
+
 <a id="paper-st-resnet"></a>
 
 - **ST-ResNet** — Junbo Zhang et al. **[Deep Spatio-Temporal Residual Networks for Citywide Crowd Flows Prediction](https://arxiv.org/abs/1610.00081)**. 2017 · AAAI; first arXiv release: 2016.
@@ -138,6 +171,26 @@ Regional inflows, outflows, and passenger demand, represented as grids or region
 ## 03 · Graph convolutions, dynamic graphs, and continuous-time modeling
 
 Spatial dependencies and temporal dynamics of road or sensor nodes.
+
+<a id="paper-strp"></a>
+
+- **STRP** — Shuhao Li et al. **[From Coarse to Fine: Managing Temporal Granularity in Spatio-Temporal Data for Fine-Grained Traffic Prediction](https://arxiv.org/abs/2606.09392)**. 2026 · arXiv; formal publication status not verified.
+
+  This paper studies traffic forecasting across temporal granularities: predicting fine-grained future traffic from coarsely sampled history, using Tree Convolution for spatial modeling and Inverse Dilated Convolution for progressive temporal extrapolation, while distinguishing window-based and duration-based settings.
+
+  [Publication evidence](https://arxiv.org/abs/2606.09392) · Code: author code not verified
+
+  Version / usage notes: Input and output temporal granularity differs from conventional same-resolution forecasting. Listed as an arXiv preprint; a formal publication and author code were not verified.
+
+<a id="paper-igstgnn"></a>
+
+- **IGSTGNN** — Lixiang Fan et al. **[Incident-Guided Spatiotemporal Traffic Forecasting](https://arxiv.org/abs/2602.02528)**. 2026 · KDD.
+
+  This paper proposes Incident-Guided Spatiotemporal Traffic Forecasting, combining incident-context spatial fusion (ICSF) and temporal incident impact decay (TIID) to model traffic history together with external incident information, and it includes a traffic/incident-aligned dataset.
+
+  [Published version](https://doi.org/10.1145/3770854.3780215) · [Publication evidence](https://github.com/fanlixiang/IGSTGNN) · [Code](https://github.com/fanlixiang/IGSTGNN) (author/project repository checked)
+
+  Version / usage notes: KDD 2026 attribution follows the author repository citation; the publisher page was not accessible during this check. Align the availability time and scope of incident inputs in comparisons. The training entry point was inspected; no experiments were run.
 
 <a id="paper-dgcrn"></a>
 
@@ -280,6 +333,16 @@ Spatio-temporal attention, embeddings, propagation delays, and combinations with
 
   [Publication evidence](https://arxiv.org/abs/2610.36393) · Code: author code not verified
 
+<a id="paper-stg-mamba"></a>
+
+- **STG-Mamba** — Lincan Li et al. **[STG-Mamba: Spatial-Temporal Graph Learning via Selective State Space Model](https://arxiv.org/abs/2403.12418)**. 2024 · arXiv; formal publication status not verified.
+
+  Combines selective state-space modeling of graph dynamics with Kalman-filter-inspired fusion across temporal granularities.
+
+  [Publication evidence](https://arxiv.org/abs/2403.12418) · [Code](https://github.com/LincanLi-X/STG-Mamba) (author/project repository checked)
+
+  Version / usage notes: Retains the arXiv 2024 record; formal publication status was not verified. The paper-linked old repository redirects to LincanLi-X. main.py was inspected; no training was run.
+
 <a id="paper-pdformer"></a>
 
 - **PDFormer** — Jiawei Jiang et al. **[PDFormer: Propagation Delay-Aware Dynamic Long-Range Transformer for Traffic Flow Prediction](https://arxiv.org/abs/2301.07945)**. 2023 · AAAI.
@@ -388,6 +451,16 @@ Designs that account for node count, history length, forecasting horizon, and co
   Uses a KDTree to construct irregular spatial patches, learning local and global relationships through within-patch and cross-patch attention.
 
   [Publication evidence](https://arxiv.org/abs/2412.09972) · [Code](https://github.com/LMissher/PatchSTG) (author/project repository checked)
+
+<a id="paper-stgformer"></a>
+
+- **STGformer** — Hongjun Wang et al. **[STGformer: Efficient Spatiotemporal Graph Transformer for Traffic Forecasting](https://arxiv.org/abs/2410.00385)**. 2024 · arXiv; formal publication status not verified.
+
+  This paper proposes an efficient spatiotemporal graph Transformer for traffic forecasting, combining graph convolution and Transformer modeling, with a single STG attention block to capture high-order spatiotemporal interactions and evaluating efficiency and performance on settings including LargeST.
+
+  [Publication evidence](https://arxiv.org/abs/2410.00385) · [Code](https://github.com/Dreamzz5/STGformer) (author/project repository checked)
+
+  Version / usage notes: The paper directly links the author repository; model/train.py and usage instructions were inspected without running experiments. Retains arXiv 2024 status. Distinct from similarly named pose, trajectory, and sparse-sensing papers; reported speedups are setting-specific.
 
 <a id="paper-bigst"></a>
 
@@ -507,6 +580,16 @@ Node-specific parameters, cross-domain adaptation, and continual learning are di
 
   Version / usage notes: Uses arXiv:2211.14701, corresponding to AAAI 2023, rather than the withdrawn extended manuscript arXiv:2212.05989.
 
+<a id="paper-st-metanet"></a>
+
+- **ST-MetaNet** — Zheyi Pan et al. **[Urban Traffic Prediction from Spatio-Temporal Data Using Deep Meta Learning](https://doi.org/10.1145/3292500.3330884)**. 2019 · KDD.
+
+  Uses geographical attributes to generate parameters for meta graph attention and meta recurrent networks, modeling heterogeneity among urban traffic nodes and connections.
+
+  [Published version](https://doi.org/10.1145/3292500.3330884) · [Publication evidence](https://api.crossref.org/works/10.1145/3292500.3330884) · [Code](https://github.com/panzheyi/ST-MetaNet) (author/project repository checked)
+
+  Version / usage notes: Meta-learning generates node/edge-dependent parameters from geographical attributes; this does not establish few-shot cross-city adaptation. The MXNet author implementation training entry was inspected but not run.
+
 
 <a id="topic-foundation"></a>
 
@@ -580,6 +663,16 @@ Predicting future distributions or samples rather than only point estimates.
   Extends denoising diffusion models to spatio-temporal graphs for non-autoregressive probabilistic forecasting.
 
   [Publication evidence](https://arxiv.org/abs/2301.13629) · Code: author code not verified
+
+<a id="paper-stgp-spde"></a>
+
+- **STGP-SPDE** — Alexander V. Nikitin et al. **[Non-separable Spatio-temporal Graph Kernels via SPDEs](https://arxiv.org/abs/2111.08524)**. 2022 · AISTATS; first arXiv release: 2021.
+
+  Derives non-separable spatio-temporal graph kernels through the link between SPDEs and Gaussian processes, modeling diffusion and wave-like dynamics.
+
+  [Published version](https://proceedings.mlr.press/v151/nikitin22a.html) · [Publication evidence](https://proceedings.mlr.press/v151/nikitin22a.html) · [Code](https://github.com/AaltoPML/spatiotemporal-graph-kernels) (author/project repository checked)
+
+  Version / usage notes: Published at AISTATS 2022, following an initial arXiv release in 2021. The repository includes both interpolation and extrapolation settings, which must be distinguished in comparisons. Temporal kernel code was inspected; experiments were not run.
 
 
 <a id="topic-grid"></a>
@@ -817,9 +910,9 @@ Task definitions, data processing, metrics, and resources for reproduction.
 
 <a id="topic-related"></a>
 
-## 13 · Related time-series baselines and imputation
+## 13 · Related tasks and time-series background
 
-Listed separately because these methods do not inherently encode physical spatial structure.
+Time-series baselines, imputation, and spatial extrapolation; task definitions and physical-space assumptions are distinguished.
 
 <a id="paper-itransformer"></a>
 
@@ -852,6 +945,26 @@ Listed separately because these methods do not inherently encode physical spatia
   Maps periodic variations into two-dimensional structures to jointly model within-period and across-period changes.
 
   [Publication evidence](https://github.com/thuml/TimesNet) · [Code](https://github.com/thuml/TimesNet) (author/project repository checked)
+
+<a id="paper-stgnp"></a>
+
+- **STGNP** — Junfeng Hu et al. **[Graph Neural Processes for Spatio-Temporal Extrapolation](https://arxiv.org/abs/2305.18719)**. 2023 · KDD.
+
+  This paper generalizes neural processes to spatio-temporal graph extrapolation, where the goal is to infer target locations from surrounding context nodes. It combines causal temporal encoding, cross-set graph reasoning, and Bayesian aggregation to model uncertainty.
+
+  [Published version](https://doi.org/10.1145/3580305.3599372) · [Publication evidence](https://api.crossref.org/works/10.1145/3580305.3599372) · [Code](https://github.com/hjf1997/STGNP) (author/project repository checked)
+
+  Version / usage notes: Related task: inferring target locations from surrounding observations is distinct from forecasting future time intervals. The author repository hierarchical model and usage instructions were inspected; no experiments were run.
+
+<a id="paper-graphdf"></a>
+
+- **GraphDF** — Hongjie Chen et al. **[Graph Deep Factors for Probabilistic Time-series Forecasting](https://arxiv.org/abs/2010.07373)**. 2023 · ACM TKDD; first arXiv release: 2020.
+
+  Combines relational global and local probabilistic models for dependent time series; the journal version also studies online incremental learning.
+
+  [Published version](https://doi.org/10.1145/3543511) · [Publication evidence](https://api.crossref.org/works/10.1145/3543511) · Code: author code not verified
+
+  Version / usage notes: Related background: probabilistic forecasting of graph-related time series without assuming geographical structure. The 2023 TKDD article extends the 2020 preprint with online incremental learning; both versions are represented by one entry. Author code was not verified.
 
 <a id="paper-csdi"></a>
 

@@ -14,7 +14,7 @@ CATEGORIES = {
     'grid': ('General grid and spatio-temporal frame prediction', 'Architectural foundations for weather and urban grid forecasting, including video prediction background.'),
     'weather': ('Precipitation, weather, and Earth-system forecasting', 'Nowcasting, medium-range weather forecasting, and Earth-system foundation models.'),
     'benchmark': ('Datasets, benchmarks, and tools', 'Task definitions, data processing, metrics, and resources for reproduction.'),
-    'related': ('Related time-series baselines and imputation', 'Listed separately because these methods do not inherently encode physical spatial structure.'),
+    'related': ('Related tasks and time-series background', 'Time-series baselines, imputation, and spatial extrapolation; task definitions and physical-space assumptions are distinguished.'),
 }
 CODE_STATUSES = {
     '作者/项目仓库已核验': 'author/project repository checked',
@@ -26,7 +26,7 @@ CODE_STATUSES = {
 }
 
 
-def build_english(papers, cats, as_of, author, anchor):
+def build_english(papers, cats, as_of, author, anchor, updated_on=None):
     """Render all records, failing on missing translations instead of hiding them."""
     if set(cats) != set(CATEGORIES):
         raise ValueError('English category translations must match categories.json')
@@ -52,6 +52,8 @@ Inspired by the topic organization and contribution model of [RSPapers](https://
 
 **Search cutoff: {as_of.isoformat()} (Asia/Shanghai). {len(papers)} unique entries across {len(cats)} topics, covering {first}–{last}; {current} papers are assigned to {as_of.year} under the verified year convention, and {nrepo} papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
 
+Catalog updated: {(updated_on or as_of).isoformat()}. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
+
 This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. {npre} entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
 
 ## Quick links
@@ -61,14 +63,15 @@ This is a representative collection centered on traffic and urban graph forecast
 - [CSV table](papers.csv) · [JSON catalog](papers.json) · [Draft BibTeX references](references.bib)
 - [Changelog](CHANGELOG.md) · [Structural validation results](verification.json)
 - [Weekly update log](updates/README.md) · [Monitoring workflow](MONITORING.md) · [Contributors](CONTRIBUTORS.md)
+- [Standalone topic pages](topics/README.md) · [Tutorial-style reading guide](TUTORIALS.en.md)
 
-The English README covers every catalog entry. Linked supporting guides and secondary indexes are currently in Chinese; paper titles and source links are shared across both versions.
+The English README, topic pages, and reading guide cover the same catalog as their Chinese counterparts. Other supporting guides and secondary indexes are currently in Chinese; paper titles and source links are shared across both versions.
 
 ## Scope and labels
 
 **Core scope:** tasks that forecast future time intervals and have explicit spatial locations, regions, graph structures, or two- or three-dimensional spatial fields. Relationships learned among variables may represent statistical dependencies; they do not automatically establish geographic relationships or causal propagation.
 
-**Related background is listed separately:** general time-series baselines, imputation methods, and broader urban representation learning. CSDI primarily addresses imputation. Video prediction architectures are included as background for grid forecasting. Trajectory planning, recommender systems, and static graph classification are outside the core catalog.
+**Related background is listed separately:** general time-series baselines, imputation methods, and spatial extrapolation. CSDI primarily addresses imputation; STGNP infers target locations from surrounding observations. Video prediction architectures are included as background for grid forecasting. Trajectory planning, recommender systems, and static graph classification are outside the core catalog.
 
 Years follow a verified formal publication when available, otherwise the first arXiv release. Differences between online publication and volume years are noted. Each paper has one primary category and is counted once, even if it spans multiple topics.
 

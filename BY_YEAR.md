@@ -4,7 +4,23 @@
 
 年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。
 
-## 2026（11 篇）
+## 2026（13 篇）
+
+- **STRP** — Shuhao Li et al. **[From Coarse to Fine: Managing Temporal Granularity in Spatio-Temporal Data for Fine-Grained Traffic Prediction](https://arxiv.org/abs/2606.09392)**. 2026 · arXiv；正式发表状态未核验.
+
+  研究不同时间粒度之间的交通预测：从粗采样历史预测细粒度未来，采用 Tree Convolution 做空间建模，并用 Inverse Dilated Convolution 做逐步时间外推，同时区分 window-based 与 duration-based 设定。
+
+  [发表证据](https://arxiv.org/abs/2606.09392) · 代码：未核验到作者代码
+
+  版本/使用说明：输入与输出时间粒度不同于常规同分辨率预测；保留 arXiv 预印本记录，未核验到正式发表版本或作者代码。
+
+- **IGSTGNN** — Lixiang Fan et al. **[Incident-Guided Spatiotemporal Traffic Forecasting](https://arxiv.org/abs/2602.02528)**. 2026 · KDD.
+
+  结合事故上下文的空间融合（ICSF）与时间事故影响衰减（TIID）来建模交通历史与外部事故信息，并附带交通/事故对齐数据集。
+
+  [正式版本](https://doi.org/10.1145/3770854.3780215) · [发表证据](https://github.com/fanlixiang/IGSTGNN) · [代码](https://github.com/fanlixiang/IGSTGNN)（作者/项目仓库已核验）
+
+  版本/使用说明：KDD 2026 信息依据作者仓库引用，出版者页面本次未成功访问。使用事故上下文，比较时需对齐事故信息的可用时点和输入范围；已检查训练入口，未运行实验。
 
 - **FAST-SSM** — Xinjin Li et al. **[FAST: A Synergistic Framework of Attention and State-space Models for Spatiotemporal Traffic Prediction](https://arxiv.org/abs/2604.13453)**. 2026 · ICME.
 
@@ -144,13 +160,29 @@
   [正式版本](https://proceedings.neurips.cc/paper_files/paper/2025/hash/7813e19a86fd73d40f7e811ab15f6d5f-Abstract-Datasets_and_Benchmarks_Track.html) · [发表证据](https://proceedings.neurips.cc/paper_files/paper/2025/hash/7813e19a86fd73d40f7e811ab15f6d5f-Abstract-Datasets_and_Benchmarks_Track.html) · 代码：未核验到作者代码
 
 
-## 2024（11 篇）
+## 2024（13 篇）
 
 - **Urban-STGNN-survey** — Guangyin Jin et al. **[Spatio-Temporal Graph Neural Networks for Predictive Learning in Urban Computing: A Survey](https://arxiv.org/abs/2303.14483)**. 2024 · IEEE TKDE；arXiv 首发 2023.
 
   面向城市计算，梳理时空图构建、模型设计与不同预测应用。
 
   [正式版本](https://doi.org/10.1109/TKDE.2023.3333824) · [发表证据](https://doi.org/10.1109/TKDE.2023.3333824) · 代码：未核验到作者代码
+
+- **STG-Mamba** — Lincan Li et al. **[STG-Mamba: Spatial-Temporal Graph Learning via Selective State Space Model](https://arxiv.org/abs/2403.12418)**. 2024 · arXiv；正式发表状态未核验.
+
+  本文提出 STG-Mamba，将选择性状态空间模型引入时空图学习，用 ST-S3M 建模跨时间的动态状态演化，并结合 KFGN 做多时间粒度的图表示融合。
+
+  [发表证据](https://arxiv.org/abs/2403.12418) · [代码](https://github.com/LincanLi-X/STG-Mamba)（作者/项目仓库已核验）
+
+  版本/使用说明：保留 arXiv 2024 记录，正式发表状态未核验。论文链接的旧仓库地址重定向至 LincanLi-X；已检查 main.py，未训练复现。
+
+- **STGformer** — Hongjun Wang et al. **[STGformer: Efficient Spatiotemporal Graph Transformer for Traffic Forecasting](https://arxiv.org/abs/2410.00385)**. 2024 · arXiv；正式发表状态未核验.
+
+  提出面向交通预测的高效时空图 Transformer，将图卷积与 Transformer 结合，用单个 STG attention block 捕捉高阶时空交互，并在 LargeST 等设置上评估效率与效果。
+
+  [发表证据](https://arxiv.org/abs/2410.00385) · [代码](https://github.com/Dreamzz5/STGformer)（作者/项目仓库已核验）
+
+  版本/使用说明：论文直接链接作者仓库，已检查 model/train.py 与运行说明，未运行实验。保留 arXiv 2024；与同名的人体姿态、轨迹及稀疏感知论文区分，不将速度报告泛化为跨设置结论。
 
 - **BigST** — Jindong Han et al. **[BigST: Linear Complexity Spatio-Temporal Graph Neural Network for Traffic Forecasting on Large-Scale Road Networks](https://www.vldb.org/pvldb/vol17/p1081-han.pdf)**. 2024 · PVLDB.
 
@@ -215,7 +247,7 @@
   [发表证据](https://github.com/thuml/iTransformer) · [代码](https://github.com/thuml/iTransformer)（作者/项目仓库已核验）
 
 
-## 2023（17 篇）
+## 2023（19 篇）
 
 - **DGCRN** — Fuxian Li et al. **[Dynamic Graph Convolutional Recurrent Network for Traffic Prediction: Benchmark and Solution](https://arxiv.org/abs/2104.14917)**. 2023 · ACM TKDD；arXiv 首发 2021.
 
@@ -323,8 +355,24 @@
 
   [发表证据](https://github.com/thuml/TimesNet) · [代码](https://github.com/thuml/TimesNet)（作者/项目仓库已核验）
 
+- **STGNP** — Junfeng Hu et al. **[Graph Neural Processes for Spatio-Temporal Extrapolation](https://arxiv.org/abs/2305.18719)**. 2023 · KDD.
 
-## 2022（10 篇）
+  这项工作把 Neural Processes 扩展到图上的时空外推任务，显式建模不确定性，并通过 Graph Bayesian Aggregation 融合上下文节点信息。
+
+  [正式版本](https://doi.org/10.1145/3580305.3599372) · [发表证据](https://api.crossref.org/works/10.1145/3580305.3599372) · [代码](https://github.com/hjf1997/STGNP)（作者/项目仓库已核验）
+
+  版本/使用说明：相关任务：依据周围观测推断目标位置，不能等同于未来时间预测。已检查作者仓库层级模型实现和运行说明，未运行实验。
+
+- **GraphDF** — Hongjie Chen et al. **[Graph Deep Factors for Probabilistic Time-series Forecasting](https://arxiv.org/abs/2010.07373)**. 2023 · ACM TKDD；arXiv 首发 2020.
+
+  结合图关系驱动的全局与局部概率模型，描述相关时间序列；正式期刊版本还研究在线增量学习。
+
+  [正式版本](https://doi.org/10.1145/3543511) · [发表证据](https://api.crossref.org/works/10.1145/3543511) · 代码：未核验到作者代码
+
+  版本/使用说明：相关背景：图相关的概率时间序列预测，不预设地理空间。2023 年 TKDD 正式版本扩展了 2020 年预印本并加入在线增量学习；以一个条目记录版本关系，未核验作者代码。
+
+
+## 2022（11 篇）
 
 - **Traffic-survey** — Weiwei Jiang et al. **[Graph Neural Network for Traffic Forecasting: A Survey](https://arxiv.org/abs/2101.11174)**. 2022 · Expert Systems with Applications；arXiv 首发 2021.
 
@@ -367,6 +415,14 @@
   系统比较时空图对比学习的接入方式、增强策略与负样本选择。
 
   [发表证据](https://github.com/liuxu77/STGCL) · [代码](https://github.com/liuxu77/STGCL)（作者/项目仓库已核验）
+
+- **STGP-SPDE** — Alexander V. Nikitin et al. **[Non-separable Spatio-temporal Graph Kernels via SPDEs](https://arxiv.org/abs/2111.08524)**. 2022 · AISTATS；arXiv 首发 2021.
+
+  本文利用 SPDE 与图上的高斯过程联系，推导出非可分的时空图核，用于描述扩散、振荡等跨时空耦合现象。
+
+  [正式版本](https://proceedings.mlr.press/v151/nikitin22a.html) · [发表证据](https://proceedings.mlr.press/v151/nikitin22a.html) · [代码](https://github.com/AaltoPML/spatiotemporal-graph-kernels)（作者/项目仓库已核验）
+
+  版本/使用说明：正式版本为 AISTATS 2022，arXiv 首发 2021。仓库同时包含插值和外推设置，比较时需区分；已检查时空核实现，未运行实验。
 
 - **SimVP** — Zhangyang Gao et al. **[SimVP: Simpler yet Better Video Prediction](https://arxiv.org/abs/2206.05099)**. 2022 · CVPR.
 
@@ -499,7 +555,7 @@
   [正式版本](https://doi.org/10.1029/2020MS002203) · [发表证据](https://doi.org/10.1029/2020MS002203) · [代码](https://github.com/pangeo-data/WeatherBench)（作者/项目仓库已核验）
 
 
-## 2019（5 篇）
+## 2019（8 篇）
 
 - **DeepSTN** — Ziqian Lin et al. **[DeepSTN+: Context-Aware Spatial-Temporal Neural Network for Crowd Flow Prediction in Metropolis](https://ojs.aaai.org/index.php/AAAI/article/download/3892/3770)**. 2019 · AAAI.
 
@@ -512,6 +568,22 @@
   用长短期编码器、图卷积和注意力进行多步乘客需求预测。
 
   [发表证据](https://github.com/LeiBAI/STG2Seq) · [代码](https://github.com/LeiBAI/STG2Seq)（作者/项目仓库已核验）
+
+- **STDN** — Huaxiu Yao et al. **[Revisiting Spatial-Temporal Similarity: A Deep Learning Framework for Traffic Prediction](https://arxiv.org/abs/1803.01254)**. 2019 · AAAI；arXiv 首发 2018.
+
+  这篇论文提出 STDN，通过流门控机制学习动态空间相似性，并用周期偏移注意力处理非严格周期的时间动态。它直接回应了交通预测里“空间关系静态、时间规律严格周期化”的常见假设。
+
+  [正式版本](https://doi.org/10.1609/aaai.v33i01.33015668) · [发表证据](https://api.crossref.org/works/10.1609/aaai.v33i01.33015668) · [代码](https://github.com/tangxianfeng/STDN)（作者/项目仓库已核验）
+
+  版本/使用说明：arXiv 首发于 2018 年，正式 AAAI 版本为 2019 年；已检查作者仓库 main.py 与运行说明，未训练复现。
+
+- **ST-MGCN** — Xu Geng et al. **[Spatiotemporal Multi-Graph Convolution Network for Ride-Hailing Demand Forecasting](https://doi.org/10.1609/aaai.v33i01.33013656)**. 2019 · AAAI.
+
+  这篇论文提出 ST-MGCN，用多张图建模区域间非欧式相关性，并结合上下文门控循环网络建模时间依赖。它适用于网约车/出行需求的区域级预测，而不仅是相邻栅格或传感器的局部建模。
+
+  [正式版本](https://doi.org/10.1609/aaai.v33i01.33013656) · [发表证据](https://api.crossref.org/works/10.1609/aaai.v33i01.33013656) · 代码：未核验到作者代码
+
+  版本/使用说明：出版者登记的 Crossref 元数据与摘要已核对；出版者页面本次访问受限，未核验到作者代码。
 
 - **ASTGCN** — Shengnan Guo et al. **[Attention Based Spatial-Temporal Graph Convolutional Networks for Traffic Flow Forecasting](https://ojs.aaai.org/index.php/AAAI/article/view/3881)**. 2019 · AAAI.
 
@@ -527,6 +599,14 @@
 
   [发表证据](https://github.com/nnzhan/Graph-WaveNet) · [代码](https://github.com/nnzhan/Graph-WaveNet)（作者/项目仓库已核验）
 
+- **ST-MetaNet** — Zheyi Pan et al. **[Urban Traffic Prediction from Spatio-Temporal Data Using Deep Meta Learning](https://doi.org/10.1145/3292500.3330884)**. 2019 · KDD.
+
+  利用地理属性生成元图注意力和元循环网络的参数，刻画城市交通节点与连接的异质性。
+
+  [正式版本](https://doi.org/10.1145/3292500.3330884) · [发表证据](https://api.crossref.org/works/10.1145/3292500.3330884) · [代码](https://github.com/panzheyi/ST-MetaNet)（作者/项目仓库已核验）
+
+  版本/使用说明：元学习根据地理属性生成节点/边相关参数；不据此推断少样本跨城市适配。已检查 MXNet 作者实现的训练入口，未运行。
+
 - **MIM** — Yunbo Wang et al. **[Memory In Memory: A Predictive Neural Network for Learning Higher-Order Non-Stationarity from Spatiotemporal Dynamics](https://arxiv.org/abs/1811.07490)**. 2019 · CVPR；arXiv 首发 2018.
 
   通过记忆模块处理时空序列中的高阶非平稳变化。
@@ -534,7 +614,15 @@
   [发表证据](https://github.com/Yunbo426/MIM) · [代码](https://github.com/Yunbo426/MIM)（作者/项目仓库已核验）
 
 
-## 2018（3 篇）
+## 2018（4 篇）
+
+- **DMVST-Net** — Huaxiu Yao et al. **[Deep Multi-View Spatial-Temporal Network for Taxi Demand Prediction](https://arxiv.org/abs/1802.08714)**. 2018 · AAAI.
+
+  这篇论文提出 DMVST-Net，用时间视图、局部空间视图和语义视图联合建模出租车需求的时空相关性。它针对区域级需求预测中仅用 CNN 或 LSTM 难以同时刻画空间与时间依赖的问题。
+
+  [正式版本](https://doi.org/10.1609/aaai.v32i1.11836) · [发表证据](https://api.crossref.org/works/10.1609/aaai.v32i1.11836) · [代码](https://github.com/huaxiuyao/DMVST-Net)（作者/项目仓库已核验）
+
+  版本/使用说明：作者仓库明确仅提供模型部分，原始数据未公开；已读 model.py，不能视为完整复现包。
 
 - **DCRNN** — Yaguang Li et al. **[Diffusion Convolutional Recurrent Neural Network: Data-Driven Traffic Forecasting](https://arxiv.org/abs/1707.01926)**. 2018 · ICLR；arXiv 首发 2017.
 
