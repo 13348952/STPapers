@@ -46,7 +46,9 @@ def build_english(papers, cats, as_of, author, anchor, updated_on=None):
 
 [简体中文](README.md) | **English**
 
-A curated reading list for spatio-temporal forecasting.
+A curated paper list for **spatio-temporal forecasting / spatiotemporal prediction**, with datasets and author-code links. Covers traffic prediction, traffic flow forecasting, urban demand prediction, spatio-temporal graph neural networks, and weather forecasting.
+
+**时空序列预测 / 时空预测 / 时空数据预测论文目录** — a bilingual Chinese–English catalog with weekly updates.
 
 Inspired by the topic organization and contribution model of [RSPapers](https://github.com/hongleizhang/RSPapers), this repository collects papers, datasets, and code resources for spatio-temporal forecasting. Method summaries are editorial descriptions written for this catalog; paper titles retain their original English wording.
 

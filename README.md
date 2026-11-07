@@ -2,7 +2,9 @@
 
 **简体中文** | [English](README.en.md)
 
-A curated reading list for spatio-temporal forecasting.
+**时空序列预测（时空预测 / 时空数据预测）论文、数据集与作者代码目录。** 覆盖交通预测、交通流预测、城市需求预测、时空图神经网络及天气预测。
+
+A curated paper list for **spatio-temporal forecasting / spatiotemporal prediction**: traffic forecasting, urban computing, graph neural networks, and weather forecasting.
 
 参考 [RSPapers](https://github.com/hongleizhang/RSPapers) 的主题分类和贡献方式，整理时空序列预测论文、数据集与代码入口。中文方法定位为本目录概括，论文保留英文原题。
 
