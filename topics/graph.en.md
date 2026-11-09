@@ -145,3 +145,13 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
   Builds a fully convolutional spatio-temporal forecasting network from graph and temporal convolutions.
 
   [Publication evidence](https://github.com/VeritasYin/STGCN_IJCAI-18) · [Code](https://github.com/VeritasYin/STGCN_IJCAI-18) (author/project repository checked)
+
+<a id="paper-atpo"></a>
+
+- **ATPO** — Hongxin Yu et al. **[Uncertainty-Aware Coordinated Multi-Ramp Metering Based on an Action-Conditioned Traffic Prediction Operator Under Sparse Observations](https://arxiv.org/abs/2611.01270)**. 2026 · arXiv; formal publication status not verified.
+
+  Predicts future density and speed distributions from sparse traffic observations, missingness masks, and candidate control actions for uncertainty-aware coordinated ramp metering.
+
+  [Publication evidence](https://arxiv.org/abs/2611.01270) · Code: author code not verified
+
+  Version / usage notes: Action-conditioned prediction uses different inputs from passive traffic forecasting. Evaluation uses a simulated corridor and does not establish field deployment; author code was not verified.

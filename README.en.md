@@ -8,11 +8,11 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
 Inspired by the topic organization and contribution model of [RSPapers](https://github.com/hongleizhang/RSPapers), this repository collects papers, datasets, and code resources for spatio-temporal forecasting. Method summaries are editorial descriptions written for this catalog; paper titles retain their original English wording.
 
-**Search cutoff: 2026-11-04 (Asia/Shanghai). 97 unique entries across 13 topics, covering 2015–2026; 13 papers are assigned to 2026 under the verified year convention, and 70 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
+**Search cutoff: 2026-11-04 (Asia/Shanghai). 107 unique entries across 13 topics, covering 2015–2026; 23 papers are assigned to 2026 under the verified year convention, and 73 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
 
-Catalog updated: 2026-11-05. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
+Catalog updated: 2026-11-09. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
 
-This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 16 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
+This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 26 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
 
 ## Quick links
 
@@ -54,15 +54,15 @@ These are editorial suggestions, not rankings of model performance.
 | --- | --- | ---: |
 | 01 | [Surveys and introductions](#topic-survey) | 4 |
 | 02 | [Urban grid flow and demand forecasting](#topic-urban) | 6 |
-| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 16 |
+| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 17 |
 | 04 | [Attention, Transformers, and state-space models](#topic-attention) | 7 |
 | 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 12 |
 | 06 | [Self-supervised learning and pretraining](#topic-pretrain) | 5 |
-| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 5 |
-| 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 5 |
-| 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 3 |
+| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 6 |
+| 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 6 |
+| 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 4 |
 | 10 | [General grid and spatio-temporal frame prediction](#topic-grid) | 8 |
-| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 10 |
+| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 16 |
 | 12 | [Datasets, benchmarks, and tools](#topic-benchmark) | 8 |
 | 13 | [Related tasks and time-series background](#topic-related) | 8 |
 
@@ -311,6 +311,16 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
   Builds a fully convolutional spatio-temporal forecasting network from graph and temporal convolutions.
 
   [Publication evidence](https://github.com/VeritasYin/STGCN_IJCAI-18) · [Code](https://github.com/VeritasYin/STGCN_IJCAI-18) (author/project repository checked)
+
+<a id="paper-atpo"></a>
+
+- **ATPO** — Hongxin Yu et al. **[Uncertainty-Aware Coordinated Multi-Ramp Metering Based on an Action-Conditioned Traffic Prediction Operator Under Sparse Observations](https://arxiv.org/abs/2611.01270)**. 2026 · arXiv; formal publication status not verified.
+
+  Predicts future density and speed distributions from sparse traffic observations, missingness masks, and candidate control actions for uncertainty-aware coordinated ramp metering.
+
+  [Publication evidence](https://arxiv.org/abs/2611.01270) · Code: author code not verified
+
+  Version / usage notes: Action-conditioned prediction uses different inputs from passive traffic forecasting. Evaluation uses a simulated corridor and does not establish field deployment; author code was not verified.
 
 
 <a id="topic-attention"></a>
@@ -592,6 +602,16 @@ Node-specific parameters, cross-domain adaptation, and continual learning are di
 
   Version / usage notes: Meta-learning generates node/edge-dependent parameters from geographical attributes; this does not establish few-shot cross-city adaptation. The MXNet author implementation training entry was inspected but not run.
 
+<a id="paper-omnist"></a>
+
+- **OmniST** — Praveg Vashishtha **[OmniST: Topology-Invariant Spatiotemporal Forecasting with Guaranteed-Coverage Uncertainty at Unseen Sensor Locations](https://arxiv.org/abs/2611.04256)**. 2026 · arXiv; formal publication status not verified.
+
+  Combines coordinate encoding, dynamic neighborhood attention, and per-node recurrent modeling for changing sensor sets, with conformal calibration at unseen locations.
+
+  [Publication evidence](https://arxiv.org/abs/2611.04256) · [Code](https://github.com/Praveg432/OmniST) (author/project repository checked)
+
+  Version / usage notes: Coverage guarantees depend on exchangeability of calibration and test scores; local topology invariance requires conditions including unchanged neighborhoods. Model source and run instructions were inspected; no training was performed.
+
 
 <a id="topic-foundation"></a>
 
@@ -641,6 +661,16 @@ Unified pretraining and few-shot or zero-shot adaptation.
 
   [Publication evidence](https://github.com/HKUDS/UrbanGPT) · [Code](https://github.com/HKUDS/UrbanGPT) (author/project repository checked)
 
+<a id="paper-e2forecast"></a>
+
+- **E2Forecast** — Jingtao Li et al. **[Forecasting Earth Surface Change in Embedding Space](https://arxiv.org/abs/2611.02211)**. 2026 · arXiv; formal publication status not verified.
+
+  Forecasts future Earth-surface embeddings from irregular satellite histories using Gaussian and rectified-flow branches conditioned on a future query date.
+
+  [Publication evidence](https://arxiv.org/abs/2611.02211) · [Code](https://github.com/ucam-eo/e2forecast) (author/project repository checked)
+
+  Version / usage notes: Targets Earth-surface embeddings rather than raw pixels. The author repository contains model source and training/evaluation instructions; some GSA embeddings and dated SSL4EO data remain unreleased. No training was performed.
+
 
 <a id="topic-probabilistic"></a>
 
@@ -675,6 +705,16 @@ Predicting future distributions or samples rather than only point estimates.
   [Published version](https://proceedings.mlr.press/v151/nikitin22a.html) · [Publication evidence](https://proceedings.mlr.press/v151/nikitin22a.html) · [Code](https://github.com/AaltoPML/spatiotemporal-graph-kernels) (author/project repository checked)
 
   Version / usage notes: Published at AISTATS 2022, following an initial arXiv release in 2021. The repository includes both interpolation and extrapolation settings, which must be distinguished in comparisons. Temporal kernel code was inspected; experiments were not run.
+
+<a id="paper-coreflow"></a>
+
+- **CoReFlow** — Pengnan Chi et al. **[CoReFlow: Consistency-Relaxed Flow Maps for Probabilistic Traffic Forecasting](https://arxiv.org/abs/2611.05715)**. 2026 · arXiv; formal publication status not verified.
+
+  Learns consistency-relaxed flow maps for probabilistic traffic forecasting, using endpoint training and conditional-mean constraints for one-step generation.
+
+  [Publication evidence](https://arxiv.org/abs/2611.05715) · Code: author code not verified
+
+  Version / usage notes: The paper states that code is in supplementary material; that implementation was not retrieved and inspected, and no public author repository was verified. Distinct from the similarly named low-rank matrix generation work.
 
 
 <a id="topic-grid"></a>
@@ -835,6 +875,66 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
   Uses a deep generative model to produce probabilistic precipitation nowcasts with spatio-temporal consistency.
 
   [Published version](https://doi.org/10.1038/s41586-021-03854-z) · [Publication evidence](https://doi.org/10.1038/s41586-021-03854-z) · Code: author code not verified
+
+<a id="paper-fitzroy"></a>
+
+- **FitzRoy** — Ozan Sener et al. **[Skillful and realistic precipitation forecasting with reinforced diffusion](https://arxiv.org/abs/2610.38775)**. 2026 · arXiv; formal publication status not verified.
+
+  Refines conditional discrete diffusion with reinforcement learning to forecast future precipitation fields.
+
+  [Publication evidence](https://arxiv.org/abs/2610.38775) · Code: author code not verified
+
+  Version / usage notes: The full model uses ERA5, MRMS, and NBM forecast guidance; distinguish it from the standalone variant without NBM. Author code was not verified; links to other models are not this implementation.
+
+<a id="paper-sonny-ens"></a>
+
+- **Sonny-ENS** — Minjong Cheon **[Sonny-ENS: demystifying machine-learning ensemble weather forecasting](https://arxiv.org/abs/2611.01614)**. 2026 · arXiv; formal publication status not verified.
+
+  Trains multiple weather networks with CRPS and constructs ensemble forecasts using Monte Carlo dropout.
+
+  [Publication evidence](https://arxiv.org/abs/2611.01614) · Code: author code not verified
+
+  Version / usage notes: The paper promises code and weights upon publication; a public release was not verified, so the promise is not treated as an available implementation.
+
+<a id="paper-lcg-sfno"></a>
+
+- **LCG-SFNO** — Yaojun Li et al. **[Low-Rank Clebsch--Gordan Coupling for Equivariant Spherical Forecasting](https://arxiv.org/abs/2611.03411)**. 2026 · arXiv; formal publication status not verified.
+
+  Uses low-rank Clebsch–Gordan coupling for nonlinear spectral interactions in equivariant spherical dynamics and weather forecasting.
+
+  [Publication evidence](https://arxiv.org/abs/2611.03411) · Code: author code not verified
+
+  Version / usage notes: Author code was not verified; reported equivariance and computational efficiency have not been independently reproduced by this catalog.
+
+<a id="paper-ai-ensemble-blend"></a>
+
+- **AI-Ensemble-Blend** — Harris Sop Nkuiate et al. **[Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend](https://arxiv.org/abs/2610.42130)**. 2026 · arXiv; formal publication status not verified.
+
+  Studies adding AI weather ensembles to multimodel probabilistic blends, examining calibration, ensemble diversity, and forecast quality.
+
+  [Publication evidence](https://arxiv.org/abs/2610.42130) · Code: author code not verified
+
+  Version / usage notes: AI-Ensemble-Blend is an editorial index label. The study combines existing forecasts, so comparisons must align constituent models and inputs; author code was not verified.
+
+<a id="paper-taiji"></a>
+
+- **TaiJi** — Jiale Wang et al. **[TaiJi: State-Conditional Adaptive Combination of Machine-Learning and Physics-Based Global Weather Forecasts](https://arxiv.org/abs/2609.31972)**. 2026 · arXiv; formal publication status not verified.
+
+  Predicts spatially and lead-time varying combination weights and residuals from recent atmospheric states to blend machine-learning and physics-based forecasts.
+
+  [Publication evidence](https://arxiv.org/abs/2609.31972) · Code: author code not verified
+
+  Version / usage notes: First posted on 2026-09-25 and revised to v3 on 2026-11-02; newly added to this catalog following a revision, not a first release this week. Primary metadata and abstract were checked; HTML was unavailable and author code was not verified.
+
+<a id="paper-swaither-precip"></a>
+
+- **SwAIther-Precip** — Dan Assouline et al. **[SwAIther-Precip: Lead-Time-Aware Bias Correction Enables Kilometer-Scale Downscaling of Global AI Precipitation Forecasts over Switzerland](https://arxiv.org/abs/2605.16163)**. 2026 · arXiv; formal publication status not verified.
+
+  Applies lead-time-conditioned U-Net bias correction to coarse precipitation forecasts, followed by diffusion super-resolution for probabilistic precipitation over Switzerland.
+
+  [Publication evidence](https://arxiv.org/abs/2605.16163) · [Code](https://github.com/danassou/swaither-precip) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-05-15 and revised to v3 on 2026-10-29; added following that revision. Author source and training instructions were inspected; the paper-specific historical AIFS forecast dataset is not public, and other data access conditions require separate checks. No training was performed.
 
 
 <a id="topic-benchmark"></a>

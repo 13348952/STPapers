@@ -49,3 +49,13 @@ Unified pretraining and few-shot or zero-shot adaptation.
   Combines a spatio-temporal dependency encoder with instruction tuning to explore zero-shot generalization across urban tasks.
 
   [Publication evidence](https://github.com/HKUDS/UrbanGPT) · [Code](https://github.com/HKUDS/UrbanGPT) (author/project repository checked)
+
+<a id="paper-e2forecast"></a>
+
+- **E2Forecast** — Jingtao Li et al. **[Forecasting Earth Surface Change in Embedding Space](https://arxiv.org/abs/2611.02211)**. 2026 · arXiv; formal publication status not verified.
+
+  Forecasts future Earth-surface embeddings from irregular satellite histories using Gaussian and rectified-flow branches conditioned on a future query date.
+
+  [Publication evidence](https://arxiv.org/abs/2611.02211) · [Code](https://github.com/ucam-eo/e2forecast) (author/project repository checked)
+
+  Version / usage notes: Targets Earth-surface embeddings rather than raw pixels. The author repository contains model source and training/evaluation instructions; some GSA embeddings and dated SSL4EO data remain unreleased. No training was performed.

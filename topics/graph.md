@@ -145,3 +145,13 @@
   用图卷积与时间卷积构成全卷积时空预测网络。
 
   [发表证据](https://github.com/VeritasYin/STGCN_IJCAI-18) · [代码](https://github.com/VeritasYin/STGCN_IJCAI-18)（作者/项目仓库已核验）
+
+<a id="paper-atpo"></a>
+
+- **ATPO** — Hongxin Yu et al. **[Uncertainty-Aware Coordinated Multi-Ramp Metering Based on an Action-Conditioned Traffic Prediction Operator Under Sparse Observations](https://arxiv.org/abs/2611.01270)**. 2026 · arXiv；正式发表状态未核验.
+
+  从稀疏交通观测、缺失掩码与候选控制动作预测未来密度和速度分布，并用于不确定性感知的多匝道协调控制。
+
+  [发表证据](https://arxiv.org/abs/2611.01270) · 代码：未核验到作者代码
+
+  版本/使用说明：动作条件预测与被动交通预测的输入不同；论文采用仿真走廊评估，不能解释为现场部署验证。未核验到作者代码。

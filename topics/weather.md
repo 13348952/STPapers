@@ -89,3 +89,63 @@
   使用深度生成模型输出具有时空一致性的概率降水临近预报。
 
   [正式版本](https://doi.org/10.1038/s41586-021-03854-z) · [发表证据](https://doi.org/10.1038/s41586-021-03854-z) · 代码：未核验到作者代码
+
+<a id="paper-fitzroy"></a>
+
+- **FitzRoy** — Ozan Sener et al. **[Skillful and realistic precipitation forecasting with reinforced diffusion](https://arxiv.org/abs/2610.38775)**. 2026 · arXiv；正式发表状态未核验.
+
+  以强化学习细化条件离散扩散模型，预测未来降水空间场。
+
+  [发表证据](https://arxiv.org/abs/2610.38775) · 代码：未核验到作者代码
+
+  版本/使用说明：完整模型使用 ERA5、MRMS 与 NBM 预报引导；须与不使用 NBM 的独立变体区分。未核验到作者代码，论文中的其他模型仓库链接不代表本方法代码。
+
+<a id="paper-sonny-ens"></a>
+
+- **Sonny-ENS** — Minjong Cheon **[Sonny-ENS: demystifying machine-learning ensemble weather forecasting](https://arxiv.org/abs/2611.01614)**. 2026 · arXiv；正式发表状态未核验.
+
+  以 CRPS 训练多个天气网络，并通过 Monte Carlo dropout 构造集合预报。
+
+  [发表证据](https://arxiv.org/abs/2611.01614) · 代码：未核验到作者代码
+
+  版本/使用说明：论文称代码和权重将在发表时开放；本次未确认公开发布，不能将未来开放承诺视为已有可用实现。
+
+<a id="paper-lcg-sfno"></a>
+
+- **LCG-SFNO** — Yaojun Li et al. **[Low-Rank Clebsch--Gordan Coupling for Equivariant Spherical Forecasting](https://arxiv.org/abs/2611.03411)**. 2026 · arXiv；正式发表状态未核验.
+
+  通过低秩 Clebsch–Gordan 耦合构造球面谱非线性交互，研究等变球面动力学与天气预测。
+
+  [发表证据](https://arxiv.org/abs/2611.03411) · 代码：未核验到作者代码
+
+  版本/使用说明：未核验到作者代码；论文报告的等变性和计算效率未经本目录独立数值复现。
+
+<a id="paper-ai-ensemble-blend"></a>
+
+- **AI-Ensemble-Blend** — Harris Sop Nkuiate et al. **[Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend](https://arxiv.org/abs/2610.42130)**. 2026 · arXiv；正式发表状态未核验.
+
+  研究将 AI 天气集合加入多模型概率融合，并分析校准、成员多样性与概率预报质量。
+
+  [发表证据](https://arxiv.org/abs/2610.42130) · 代码：未核验到作者代码
+
+  版本/使用说明：AI-Ensemble-Blend 是本目录索引简称。该工作组合已有预报，比较时需对齐组成模型与输入；未核验到作者代码。
+
+<a id="paper-taiji"></a>
+
+- **TaiJi** — Jiale Wang et al. **[TaiJi: State-Conditional Adaptive Combination of Machine-Learning and Physics-Based Global Weather Forecasts](https://arxiv.org/abs/2609.31972)**. 2026 · arXiv；正式发表状态未核验.
+
+  由近期大气状态生成随网格位置和预测步长变化的组合权重与残差，融合机器学习及物理天气预报。
+
+  [发表证据](https://arxiv.org/abs/2609.31972) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 首发 2026-09-25，v3 修订 2026-11-02；因窗口内修订首次补入本目录，不是本周首发。已核验主源元数据与摘要，HTML 不可用，未核验到作者代码。
+
+<a id="paper-swaither-precip"></a>
+
+- **SwAIther-Precip** — Dan Assouline et al. **[SwAIther-Precip: Lead-Time-Aware Bias Correction Enables Kilometer-Scale Downscaling of Global AI Precipitation Forecasts over Switzerland](https://arxiv.org/abs/2605.16163)**. 2026 · arXiv；正式发表状态未核验.
+
+  先以预测步长条件化的 U-Net 校正粗网格降水偏差，再通过扩散超分辨率生成瑞士地区概率降水场。
+
+  [发表证据](https://arxiv.org/abs/2605.16163) · [代码](https://github.com/danassou/swaither-precip)（作者/项目仓库已核验）
+
+  版本/使用说明：首发 2026-05-15，v3 修订 2026-10-29；本次为修订触发的目录补录。已检查作者源码与训练说明；论文专用 AIFS 历史预测数据未公开，其他数据获取条件需单独核对，未训练复现。

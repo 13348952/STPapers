@@ -55,3 +55,13 @@ Node-specific parameters, cross-domain adaptation, and continual learning are di
   [Published version](https://doi.org/10.1145/3292500.3330884) · [Publication evidence](https://api.crossref.org/works/10.1145/3292500.3330884) · [Code](https://github.com/panzheyi/ST-MetaNet) (author/project repository checked)
 
   Version / usage notes: Meta-learning generates node/edge-dependent parameters from geographical attributes; this does not establish few-shot cross-city adaptation. The MXNet author implementation training entry was inspected but not run.
+
+<a id="paper-omnist"></a>
+
+- **OmniST** — Praveg Vashishtha **[OmniST: Topology-Invariant Spatiotemporal Forecasting with Guaranteed-Coverage Uncertainty at Unseen Sensor Locations](https://arxiv.org/abs/2611.04256)**. 2026 · arXiv; formal publication status not verified.
+
+  Combines coordinate encoding, dynamic neighborhood attention, and per-node recurrent modeling for changing sensor sets, with conformal calibration at unseen locations.
+
+  [Publication evidence](https://arxiv.org/abs/2611.04256) · [Code](https://github.com/Praveg432/OmniST) (author/project repository checked)
+
+  Version / usage notes: Coverage guarantees depend on exchangeability of calibration and test scores; local topology invariance requires conditions including unchanged neighborhoods. Model source and run instructions were inspected; no training was performed.

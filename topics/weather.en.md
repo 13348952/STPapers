@@ -89,3 +89,63 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
   Uses a deep generative model to produce probabilistic precipitation nowcasts with spatio-temporal consistency.
 
   [Published version](https://doi.org/10.1038/s41586-021-03854-z) · [Publication evidence](https://doi.org/10.1038/s41586-021-03854-z) · Code: author code not verified
+
+<a id="paper-fitzroy"></a>
+
+- **FitzRoy** — Ozan Sener et al. **[Skillful and realistic precipitation forecasting with reinforced diffusion](https://arxiv.org/abs/2610.38775)**. 2026 · arXiv; formal publication status not verified.
+
+  Refines conditional discrete diffusion with reinforcement learning to forecast future precipitation fields.
+
+  [Publication evidence](https://arxiv.org/abs/2610.38775) · Code: author code not verified
+
+  Version / usage notes: The full model uses ERA5, MRMS, and NBM forecast guidance; distinguish it from the standalone variant without NBM. Author code was not verified; links to other models are not this implementation.
+
+<a id="paper-sonny-ens"></a>
+
+- **Sonny-ENS** — Minjong Cheon **[Sonny-ENS: demystifying machine-learning ensemble weather forecasting](https://arxiv.org/abs/2611.01614)**. 2026 · arXiv; formal publication status not verified.
+
+  Trains multiple weather networks with CRPS and constructs ensemble forecasts using Monte Carlo dropout.
+
+  [Publication evidence](https://arxiv.org/abs/2611.01614) · Code: author code not verified
+
+  Version / usage notes: The paper promises code and weights upon publication; a public release was not verified, so the promise is not treated as an available implementation.
+
+<a id="paper-lcg-sfno"></a>
+
+- **LCG-SFNO** — Yaojun Li et al. **[Low-Rank Clebsch--Gordan Coupling for Equivariant Spherical Forecasting](https://arxiv.org/abs/2611.03411)**. 2026 · arXiv; formal publication status not verified.
+
+  Uses low-rank Clebsch–Gordan coupling for nonlinear spectral interactions in equivariant spherical dynamics and weather forecasting.
+
+  [Publication evidence](https://arxiv.org/abs/2611.03411) · Code: author code not verified
+
+  Version / usage notes: Author code was not verified; reported equivariance and computational efficiency have not been independently reproduced by this catalog.
+
+<a id="paper-ai-ensemble-blend"></a>
+
+- **AI-Ensemble-Blend** — Harris Sop Nkuiate et al. **[Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend](https://arxiv.org/abs/2610.42130)**. 2026 · arXiv; formal publication status not verified.
+
+  Studies adding AI weather ensembles to multimodel probabilistic blends, examining calibration, ensemble diversity, and forecast quality.
+
+  [Publication evidence](https://arxiv.org/abs/2610.42130) · Code: author code not verified
+
+  Version / usage notes: AI-Ensemble-Blend is an editorial index label. The study combines existing forecasts, so comparisons must align constituent models and inputs; author code was not verified.
+
+<a id="paper-taiji"></a>
+
+- **TaiJi** — Jiale Wang et al. **[TaiJi: State-Conditional Adaptive Combination of Machine-Learning and Physics-Based Global Weather Forecasts](https://arxiv.org/abs/2609.31972)**. 2026 · arXiv; formal publication status not verified.
+
+  Predicts spatially and lead-time varying combination weights and residuals from recent atmospheric states to blend machine-learning and physics-based forecasts.
+
+  [Publication evidence](https://arxiv.org/abs/2609.31972) · Code: author code not verified
+
+  Version / usage notes: First posted on 2026-09-25 and revised to v3 on 2026-11-02; newly added to this catalog following a revision, not a first release this week. Primary metadata and abstract were checked; HTML was unavailable and author code was not verified.
+
+<a id="paper-swaither-precip"></a>
+
+- **SwAIther-Precip** — Dan Assouline et al. **[SwAIther-Precip: Lead-Time-Aware Bias Correction Enables Kilometer-Scale Downscaling of Global AI Precipitation Forecasts over Switzerland](https://arxiv.org/abs/2605.16163)**. 2026 · arXiv; formal publication status not verified.
+
+  Applies lead-time-conditioned U-Net bias correction to coarse precipitation forecasts, followed by diffusion super-resolution for probabilistic precipitation over Switzerland.
+
+  [Publication evidence](https://arxiv.org/abs/2605.16163) · [Code](https://github.com/danassou/swaither-precip) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-05-15 and revised to v3 on 2026-10-29; added following that revision. Author source and training instructions were inspected; the paper-specific historical AIFS forecast dataset is not public, and other data access conditions require separate checks. No training was performed.

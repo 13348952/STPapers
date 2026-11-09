@@ -49,3 +49,13 @@
   结合时空依赖编码器和指令微调，探索城市任务的零样本泛化。
 
   [发表证据](https://github.com/HKUDS/UrbanGPT) · [代码](https://github.com/HKUDS/UrbanGPT)（作者/项目仓库已核验）
+
+<a id="paper-e2forecast"></a>
+
+- **E2Forecast** — Jingtao Li et al. **[Forecasting Earth Surface Change in Embedding Space](https://arxiv.org/abs/2611.02211)**. 2026 · arXiv；正式发表状态未核验.
+
+  从不规则卫星观测序列预测未来地表嵌入，结合高斯分支与整流流分支，并接受未来查询日期。
+
+  [发表证据](https://arxiv.org/abs/2611.02211) · [代码](https://github.com/ucam-eo/e2forecast)（作者/项目仓库已核验）
+
+  版本/使用说明：预测目标是地表嵌入，不是原始像素。作者仓库含模型、训练和评估说明；部分 GSA 嵌入与带日期 SSL4EO 数据仍待发布，未训练复现。

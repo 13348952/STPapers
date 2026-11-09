@@ -35,3 +35,13 @@ Predicting future distributions or samples rather than only point estimates.
   [Published version](https://proceedings.mlr.press/v151/nikitin22a.html) · [Publication evidence](https://proceedings.mlr.press/v151/nikitin22a.html) · [Code](https://github.com/AaltoPML/spatiotemporal-graph-kernels) (author/project repository checked)
 
   Version / usage notes: Published at AISTATS 2022, following an initial arXiv release in 2021. The repository includes both interpolation and extrapolation settings, which must be distinguished in comparisons. Temporal kernel code was inspected; experiments were not run.
+
+<a id="paper-coreflow"></a>
+
+- **CoReFlow** — Pengnan Chi et al. **[CoReFlow: Consistency-Relaxed Flow Maps for Probabilistic Traffic Forecasting](https://arxiv.org/abs/2611.05715)**. 2026 · arXiv; formal publication status not verified.
+
+  Learns consistency-relaxed flow maps for probabilistic traffic forecasting, using endpoint training and conditional-mean constraints for one-step generation.
+
+  [Publication evidence](https://arxiv.org/abs/2611.05715) · Code: author code not verified
+
+  Version / usage notes: The paper states that code is in supplementary material; that implementation was not retrieved and inspected, and no public author repository was verified. Distinct from the similarly named low-rank matrix generation work.

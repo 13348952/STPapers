@@ -8,11 +8,11 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
 参考 [RSPapers](https://github.com/hongleizhang/RSPapers) 的主题分类和贡献方式，整理时空序列预测论文、数据集与代码入口。中文方法定位为本目录概括，论文保留英文原题。
 
-**本次检索截止：2026-11-04（Asia/Shanghai）。共 97 个独立条目、13 个主题，覆盖 2015—2026；其中 13 篇按核验口径归入 2026，70 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
+**本次检索截止：2026-11-04（Asia/Shanghai）。共 107 个独立条目、13 个主题，覆盖 2015—2026；其中 23 篇按核验口径归入 2026，73 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
 
-目录更新：2026-11-05。定向补录不推进完整检索截止日期；实际范围见 [更新记录](updates/README.md)。
+目录更新：2026-11-09。定向补录不推进完整检索截止日期；实际范围见 [更新记录](updates/README.md)。
 
-这是代表性精选目录，重点为交通/城市图预测，同时覆盖网格序列、降水和天气。并非全领域穷尽综述，也不是性能排行榜。16 条采用已核验的预印本记录，其中一部分可能已有本次未确认的正式版本。
+这是代表性精选目录，重点为交通/城市图预测，同时覆盖网格序列、降水和天气。并非全领域穷尽综述，也不是性能排行榜。26 条采用已核验的预印本记录，其中一部分可能已有本次未确认的正式版本。
 
 ## 快速入口
 
@@ -52,15 +52,15 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 | --- | --- | ---: |
 | 01 | [综述与入门](#topic-survey) | 4 |
 | 02 | [城市网格流量与需求预测](#topic-urban) | 6 |
-| 03 | [图卷积、动态图与连续时间建模](#topic-graph) | 16 |
+| 03 | [图卷积、动态图与连续时间建模](#topic-graph) | 17 |
 | 04 | [注意力、Transformer 与状态空间模型](#topic-attention) | 7 |
 | 05 | [简洁基线、高效与大规模预测](#topic-efficient) | 12 |
 | 06 | [自监督与预训练](#topic-pretrain) | 5 |
-| 07 | [异质性、元学习与迁移](#topic-transfer) | 5 |
-| 08 | [基础模型、语言模型与跨模态迁移](#topic-foundation) | 5 |
-| 09 | [概率时空图预测](#topic-probabilistic) | 3 |
+| 07 | [异质性、元学习与迁移](#topic-transfer) | 6 |
+| 08 | [基础模型、语言模型与跨模态迁移](#topic-foundation) | 6 |
+| 09 | [概率时空图预测](#topic-probabilistic) | 4 |
 | 10 | [通用网格与时空帧预测](#topic-grid) | 8 |
-| 11 | [降水、天气与地球系统预测](#topic-weather) | 10 |
+| 11 | [降水、天气与地球系统预测](#topic-weather) | 16 |
 | 12 | [数据集、基准与工具](#topic-benchmark) | 8 |
 | 13 | [相关任务与时间序列背景](#topic-related) | 8 |
 
@@ -309,6 +309,16 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
   用图卷积与时间卷积构成全卷积时空预测网络。
 
   [发表证据](https://github.com/VeritasYin/STGCN_IJCAI-18) · [代码](https://github.com/VeritasYin/STGCN_IJCAI-18)（作者/项目仓库已核验）
+
+<a id="paper-atpo"></a>
+
+- **ATPO** — Hongxin Yu et al. **[Uncertainty-Aware Coordinated Multi-Ramp Metering Based on an Action-Conditioned Traffic Prediction Operator Under Sparse Observations](https://arxiv.org/abs/2611.01270)**. 2026 · arXiv；正式发表状态未核验.
+
+  从稀疏交通观测、缺失掩码与候选控制动作预测未来密度和速度分布，并用于不确定性感知的多匝道协调控制。
+
+  [发表证据](https://arxiv.org/abs/2611.01270) · 代码：未核验到作者代码
+
+  版本/使用说明：动作条件预测与被动交通预测的输入不同；论文采用仿真走廊评估，不能解释为现场部署验证。未核验到作者代码。
 
 
 <a id="topic-attention"></a>
@@ -590,6 +600,16 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
   版本/使用说明：元学习根据地理属性生成节点/边相关参数；不据此推断少样本跨城市适配。已检查 MXNet 作者实现的训练入口，未运行。
 
+<a id="paper-omnist"></a>
+
+- **OmniST** — Praveg Vashishtha **[OmniST: Topology-Invariant Spatiotemporal Forecasting with Guaranteed-Coverage Uncertainty at Unseen Sensor Locations](https://arxiv.org/abs/2611.04256)**. 2026 · arXiv；正式发表状态未核验.
+
+  以坐标编码、动态近邻注意力和逐节点循环网络处理变化的传感器集合，并结合共形校准预测未见位置及其不确定性。
+
+  [发表证据](https://arxiv.org/abs/2611.04256) · [代码](https://github.com/Praveg432/OmniST)（作者/项目仓库已核验）
+
+  版本/使用说明：覆盖保证依赖校准与测试分数的交换性；局部拓扑不变性有近邻集合不变等条件。已检查模型源码和运行入口，未训练复现。
+
 
 <a id="topic-foundation"></a>
 
@@ -639,6 +659,16 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
   [发表证据](https://github.com/HKUDS/UrbanGPT) · [代码](https://github.com/HKUDS/UrbanGPT)（作者/项目仓库已核验）
 
+<a id="paper-e2forecast"></a>
+
+- **E2Forecast** — Jingtao Li et al. **[Forecasting Earth Surface Change in Embedding Space](https://arxiv.org/abs/2611.02211)**. 2026 · arXiv；正式发表状态未核验.
+
+  从不规则卫星观测序列预测未来地表嵌入，结合高斯分支与整流流分支，并接受未来查询日期。
+
+  [发表证据](https://arxiv.org/abs/2611.02211) · [代码](https://github.com/ucam-eo/e2forecast)（作者/项目仓库已核验）
+
+  版本/使用说明：预测目标是地表嵌入，不是原始像素。作者仓库含模型、训练和评估说明；部分 GSA 嵌入与带日期 SSL4EO 数据仍待发布，未训练复现。
+
 
 <a id="topic-probabilistic"></a>
 
@@ -673,6 +703,16 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
   [正式版本](https://proceedings.mlr.press/v151/nikitin22a.html) · [发表证据](https://proceedings.mlr.press/v151/nikitin22a.html) · [代码](https://github.com/AaltoPML/spatiotemporal-graph-kernels)（作者/项目仓库已核验）
 
   版本/使用说明：正式版本为 AISTATS 2022，arXiv 首发 2021。仓库同时包含插值和外推设置，比较时需区分；已检查时空核实现，未运行实验。
+
+<a id="paper-coreflow"></a>
+
+- **CoReFlow** — Pengnan Chi et al. **[CoReFlow: Consistency-Relaxed Flow Maps for Probabilistic Traffic Forecasting](https://arxiv.org/abs/2611.05715)**. 2026 · arXiv；正式发表状态未核验.
+
+  通过一致性松弛的流映射学习概率交通预测，以端点训练和条件均值约束支持单步生成。
+
+  [发表证据](https://arxiv.org/abs/2611.05715) · 代码：未核验到作者代码
+
+  版本/使用说明：论文称代码位于补充材料；本次未取得并核验该材料中的实现，未确认公开作者仓库。勿与同名的低秩矩阵生成工作混淆。
 
 
 <a id="topic-grid"></a>
@@ -833,6 +873,66 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
   使用深度生成模型输出具有时空一致性的概率降水临近预报。
 
   [正式版本](https://doi.org/10.1038/s41586-021-03854-z) · [发表证据](https://doi.org/10.1038/s41586-021-03854-z) · 代码：未核验到作者代码
+
+<a id="paper-fitzroy"></a>
+
+- **FitzRoy** — Ozan Sener et al. **[Skillful and realistic precipitation forecasting with reinforced diffusion](https://arxiv.org/abs/2610.38775)**. 2026 · arXiv；正式发表状态未核验.
+
+  以强化学习细化条件离散扩散模型，预测未来降水空间场。
+
+  [发表证据](https://arxiv.org/abs/2610.38775) · 代码：未核验到作者代码
+
+  版本/使用说明：完整模型使用 ERA5、MRMS 与 NBM 预报引导；须与不使用 NBM 的独立变体区分。未核验到作者代码，论文中的其他模型仓库链接不代表本方法代码。
+
+<a id="paper-sonny-ens"></a>
+
+- **Sonny-ENS** — Minjong Cheon **[Sonny-ENS: demystifying machine-learning ensemble weather forecasting](https://arxiv.org/abs/2611.01614)**. 2026 · arXiv；正式发表状态未核验.
+
+  以 CRPS 训练多个天气网络，并通过 Monte Carlo dropout 构造集合预报。
+
+  [发表证据](https://arxiv.org/abs/2611.01614) · 代码：未核验到作者代码
+
+  版本/使用说明：论文称代码和权重将在发表时开放；本次未确认公开发布，不能将未来开放承诺视为已有可用实现。
+
+<a id="paper-lcg-sfno"></a>
+
+- **LCG-SFNO** — Yaojun Li et al. **[Low-Rank Clebsch--Gordan Coupling for Equivariant Spherical Forecasting](https://arxiv.org/abs/2611.03411)**. 2026 · arXiv；正式发表状态未核验.
+
+  通过低秩 Clebsch–Gordan 耦合构造球面谱非线性交互，研究等变球面动力学与天气预测。
+
+  [发表证据](https://arxiv.org/abs/2611.03411) · 代码：未核验到作者代码
+
+  版本/使用说明：未核验到作者代码；论文报告的等变性和计算效率未经本目录独立数值复现。
+
+<a id="paper-ai-ensemble-blend"></a>
+
+- **AI-Ensemble-Blend** — Harris Sop Nkuiate et al. **[Value of Adding AI Weather Model Ensembles to a Multi-model Probabilistic Blend](https://arxiv.org/abs/2610.42130)**. 2026 · arXiv；正式发表状态未核验.
+
+  研究将 AI 天气集合加入多模型概率融合，并分析校准、成员多样性与概率预报质量。
+
+  [发表证据](https://arxiv.org/abs/2610.42130) · 代码：未核验到作者代码
+
+  版本/使用说明：AI-Ensemble-Blend 是本目录索引简称。该工作组合已有预报，比较时需对齐组成模型与输入；未核验到作者代码。
+
+<a id="paper-taiji"></a>
+
+- **TaiJi** — Jiale Wang et al. **[TaiJi: State-Conditional Adaptive Combination of Machine-Learning and Physics-Based Global Weather Forecasts](https://arxiv.org/abs/2609.31972)**. 2026 · arXiv；正式发表状态未核验.
+
+  由近期大气状态生成随网格位置和预测步长变化的组合权重与残差，融合机器学习及物理天气预报。
+
+  [发表证据](https://arxiv.org/abs/2609.31972) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 首发 2026-09-25，v3 修订 2026-11-02；因窗口内修订首次补入本目录，不是本周首发。已核验主源元数据与摘要，HTML 不可用，未核验到作者代码。
+
+<a id="paper-swaither-precip"></a>
+
+- **SwAIther-Precip** — Dan Assouline et al. **[SwAIther-Precip: Lead-Time-Aware Bias Correction Enables Kilometer-Scale Downscaling of Global AI Precipitation Forecasts over Switzerland](https://arxiv.org/abs/2605.16163)**. 2026 · arXiv；正式发表状态未核验.
+
+  先以预测步长条件化的 U-Net 校正粗网格降水偏差，再通过扩散超分辨率生成瑞士地区概率降水场。
+
+  [发表证据](https://arxiv.org/abs/2605.16163) · [代码](https://github.com/danassou/swaither-precip)（作者/项目仓库已核验）
+
+  版本/使用说明：首发 2026-05-15，v3 修订 2026-10-29；本次为修订触发的目录补录。已检查作者源码与训练说明；论文专用 AIFS 历史预测数据未公开，其他数据获取条件需单独核对，未训练复现。
 
 
 <a id="topic-benchmark"></a>
