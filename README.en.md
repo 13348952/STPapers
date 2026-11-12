@@ -8,9 +8,9 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
 Inspired by the topic organization and contribution model of [RSPapers](https://github.com/hongleizhang/RSPapers), this repository collects papers, datasets, and code resources for spatio-temporal forecasting. Method summaries are editorial descriptions written for this catalog; paper titles retain their original English wording.
 
-**Search cutoff: 2026-11-04 (Asia/Shanghai). 107 unique entries across 13 topics, covering 2015–2026; 23 papers are assigned to 2026 under the verified year convention, and 73 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
+**Search cutoff: 2026-11-04 (Asia/Shanghai). 108 unique entries across 13 topics, covering 2015–2026; 24 papers are assigned to 2026 under the verified year convention, and 74 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
 
-Catalog updated: 2026-11-09. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
+Catalog updated: 2026-11-12. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
 
 This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 26 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
 
@@ -56,7 +56,7 @@ These are editorial suggestions, not rankings of model performance.
 | 02 | [Urban grid flow and demand forecasting](#topic-urban) | 6 |
 | 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 17 |
 | 04 | [Attention, Transformers, and state-space models](#topic-attention) | 7 |
-| 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 12 |
+| 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 13 |
 | 06 | [Self-supervised learning and pretraining](#topic-pretrain) | 5 |
 | 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 6 |
 | 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 6 |
@@ -497,6 +497,16 @@ Designs that account for node count, history length, forecasting horizon, and co
   Uses spatial and temporal normalization to handle different components of multivariate sequences in a simple forecasting module.
 
   [Published version](https://doi.org/10.1145/3447548.3467330) · [Publication evidence](https://doi.org/10.1145/3447548.3467330) · [Code](https://github.com/JLDeng/ST-Norm) (author/project repository checked)
+
+<a id="paper-ragc"></a>
+
+- **RAGC** — Kaiqi Wu et al. **[Efficient Traffic Forecasting on Large-Scale Road Network by Regularized Adaptive Graph Convolution](https://arxiv.org/abs/2506.07179)**. 2026 · ICDE; first arXiv release: 2025.
+
+  Targets large-scale traffic forecasting with an efficient cosine operator for graph convolution and regularizes adaptive graph learning through stochastic shared embeddings and a residual-difference mechanism.
+
+  [Published version](https://doi.org/10.1109/ICDE65706.2026.00068) · [Publication evidence](https://doi.org/10.1109/ICDE65706.2026.00068) · [Code](https://github.com/wkq-wukaiqi/RAGC) (author/project repository checked)
+
+  Version / usage notes: arXiv v1 (2025-06-08) was titled Regularized Adaptive Graph Learning for Large-Scale Traffic Forecasting (RAGL); v3 (2026-04-30) uses the current title. These versions are counted as one work. Author order follows the publisher metadata and v3. Author source files and usage instructions were inspected; training and performance were not reproduced.
 
 
 <a id="topic-pretrain"></a>
@@ -1094,7 +1104,7 @@ LargeST's SD/GBA/GLA/CA, classic PeMS subsets, METR-LA/PEMS-BAY, and meteorologi
 
 ## Maintenance
 
-`papers.json` is the single source of paper data, including `summary_zh` / `summary_en` and `notes` / `notes_en`. After editing it, run `python scripts/build_catalog.py` from the repository root to regenerate both READMEs, year indexes, CSV, and BibTeX, and check the counts. Contribution guidelines are in [CONTRIBUTING.md](CONTRIBUTING.md).
+`papers.json` is the single source of paper data, including `summary_zh` / `summary_en` and `notes` / `notes_en`. After editing it, run `python scripts/build_catalog.py` from the repository root to regenerate both READMEs, year indexes, CSV, and BibTeX, then run `python scripts/verify_catalog.py` and `git diff --check` for independent validation and whitespace checks. Contribution guidelines are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Weekly searches verify new papers and official code links, deduplicate entries, and update the catalog. Additions, revisions, and items awaiting verification are recorded in the [update log](updates/README.md). The search cutoff is stored in `catalog_meta.json` and advances only after a completed search. New or revised entries must maintain both language versions; missing English summaries, notes, or code-status translations cause generation to fail.
 

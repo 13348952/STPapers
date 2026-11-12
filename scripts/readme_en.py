@@ -134,7 +134,7 @@ LargeST's SD/GBA/GLA/CA, classic PeMS subsets, METR-LA/PEMS-BAY, and meteorologi
 
 ## Maintenance
 
-`papers.json` is the single source of paper data, including `summary_zh` / `summary_en` and `notes` / `notes_en`. After editing it, run `python scripts/build_catalog.py` from the repository root to regenerate both READMEs, year indexes, CSV, and BibTeX, and check the counts. Contribution guidelines are in [CONTRIBUTING.md](CONTRIBUTING.md).
+`papers.json` is the single source of paper data, including `summary_zh` / `summary_en` and `notes` / `notes_en`. After editing it, run `python scripts/build_catalog.py` from the repository root to regenerate both READMEs, year indexes, CSV, and BibTeX, then run `python scripts/verify_catalog.py` and `git diff --check` for independent validation and whitespace checks. Contribution guidelines are in [CONTRIBUTING.md](CONTRIBUTING.md).
 
 Weekly searches verify new papers and official code links, deduplicate entries, and update the catalog. Additions, revisions, and items awaiting verification are recorded in the [update log](updates/README.md). The search cutoff is stored in `catalog_meta.json` and advances only after a completed search. New or revised entries must maintain both language versions; missing English summaries, notes, or code-status translations cause generation to fail.
 

@@ -109,3 +109,13 @@ Designs that account for node count, history length, forecasting horizon, and co
   Uses spatial and temporal normalization to handle different components of multivariate sequences in a simple forecasting module.
 
   [Published version](https://doi.org/10.1145/3447548.3467330) · [Publication evidence](https://doi.org/10.1145/3447548.3467330) · [Code](https://github.com/JLDeng/ST-Norm) (author/project repository checked)
+
+<a id="paper-ragc"></a>
+
+- **RAGC** — Kaiqi Wu et al. **[Efficient Traffic Forecasting on Large-Scale Road Network by Regularized Adaptive Graph Convolution](https://arxiv.org/abs/2506.07179)**. 2026 · ICDE; first arXiv release: 2025.
+
+  Targets large-scale traffic forecasting with an efficient cosine operator for graph convolution and regularizes adaptive graph learning through stochastic shared embeddings and a residual-difference mechanism.
+
+  [Published version](https://doi.org/10.1109/ICDE65706.2026.00068) · [Publication evidence](https://doi.org/10.1109/ICDE65706.2026.00068) · [Code](https://github.com/wkq-wukaiqi/RAGC) (author/project repository checked)
+
+  Version / usage notes: arXiv v1 (2025-06-08) was titled Regularized Adaptive Graph Learning for Large-Scale Traffic Forecasting (RAGL); v3 (2026-04-30) uses the current title. These versions are counted as one work. Author order follows the publisher metadata and v3. Author source files and usage instructions were inspected; training and performance were not reproduced.

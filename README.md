@@ -8,9 +8,9 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
 参考 [RSPapers](https://github.com/hongleizhang/RSPapers) 的主题分类和贡献方式，整理时空序列预测论文、数据集与代码入口。中文方法定位为本目录概括，论文保留英文原题。
 
-**本次检索截止：2026-11-04（Asia/Shanghai）。共 107 个独立条目、13 个主题，覆盖 2015—2026；其中 23 篇按核验口径归入 2026，73 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
+**本次检索截止：2026-11-04（Asia/Shanghai）。共 108 个独立条目、13 个主题，覆盖 2015—2026；其中 24 篇按核验口径归入 2026，74 篇关联已检查的作者/项目仓库。** 仓库数按论文计，同一个工具库可能对应多篇论文。
 
-目录更新：2026-11-09。定向补录不推进完整检索截止日期；实际范围见 [更新记录](updates/README.md)。
+目录更新：2026-11-12。定向补录不推进完整检索截止日期；实际范围见 [更新记录](updates/README.md)。
 
 这是代表性精选目录，重点为交通/城市图预测，同时覆盖网格序列、降水和天气。并非全领域穷尽综述，也不是性能排行榜。26 条采用已核验的预印本记录，其中一部分可能已有本次未确认的正式版本。
 
@@ -54,7 +54,7 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 | 02 | [城市网格流量与需求预测](#topic-urban) | 6 |
 | 03 | [图卷积、动态图与连续时间建模](#topic-graph) | 17 |
 | 04 | [注意力、Transformer 与状态空间模型](#topic-attention) | 7 |
-| 05 | [简洁基线、高效与大规模预测](#topic-efficient) | 12 |
+| 05 | [简洁基线、高效与大规模预测](#topic-efficient) | 13 |
 | 06 | [自监督与预训练](#topic-pretrain) | 5 |
 | 07 | [异质性、元学习与迁移](#topic-transfer) | 6 |
 | 08 | [基础模型、语言模型与跨模态迁移](#topic-foundation) | 6 |
@@ -495,6 +495,16 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
   用空间与时间归一化处理多变量序列中的不同成分，形成简洁预测模块。
 
   [正式版本](https://doi.org/10.1145/3447548.3467330) · [发表证据](https://doi.org/10.1145/3447548.3467330) · [代码](https://github.com/JLDeng/ST-Norm)（作者/项目仓库已核验）
+
+<a id="paper-ragc"></a>
+
+- **RAGC** — Kaiqi Wu et al. **[Efficient Traffic Forecasting on Large-Scale Road Network by Regularized Adaptive Graph Convolution](https://arxiv.org/abs/2506.07179)**. 2026 · ICDE；arXiv 首发 2025.
+
+  面向大规模交通预测，以高效余弦算子降低图卷积复杂度，并通过随机共享嵌入与残差差分机制正则化自适应图学习。
+
+  [正式版本](https://doi.org/10.1109/ICDE65706.2026.00068) · [发表证据](https://doi.org/10.1109/ICDE65706.2026.00068) · [代码](https://github.com/wkq-wukaiqi/RAGC)（作者/项目仓库已核验）
+
+  版本/使用说明：arXiv v1（2025-06-08）题为 Regularized Adaptive Graph Learning for Large-Scale Traffic Forecasting，简称 RAGL；v3（2026-04-30）采用现标题，按同一工作收录，不重复计数。作者顺序采用正式出版元数据及 v3。已检查作者源码与运行说明，未运行训练或验证性能。
 
 
 <a id="topic-pretrain"></a>
@@ -1093,7 +1103,7 @@ LargeST 的 SD/GBA/GLA/CA、经典 PeMS 子集、METR-LA/PEMS-BAY、气象 ERA5/
 
 ## 维护
 
-以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、独立主题页面、年度索引、CSV 与 BibTeX，并检查统计。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
+以 `papers.json` 为单一数据源，同时维护 `summary_zh` / `summary_en` 和 `notes` / `notes_en`。修改后在本目录运行 `python scripts/build_catalog.py`，同步生成中英文 README、独立主题页面、年度索引、CSV 与 BibTeX，随后运行 `python scripts/verify_catalog.py` 和 `git diff --check` 完成独立验证与差异检查。贡献方式见 [CONTRIBUTING.md](CONTRIBUTING.md)。
 
 每周检索新论文、核验论文与官方代码链接，去重后更新目录，并在 [更新记录](updates/README.md) 中保存每次新增、修订和待核验项。检索截止日期由 `catalog_meta.json` 记录，只有完成检索后才推进。
 

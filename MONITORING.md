@@ -36,7 +36,7 @@
 
 ## 生成与发布
 
-运行 `python scripts/build_catalog.py`，同步生成 `README.md` 和 `README.en.md`，检查 JSON/CSV/Markdown/BibTeX 一致性、中英文条目与来源链接一致性、标题及标识符重复、内部链接和 `git diff --check`。`RECENT.md` 随检索年份滚动；`RECENT_2025_2026.md` 保留固定年份索引。
+依次运行 `python scripts/build_catalog.py`、`python scripts/verify_catalog.py` 和 `git diff --check`。生成与独立验证均通过后再发布；具体步骤见 [贡献规范](CONTRIBUTING.md)。同步生成 `README.md` 和 `README.en.md`，检查 JSON/CSV/Markdown/BibTeX 一致性、中英文条目与来源链接一致性、标题及标识符重复、内部链接和 `git diff --check`。`RECENT.md` 随检索年份滚动；`RECENT_2025_2026.md` 保留固定年份索引。
 
 检查提交内容只包含公开目录、脚本及更新报告，不包含访问令牌、机器路径、聊天记录、全文下载缓存或私人文件。每周用独立提交推送到 `main`，不强推、不覆盖维护者修改。远端发生变化时先整合；无法安全整合或认证失败时保存本地成果并报告具体阻碍。
 
