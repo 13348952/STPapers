@@ -119,3 +119,13 @@ Designs that account for node count, history length, forecasting horizon, and co
   [Published version](https://doi.org/10.1109/ICDE65706.2026.00068) · [Publication evidence](https://doi.org/10.1109/ICDE65706.2026.00068) · [Code](https://github.com/wkq-wukaiqi/RAGC) (author/project repository checked)
 
   Version / usage notes: arXiv v1 (2025-06-08) was titled Regularized Adaptive Graph Learning for Large-Scale Traffic Forecasting (RAGL); v3 (2026-04-30) uses the current title. These versions are counted as one work. Author order follows the publisher metadata and v3. Author source files and usage instructions were inspected; training and performance were not reproduced.
+
+<a id="paper-tas-gnn"></a>
+
+- **TAS-GNN** — JiaJun Yu et al. **[Active Arbitration: Decoupling Spatio-Temporal Duality for Efficient Traffic Forecasting](https://ijcai.org/proceedings/2026/583)**. 2026 · IJCAI 2026.
+
+  Uses temporal context to arbitrate spatial interactions and wavelet decomposition to separate physical lags from semantic synchrony.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/583) · [Publication evidence](https://ijcai.org/proceedings/2026/583) · Code: author code not verified
+
+  Version / usage notes: The paper links https://github.com/highhhhh/TAS-GNN, but the inspected commit contains only a supplementary PDF, not released model code.

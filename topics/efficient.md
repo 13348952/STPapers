@@ -119,3 +119,13 @@
   [正式版本](https://doi.org/10.1109/ICDE65706.2026.00068) · [发表证据](https://doi.org/10.1109/ICDE65706.2026.00068) · [代码](https://github.com/wkq-wukaiqi/RAGC)（作者/项目仓库已核验）
 
   版本/使用说明：arXiv v1（2025-06-08）题为 Regularized Adaptive Graph Learning for Large-Scale Traffic Forecasting，简称 RAGL；v3（2026-04-30）采用现标题，按同一工作收录，不重复计数。作者顺序采用正式出版元数据及 v3。已检查作者源码与运行说明，未运行训练或验证性能。
+
+<a id="paper-tas-gnn"></a>
+
+- **TAS-GNN** — JiaJun Yu et al. **[Active Arbitration: Decoupling Spatio-Temporal Duality for Efficient Traffic Forecasting](https://ijcai.org/proceedings/2026/583)**. 2026 · IJCAI 2026.
+
+  以时间上下文调节空间交互，并结合离散小波分解，区分物理传播滞后与语义同步。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/583) · [发表证据](https://ijcai.org/proceedings/2026/583) · 代码：未核验到作者代码
+
+  版本/使用说明：论文链接 https://github.com/highhhhh/TAS-GNN ，但所查提交仅有补充材料 PDF，不作为已开放模型代码。

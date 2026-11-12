@@ -149,3 +149,13 @@
   [发表证据](https://arxiv.org/abs/2605.16163) · [代码](https://github.com/danassou/swaither-precip)（作者/项目仓库已核验）
 
   版本/使用说明：首发 2026-05-15，v3 修订 2026-10-29；本次为修订触发的目录补录。已检查作者源码与训练说明；论文专用 AIFS 历史预测数据未公开，其他数据获取条件需单独核对，未训练复现。
+
+<a id="paper-six-hourly-pqpf"></a>
+
+- **Six-hourly-PQPF** — Thomas M Hamill **[Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326)**. 2026 · arXiv；正式发表状态未核验.
+
+  将逐小时概率预报通过轻量 GRU 和 MLP 聚合为六小时累积降水分布，处理连续时段间的相关性。
+
+  [发表证据](https://arxiv.org/abs/2611.03326) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-02 首发；补录此前待核验候选。属于概率预报后处理，不是仅输入历史雷达观测的外推基线。

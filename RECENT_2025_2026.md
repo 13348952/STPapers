@@ -4,7 +4,15 @@
 
 年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。
 
-## 2026（24 篇）
+## 2026（30 篇）
+
+- **Vision-ST-Fusion-survey** — Anna Wang et al. **[Towards Vision-Spatiotemporal Fusion in Traffic Forecasting: A Survey on Cross-Modal Alignment](https://ijcai.org/proceedings/2026/891)**. 2026 · IJCAI 2026 (Survey Track).
+
+  从特征、语义和任务级对齐组织视觉与交通时空信号融合方法，讨论跨视角与几何映射挑战。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/891) · [发表证据](https://ijcai.org/proceedings/2026/891) · 代码：未核验到作者代码
+
+  版本/使用说明：范围同时涉及交通状态、轨迹、事件与需求；作为跨模态预测综述收录，不将轨迹规划方法列为核心预测基线。资源仓库未核验。
 
 - **STRP** — Shuhao Li et al. **[From Coarse to Fine: Managing Temporal Granularity in Spatio-Temporal Data for Fine-Grained Traffic Prediction](https://arxiv.org/abs/2606.09392)**. 2026 · arXiv；正式发表状态未核验.
 
@@ -30,6 +38,22 @@
 
   版本/使用说明：动作条件预测与被动交通预测的输入不同；论文采用仿真走廊评估，不能解释为现场部署验证。未核验到作者代码。
 
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv；正式发表状态未核验.
+
+  利用历史周期与近期观测的相似性调节时间信息和节点间作用，增强非周期交通模式下的预测。
+
+  [发表证据](https://arxiv.org/abs/2611.09015) · [代码](https://github.com/theghks3/SIMBAD)（作者/项目仓库已核验）
+
+  版本/使用说明：2026-11-06 首发。作者声明 NeurIPS 2026 录用，尚未独立核验正式论文集，暂按预印本列示。已检查模型、训练入口和使用说明，未训练复现。
+
+- **UniST-Pred** — Yue Wang et al. **[UniST-Pred: A Robust Unified Framework for Spatio-Temporal Traffic Forecasting in Transportation Networks Under Disruptions](https://ijcai.org/proceedings/2026/834)**. 2026 · IJCAI 2026 (AI and Social Good).
+
+  先解耦时间建模与空间表征，再自适应融合；在真实交通与 MATSim 网络中断场景中评估。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/834) · [发表证据](https://ijcai.org/proceedings/2026/834) · [代码](https://anonymous.4open.science/r/UniST-Pred-EF27)（论文提供匿名代码，访问未核验）
+
+  版本/使用说明：与目录中的 UniST 为不同工作。论文提供匿名代码及数据链接，本次未核验匿名站点内容。
+
 - **FAST-SSM** — Xinjin Li et al. **[FAST: A Synergistic Framework of Attention and State-space Models for Spatiotemporal Traffic Prediction](https://arxiv.org/abs/2604.13453)**. 2026 · ICME.
 
   结合时间注意力与 Mamba 空间模块；与 KDD 2026 的 FaST 是不同论文。
@@ -41,6 +65,12 @@
   以频域长历史表示融合天气、事故等上下文，并采用稀疏 MoE；属于多模态设置。
 
   [发表证据](https://arxiv.org/abs/2610.36393) · 代码：未核验到作者代码
+
+- **ASTPKEFormer** — Wenfeng Zhou et al. **[ASTPKEFormer: Adaptive Spatiotemporal Prior Knowledge Embedding-Induced Transformers for Traffic Data Forecasting](https://ijcai.org/proceedings/2026/368)**. 2026 · IJCAI 2026.
+
+  结合多尺度时间通道对齐、时间与图结构先验嵌入及交叉融合，建模交通时空依赖。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/368) · [发表证据](https://ijcai.org/proceedings/2026/368) · 代码：未核验到作者代码
 
 - **FaST** — Yiji Zhao et al. **[FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts](https://arxiv.org/abs/2601.05174)**. 2026 · KDD.
 
@@ -89,6 +119,14 @@
   [正式版本](https://doi.org/10.1109/ICDE65706.2026.00068) · [发表证据](https://doi.org/10.1109/ICDE65706.2026.00068) · [代码](https://github.com/wkq-wukaiqi/RAGC)（作者/项目仓库已核验）
 
   版本/使用说明：arXiv v1（2025-06-08）题为 Regularized Adaptive Graph Learning for Large-Scale Traffic Forecasting，简称 RAGL；v3（2026-04-30）采用现标题，按同一工作收录，不重复计数。作者顺序采用正式出版元数据及 v3。已检查作者源码与运行说明，未运行训练或验证性能。
+
+- **TAS-GNN** — JiaJun Yu et al. **[Active Arbitration: Decoupling Spatio-Temporal Duality for Efficient Traffic Forecasting](https://ijcai.org/proceedings/2026/583)**. 2026 · IJCAI 2026.
+
+  以时间上下文调节空间交互，并结合离散小波分解，区分物理传播滞后与语义同步。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/583) · [发表证据](https://ijcai.org/proceedings/2026/583) · 代码：未核验到作者代码
+
+  版本/使用说明：论文链接 https://github.com/highhhhh/TAS-GNN ，但所查提交仅有补充材料 PDF，不作为已开放模型代码。
 
 - **PIMCST** — Abdul Joseph Fofanah et al. **[PIMCST: Physics-Informed Multi-Phase Consensus and Spatio-Temporal Few-Shot Learning for Traffic Flow Forecasting](https://arxiv.org/abs/2602.01936)**. 2026 · arXiv；正式发表状态未核验.
 
@@ -185,6 +223,14 @@
   [发表证据](https://arxiv.org/abs/2605.16163) · [代码](https://github.com/danassou/swaither-precip)（作者/项目仓库已核验）
 
   版本/使用说明：首发 2026-05-15，v3 修订 2026-10-29；本次为修订触发的目录补录。已检查作者源码与训练说明；论文专用 AIFS 历史预测数据未公开，其他数据获取条件需单独核对，未训练复现。
+
+- **Six-hourly-PQPF** — Thomas M Hamill **[Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326)**. 2026 · arXiv；正式发表状态未核验.
+
+  将逐小时概率预报通过轻量 GRU 和 MLP 聚合为六小时累积降水分布，处理连续时段间的相关性。
+
+  [发表证据](https://arxiv.org/abs/2611.03326) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-02 首发；补录此前待核验候选。属于概率预报后处理，不是仅输入历史雷达观测的外推基线。
 
 
 ## 2025（9 篇）

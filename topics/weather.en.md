@@ -149,3 +149,13 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
   [Publication evidence](https://arxiv.org/abs/2605.16163) · [Code](https://github.com/danassou/swaither-precip) (author/project repository checked)
 
   Version / usage notes: First posted on 2026-05-15 and revised to v3 on 2026-10-29; added following that revision. Author source and training instructions were inspected; the paper-specific historical AIFS forecast dataset is not public, and other data access conditions require separate checks. No training was performed.
+
+<a id="paper-six-hourly-pqpf"></a>
+
+- **Six-hourly-PQPF** — Thomas M Hamill **[Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326)**. 2026 · arXiv; formal publication status not verified.
+
+  Aggregates hourly probabilistic forecasts into six-hour precipitation distributions using a lightweight GRU and MLP.
+
+  [Publication evidence](https://arxiv.org/abs/2611.03326) · Code: author code not verified
+
+  Version / usage notes: First posted on 2026-11-02; backfills a previously pending candidate. This is probabilistic forecast postprocessing, not a baseline using only historical radar observations.

@@ -24,7 +24,9 @@ Predicting future distributions or samples rather than only point estimates.
 
   Extends denoising diffusion models to spatio-temporal graphs for non-autoregressive probabilistic forecasting.
 
-  [Publication evidence](https://arxiv.org/abs/2301.13629) · Code: author code not verified
+  [Published version](https://doi.org/10.1145/3589132.3625614) · [Publication evidence](https://arxiv.org/html/2301.13629v3) · [Code](https://github.com/wenhaomin/DiffSTG) (author/project repository checked)
+
+  Version / usage notes: The author homepage lists the paper and links the author GitHub account; its repository README identifies the paper and includes train.py and training instructions. Public sources were inspected; training was not run.
 
 <a id="paper-stgp-spde"></a>
 

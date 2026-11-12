@@ -24,7 +24,9 @@
 
   将去噪扩散模型推广到时空图，进行非自回归概率预测。
 
-  [发表证据](https://arxiv.org/abs/2301.13629) · 代码：未核验到作者代码
+  [正式版本](https://doi.org/10.1145/3589132.3625614) · [发表证据](https://arxiv.org/html/2301.13629v3) · [代码](https://github.com/wenhaomin/DiffSTG)（作者/项目仓库已核验）
+
+  版本/使用说明：作者主页列出论文并链接作者 GitHub 账户；该账户仓库 README 对应论文，包含 train.py 和训练说明。仅检查公开源码，未运行训练。
 
 <a id="paper-stgp-spde"></a>
 

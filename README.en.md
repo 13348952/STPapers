@@ -8,11 +8,11 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
 Inspired by the topic organization and contribution model of [RSPapers](https://github.com/hongleizhang/RSPapers), this repository collects papers, datasets, and code resources for spatio-temporal forecasting. Method summaries are editorial descriptions written for this catalog; paper titles retain their original English wording.
 
-**Search cutoff: 2026-11-04 (Asia/Shanghai). 108 unique entries across 13 topics, covering 2015–2026; 24 papers are assigned to 2026 under the verified year convention, and 74 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
+**Search cutoff: 2026-11-04 (Asia/Shanghai). 114 unique entries across 13 topics, covering 2015–2026; 30 papers are assigned to 2026 under the verified year convention, and 76 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
 
 Catalog updated: 2026-11-12. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
 
-This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 26 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
+This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 28 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
 
 ## Quick links
 
@@ -52,17 +52,17 @@ These are editorial suggestions, not rankings of model performance.
 
 | No. | Topic | Entries |
 | --- | --- | ---: |
-| 01 | [Surveys and introductions](#topic-survey) | 4 |
+| 01 | [Surveys and introductions](#topic-survey) | 5 |
 | 02 | [Urban grid flow and demand forecasting](#topic-urban) | 6 |
-| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 17 |
-| 04 | [Attention, Transformers, and state-space models](#topic-attention) | 7 |
-| 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 13 |
+| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 19 |
+| 04 | [Attention, Transformers, and state-space models](#topic-attention) | 8 |
+| 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 14 |
 | 06 | [Self-supervised learning and pretraining](#topic-pretrain) | 5 |
 | 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 6 |
 | 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 6 |
 | 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 4 |
 | 10 | [General grid and spatio-temporal frame prediction](#topic-grid) | 8 |
-| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 16 |
+| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 17 |
 | 12 | [Datasets, benchmarks, and tools](#topic-benchmark) | 8 |
 | 13 | [Related tasks and time-series background](#topic-related) | 8 |
 
@@ -105,6 +105,16 @@ Maps of tasks, methods, and resources.
   [Publication evidence](https://arxiv.org/abs/2009.00712) · Code: author code not verified
 
   Version / usage notes: The verified arXiv version is listed here; this does not imply that no formally published version exists.
+
+<a id="paper-vision-st-fusion-survey"></a>
+
+- **Vision-ST-Fusion-survey** — Anna Wang et al. **[Towards Vision-Spatiotemporal Fusion in Traffic Forecasting: A Survey on Cross-Modal Alignment](https://ijcai.org/proceedings/2026/891)**. 2026 · IJCAI 2026 (Survey Track).
+
+  Organizes visual–spatiotemporal traffic fusion by feature-, semantic-, and task-level alignment, covering cross-view association and geometric mapping.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/891) · [Publication evidence](https://ijcai.org/proceedings/2026/891) · Code: author code not verified
+
+  Version / usage notes: Covers traffic state, trajectory, event, and demand forecasting; included as a cross-modal survey, not as evidence that trajectory planning methods are core forecasting baselines. The resource repository was not verified.
 
 
 <a id="topic-urban"></a>
@@ -322,6 +332,26 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
 
   Version / usage notes: Action-conditioned prediction uses different inputs from passive traffic forecasting. Evaluation uses a simulated corridor and does not establish field deployment; author code was not verified.
 
+<a id="paper-simbad"></a>
+
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv; formal publication status not verified.
+
+  Regulates historical temporal signals and spatial interactions using similarity to recent observations, targeting aperiodic traffic patterns.
+
+  [Publication evidence](https://arxiv.org/abs/2611.09015) · [Code](https://github.com/theghks3/SIMBAD) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-11-06. Authors report NeurIPS 2026 acceptance; proceedings were not independently verified, so this entry retains preprint status. Model sources, training entry point, and usage instructions were inspected; no training reproduction was performed.
+
+<a id="paper-unist-pred"></a>
+
+- **UniST-Pred** — Yue Wang et al. **[UniST-Pred: A Robust Unified Framework for Spatio-Temporal Traffic Forecasting in Transportation Networks Under Disruptions](https://ijcai.org/proceedings/2026/834)**. 2026 · IJCAI 2026 (AI and Social Good).
+
+  Decouples temporal modeling and spatial representations before adaptive fusion; evaluates real traffic and MATSim network-disruption scenarios.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/834) · [Publication evidence](https://ijcai.org/proceedings/2026/834) · [Code](https://anonymous.4open.science/r/UniST-Pred-EF27) (anonymous code linked by the paper; access not verified)
+
+  Version / usage notes: Distinct from the existing UniST entry. The paper provides an anonymous code/data link; its contents were not verified in this pass.
+
 
 <a id="topic-attention"></a>
 
@@ -388,6 +418,14 @@ Spatio-temporal attention, embeddings, propagation delays, and combinations with
   [Publication evidence](https://arxiv.org/abs/2001.02908) · Code: author code not verified
 
   Version / usage notes: The verified arXiv version is listed here; this does not imply that no formally published version exists.
+
+<a id="paper-astpkeformer"></a>
+
+- **ASTPKEFormer** — Wenfeng Zhou et al. **[ASTPKEFormer: Adaptive Spatiotemporal Prior Knowledge Embedding-Induced Transformers for Traffic Data Forecasting](https://ijcai.org/proceedings/2026/368)**. 2026 · IJCAI 2026.
+
+  Combines multiscale temporal channel alignment, temporal and graph-structure prior embeddings, and cross-fusion for traffic forecasting.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/368) · [Publication evidence](https://ijcai.org/proceedings/2026/368) · Code: author code not verified
 
 
 <a id="topic-efficient"></a>
@@ -507,6 +545,16 @@ Designs that account for node count, history length, forecasting horizon, and co
   [Published version](https://doi.org/10.1109/ICDE65706.2026.00068) · [Publication evidence](https://doi.org/10.1109/ICDE65706.2026.00068) · [Code](https://github.com/wkq-wukaiqi/RAGC) (author/project repository checked)
 
   Version / usage notes: arXiv v1 (2025-06-08) was titled Regularized Adaptive Graph Learning for Large-Scale Traffic Forecasting (RAGL); v3 (2026-04-30) uses the current title. These versions are counted as one work. Author order follows the publisher metadata and v3. Author source files and usage instructions were inspected; training and performance were not reproduced.
+
+<a id="paper-tas-gnn"></a>
+
+- **TAS-GNN** — JiaJun Yu et al. **[Active Arbitration: Decoupling Spatio-Temporal Duality for Efficient Traffic Forecasting](https://ijcai.org/proceedings/2026/583)**. 2026 · IJCAI 2026.
+
+  Uses temporal context to arbitrate spatial interactions and wavelet decomposition to separate physical lags from semantic synchrony.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/583) · [Publication evidence](https://ijcai.org/proceedings/2026/583) · Code: author code not verified
+
+  Version / usage notes: The paper links https://github.com/highhhhh/TAS-GNN, but the inspected commit contains only a supplementary PDF, not released model code.
 
 
 <a id="topic-pretrain"></a>
@@ -704,7 +752,9 @@ Predicting future distributions or samples rather than only point estimates.
 
   Extends denoising diffusion models to spatio-temporal graphs for non-autoregressive probabilistic forecasting.
 
-  [Publication evidence](https://arxiv.org/abs/2301.13629) · Code: author code not verified
+  [Published version](https://doi.org/10.1145/3589132.3625614) · [Publication evidence](https://arxiv.org/html/2301.13629v3) · [Code](https://github.com/wenhaomin/DiffSTG) (author/project repository checked)
+
+  Version / usage notes: The author homepage lists the paper and links the author GitHub account; its repository README identifies the paper and includes train.py and training instructions. Public sources were inspected; training was not run.
 
 <a id="paper-stgp-spde"></a>
 
@@ -945,6 +995,16 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
   [Publication evidence](https://arxiv.org/abs/2605.16163) · [Code](https://github.com/danassou/swaither-precip) (author/project repository checked)
 
   Version / usage notes: First posted on 2026-05-15 and revised to v3 on 2026-10-29; added following that revision. Author source and training instructions were inspected; the paper-specific historical AIFS forecast dataset is not public, and other data access conditions require separate checks. No training was performed.
+
+<a id="paper-six-hourly-pqpf"></a>
+
+- **Six-hourly-PQPF** — Thomas M Hamill **[Six-hourly Probabilistic Precipitation Forecasts Created From Hourly Probabilities](https://arxiv.org/abs/2611.03326)**. 2026 · arXiv; formal publication status not verified.
+
+  Aggregates hourly probabilistic forecasts into six-hour precipitation distributions using a lightweight GRU and MLP.
+
+  [Publication evidence](https://arxiv.org/abs/2611.03326) · Code: author code not verified
+
+  Version / usage notes: First posted on 2026-11-02; backfills a previously pending candidate. This is probabilistic forecast postprocessing, not a baseline using only historical radar observations.
 
 
 <a id="topic-benchmark"></a>

@@ -67,3 +67,11 @@
   [发表证据](https://arxiv.org/abs/2001.02908) · 代码：未核验到作者代码
 
   版本/使用说明： 当前列出已核验的 arXiv 版本；不据此断言没有正式发表版本。
+
+<a id="paper-astpkeformer"></a>
+
+- **ASTPKEFormer** — Wenfeng Zhou et al. **[ASTPKEFormer: Adaptive Spatiotemporal Prior Knowledge Embedding-Induced Transformers for Traffic Data Forecasting](https://ijcai.org/proceedings/2026/368)**. 2026 · IJCAI 2026.
+
+  结合多尺度时间通道对齐、时间与图结构先验嵌入及交叉融合，建模交通时空依赖。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/368) · [发表证据](https://ijcai.org/proceedings/2026/368) · 代码：未核验到作者代码

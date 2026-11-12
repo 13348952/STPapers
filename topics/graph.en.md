@@ -155,3 +155,23 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
   [Publication evidence](https://arxiv.org/abs/2611.01270) · Code: author code not verified
 
   Version / usage notes: Action-conditioned prediction uses different inputs from passive traffic forecasting. Evaluation uses a simulated corridor and does not establish field deployment; author code was not verified.
+
+<a id="paper-simbad"></a>
+
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv; formal publication status not verified.
+
+  Regulates historical temporal signals and spatial interactions using similarity to recent observations, targeting aperiodic traffic patterns.
+
+  [Publication evidence](https://arxiv.org/abs/2611.09015) · [Code](https://github.com/theghks3/SIMBAD) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-11-06. Authors report NeurIPS 2026 acceptance; proceedings were not independently verified, so this entry retains preprint status. Model sources, training entry point, and usage instructions were inspected; no training reproduction was performed.
+
+<a id="paper-unist-pred"></a>
+
+- **UniST-Pred** — Yue Wang et al. **[UniST-Pred: A Robust Unified Framework for Spatio-Temporal Traffic Forecasting in Transportation Networks Under Disruptions](https://ijcai.org/proceedings/2026/834)**. 2026 · IJCAI 2026 (AI and Social Good).
+
+  Decouples temporal modeling and spatial representations before adaptive fusion; evaluates real traffic and MATSim network-disruption scenarios.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/834) · [Publication evidence](https://ijcai.org/proceedings/2026/834) · [Code](https://anonymous.4open.science/r/UniST-Pred-EF27) (anonymous code linked by the paper; access not verified)
+
+  Version / usage notes: Distinct from the existing UniST entry. The paper provides an anonymous code/data link; its contents were not verified in this pass.

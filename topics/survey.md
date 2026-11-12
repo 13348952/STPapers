@@ -41,3 +41,13 @@
   [发表证据](https://arxiv.org/abs/2009.00712) · 代码：未核验到作者代码
 
   版本/使用说明： 当前列出已核验的 arXiv 版本；不据此断言没有正式发表版本。
+
+<a id="paper-vision-st-fusion-survey"></a>
+
+- **Vision-ST-Fusion-survey** — Anna Wang et al. **[Towards Vision-Spatiotemporal Fusion in Traffic Forecasting: A Survey on Cross-Modal Alignment](https://ijcai.org/proceedings/2026/891)**. 2026 · IJCAI 2026 (Survey Track).
+
+  从特征、语义和任务级对齐组织视觉与交通时空信号融合方法，讨论跨视角与几何映射挑战。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/891) · [发表证据](https://ijcai.org/proceedings/2026/891) · 代码：未核验到作者代码
+
+  版本/使用说明：范围同时涉及交通状态、轨迹、事件与需求；作为跨模态预测综述收录，不将轨迹规划方法列为核心预测基线。资源仓库未核验。

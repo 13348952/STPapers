@@ -155,3 +155,23 @@
   [发表证据](https://arxiv.org/abs/2611.01270) · 代码：未核验到作者代码
 
   版本/使用说明：动作条件预测与被动交通预测的输入不同；论文采用仿真走廊评估，不能解释为现场部署验证。未核验到作者代码。
+
+<a id="paper-simbad"></a>
+
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv；正式发表状态未核验.
+
+  利用历史周期与近期观测的相似性调节时间信息和节点间作用，增强非周期交通模式下的预测。
+
+  [发表证据](https://arxiv.org/abs/2611.09015) · [代码](https://github.com/theghks3/SIMBAD)（作者/项目仓库已核验）
+
+  版本/使用说明：2026-11-06 首发。作者声明 NeurIPS 2026 录用，尚未独立核验正式论文集，暂按预印本列示。已检查模型、训练入口和使用说明，未训练复现。
+
+<a id="paper-unist-pred"></a>
+
+- **UniST-Pred** — Yue Wang et al. **[UniST-Pred: A Robust Unified Framework for Spatio-Temporal Traffic Forecasting in Transportation Networks Under Disruptions](https://ijcai.org/proceedings/2026/834)**. 2026 · IJCAI 2026 (AI and Social Good).
+
+  先解耦时间建模与空间表征，再自适应融合；在真实交通与 MATSim 网络中断场景中评估。
+
+  [正式版本](https://doi.org/10.24963/ijcai.2026/834) · [发表证据](https://ijcai.org/proceedings/2026/834) · [代码](https://anonymous.4open.science/r/UniST-Pred-EF27)（论文提供匿名代码，访问未核验）
+
+  版本/使用说明：与目录中的 UniST 为不同工作。论文提供匿名代码及数据链接，本次未核验匿名站点内容。

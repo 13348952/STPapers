@@ -41,3 +41,13 @@ Maps of tasks, methods, and resources.
   [Publication evidence](https://arxiv.org/abs/2009.00712) · Code: author code not verified
 
   Version / usage notes: The verified arXiv version is listed here; this does not imply that no formally published version exists.
+
+<a id="paper-vision-st-fusion-survey"></a>
+
+- **Vision-ST-Fusion-survey** — Anna Wang et al. **[Towards Vision-Spatiotemporal Fusion in Traffic Forecasting: A Survey on Cross-Modal Alignment](https://ijcai.org/proceedings/2026/891)**. 2026 · IJCAI 2026 (Survey Track).
+
+  Organizes visual–spatiotemporal traffic fusion by feature-, semantic-, and task-level alignment, covering cross-view association and geometric mapping.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/891) · [Publication evidence](https://ijcai.org/proceedings/2026/891) · Code: author code not verified
+
+  Version / usage notes: Covers traffic state, trajectory, event, and demand forecasting; included as a cross-modal survey, not as evidence that trajectory planning methods are core forecasting baselines. The resource repository was not verified.

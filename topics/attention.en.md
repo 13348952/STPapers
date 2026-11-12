@@ -67,3 +67,11 @@ Spatio-temporal attention, embeddings, propagation delays, and combinations with
   [Publication evidence](https://arxiv.org/abs/2001.02908) · Code: author code not verified
 
   Version / usage notes: The verified arXiv version is listed here; this does not imply that no formally published version exists.
+
+<a id="paper-astpkeformer"></a>
+
+- **ASTPKEFormer** — Wenfeng Zhou et al. **[ASTPKEFormer: Adaptive Spatiotemporal Prior Knowledge Embedding-Induced Transformers for Traffic Data Forecasting](https://ijcai.org/proceedings/2026/368)**. 2026 · IJCAI 2026.
+
+  Combines multiscale temporal channel alignment, temporal and graph-structure prior embeddings, and cross-fusion for traffic forecasting.
+
+  [Published version](https://doi.org/10.24963/ijcai.2026/368) · [Publication evidence](https://ijcai.org/proceedings/2026/368) · Code: author code not verified
