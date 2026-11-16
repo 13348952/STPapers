@@ -59,3 +59,23 @@ Unified pretraining and few-shot or zero-shot adaptation.
   [Publication evidence](https://arxiv.org/abs/2611.02211) · [Code](https://github.com/ucam-eo/e2forecast) (author/project repository checked)
 
   Version / usage notes: Targets Earth-surface embeddings rather than raw pixels. The author repository contains model source and training/evaluation instructions; some GSA embeddings and dated SSL4EO data remain unreleased. No training was performed.
+
+<a id="paper-topost"></a>
+
+- **TopoST** — Kaiyun Wei et al. **[TopoST: Topology-Conditioned Node Specialization for Urban Spatio-Temporal Foundation Models](https://arxiv.org/abs/2611.15440)**. 2026 · arXiv; formal publication status not verified.
+
+  Generates node-specific temporal and spatial parameters through a shared topology-to-parameter mapping for zero-shot forecasting across cities and tasks.
+
+  [Publication evidence](https://arxiv.org/abs/2611.15440) · [Code](https://github.com/weikaiyun/TopoST) (author/project repository checked)
+
+  Version / usage notes: Topology encoding, parameter-generation source, and training instructions were inspected. Zero-shot and data-separation claims require independent source/target protocol checks; no training was performed.
+
+<a id="paper-multi-stg"></a>
+
+- **Multi-STG** — Zhu Xiao et al. **[Beyond Sunny Skies: Using Large Language Models to Predict Urban Traffic in Adverse Weather](https://arxiv.org/abs/2611.12635)**. 2026 · arXiv; formal publication status not verified.
+
+  Combines language-model semantic priors from weather, POIs, and holidays with multimodal attention and gated residual calibration for urban traffic forecasting in adverse weather.
+
+  [Publication evidence](https://arxiv.org/abs/2611.12635) · Code: author code not verified
+
+  Version / usage notes: Author code was not verified. External context and private-car data settings must be aligned across baselines; semantic representations do not establish causal weather effects on traffic.

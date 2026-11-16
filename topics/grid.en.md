@@ -71,3 +71,13 @@ Architectural foundations for weather and urban grid forecasting, including vide
   Introduces convolutions into LSTM state transitions, providing a foundational architecture for grid sequences and precipitation nowcasting.
 
   [Published version](https://papers.nips.cc/paper_files/paper/2015/hash/07563a3fe3bbe7e3ba84431ad9d055af-Abstract.html) · [Publication evidence](https://papers.nips.cc/paper_files/paper/2015/hash/07563a3fe3bbe7e3ba84431ad9d055af-Abstract.html) · Code: author code not verified
+
+<a id="paper-dssd"></a>
+
+- **DSSD** — Woojun Lee et al. **[Dynamical State-Space Diffusion for Spatiotemporal Prediction](https://arxiv.org/abs/2611.06652)**. 2026 · arXiv; formal publication status not verified.
+
+  Builds temporally correlated diffusion noise from a stable state-space model and uses a stationary-covariance Cholesky factor for future-frame prediction.
+
+  [Publication evidence](https://arxiv.org/abs/2611.06652) · Code: author code not verified
+
+  Version / usage notes: A general method for scientific-field and video prediction. The learned temporal operator describes noise correlations rather than establishing physical causal dynamics; author code was not verified.

@@ -159,3 +159,53 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
   [Publication evidence](https://arxiv.org/abs/2611.03326) · Code: author code not verified
 
   Version / usage notes: First posted on 2026-11-02; backfills a previously pending candidate. This is probabilistic forecast postprocessing, not a baseline using only historical radar observations.
+
+<a id="paper-prola"></a>
+
+- **PROLA** — Minseo Yoon et al. **[PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling](https://arxiv.org/abs/2611.11318)**. 2026 · NeurIPS 2026.
+
+  Splits a low-rank adaptation budget between pretrained principal directions and their orthogonal complement for future weather prediction with spatial and temporal refinement.
+
+  [Publication evidence](https://nips.cc/virtual/2026/poster/155892) · [Code](https://github.com/yms020615/PROLA) (author/project repository checked)
+
+  Version / usage notes: Acceptance is confirmed by the official NeurIPS 2026 poster page; proceedings volume/pages were not verified. Adapter source, training entry point, and instructions were inspected; no training was performed.
+
+<a id="paper-rescene-esm"></a>
+
+- **Rescene-ESM** — Minjong Cheon et al. **[Rescene-ESM: an Earth system model built around a frozen AI weather model](https://arxiv.org/abs/2611.11066)**. 2026 · arXiv; formal publication status not verified.
+
+  Couples a frozen AI atmosphere to ocean, sea-ice, land, river, carbon, and energy components for long-term Earth-system simulation and scenario projections.
+
+  [Publication evidence](https://arxiv.org/abs/2611.11066) · Code: author code not verified
+
+  Version / usage notes: The paper promises code, fitted coefficients, and run records on publication; a public implementation was not verified. Long-term climate scenarios and short-range weather errors are different evaluation tasks.
+
+<a id="paper-ai-nwp-fp16"></a>
+
+- **AI-NWP-FP16** — Stefan Siegert **[Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost](https://arxiv.org/abs/2611.09573)**. 2026 · arXiv; formal publication status not verified.
+
+  Evaluates half-precision inference across AI weather models while keeping physical states, normalization, and denormalization in FP32.
+
+  [Publication evidence](https://arxiv.org/abs/2611.09573) · [Code](https://github.com/sieste/ai-nwp-fp16) (author/project repository checked)
+
+  Version / usage notes: The ID is an editorial label. Precision conversion, forecast entry point, and experiment instructions were inspected; accuracy and energy findings are model-, hardware-, and evaluation-date-dependent and were not independently reproduced.
+
+<a id="paper-dayu-tc"></a>
+
+- **DaYu-TC** — Runzepu Hou et al. **[DaYu-TC: a global-regional nested AI system for tropical cyclone forecasting](https://arxiv.org/abs/2611.15266)**. 2026 · arXiv; formal publication status not verified.
+
+  Combines global and regional models with extreme-aware objectives, coupling large-scale forecasts to local evolution for tropical cyclone forecasting.
+
+  [Publication evidence](https://arxiv.org/abs/2611.15266) · [Code](https://github.com/hourzp/DaYu-TC) (author inference entry point checked; binary model, no public training code)
+
+  Version / usage notes: Paper attribution and the public inference entry point were checked, but the neural implementation is compiled binary and training code is not public. The authors mark full-resolution accelerator validation as pending; this catalog did not download weights or run the model.
+
+<a id="paper-satellite-swr-nowcasting"></a>
+
+- **Satellite-SWR-Nowcasting** — Tianyu Xie et al. **[Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation](https://arxiv.org/abs/2611.12999)**. 2026 · arXiv; formal publication status not verified.
+
+  Directly predicts gridded surface shortwave radiation over the next four hours from Himawari-9 multispectral histories and solar geometry.
+
+  [Publication evidence](https://arxiv.org/abs/2611.12999) · Code: author code not verified
+
+  Version / usage notes: The ID is an editorial label. First posted on 2026-11-08 and revised to v2 on 2026-11-11; counted once. Author code was not verified; distinguish external satellite observations from historical-radiation-only inputs.

@@ -158,13 +158,13 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
 
 <a id="paper-simbad"></a>
 
-- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv; formal publication status not verified.
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · NeurIPS 2026.
 
   Regulates historical temporal signals and spatial interactions using similarity to recent observations, targeting aperiodic traffic patterns.
 
-  [Publication evidence](https://arxiv.org/abs/2611.09015) · [Code](https://github.com/theghks3/SIMBAD) (author/project repository checked)
+  [Publication evidence](https://nips.cc/virtual/2026/poster/150645) · [Code](https://github.com/theghks3/SIMBAD) (author/project repository checked)
 
-  Version / usage notes: First posted on 2026-11-06. Authors report NeurIPS 2026 acceptance; proceedings were not independently verified, so this entry retains preprint status. Model sources, training entry point, and usage instructions were inspected; no training reproduction was performed.
+  Version / usage notes: First posted on 2026-11-06. Acceptance is confirmed by the official NeurIPS 2026 poster page; proceedings volume/pages were not verified. Code evidence remains the source and instruction checks from 2026-11-12; no rerun or reproduction was performed.
 
 <a id="paper-unist-pred"></a>
 
@@ -175,3 +175,13 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
   [Published version](https://doi.org/10.24963/ijcai.2026/834) · [Publication evidence](https://ijcai.org/proceedings/2026/834) · [Code](https://anonymous.4open.science/r/UniST-Pred-EF27) (anonymous code linked by the paper; access not verified)
 
   Version / usage notes: Distinct from the existing UniST entry. The paper provides an anonymous code/data link; its contents were not verified in this pass.
+
+<a id="paper-candor"></a>
+
+- **CANDOR** — Ziqi Wang et al. **[Decompose Dynamics Before Learning Dependencies in Spatiotemporal Systems](https://arxiv.org/abs/2609.36637)**. 2026 · arXiv; formal publication status not verified.
+
+  Decomposes local dynamics into background, accumulation/release, and sparse shocks before fusing delay-aware directed propagation with topology-unconstrained dependency learning for traffic and water-quality forecasting.
+
+  [Publication evidence](https://arxiv.org/abs/2609.36637) · Code: author code not verified
+
+  Version / usage notes: First posted on 2026-09-29 and revised to v2 on 2026-11-07; a revision-triggered catalog backfill. Branch names do not establish causal mechanism identification; author code was not verified.

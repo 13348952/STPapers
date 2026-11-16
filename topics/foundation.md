@@ -59,3 +59,23 @@
   [发表证据](https://arxiv.org/abs/2611.02211) · [代码](https://github.com/ucam-eo/e2forecast)（作者/项目仓库已核验）
 
   版本/使用说明：预测目标是地表嵌入，不是原始像素。作者仓库含模型、训练和评估说明；部分 GSA 嵌入与带日期 SSL4EO 数据仍待发布，未训练复现。
+
+<a id="paper-topost"></a>
+
+- **TopoST** — Kaiyun Wei et al. **[TopoST: Topology-Conditioned Node Specialization for Urban Spatio-Temporal Foundation Models](https://arxiv.org/abs/2611.15440)**. 2026 · arXiv；正式发表状态未核验.
+
+  通过共享的拓扑到参数映射生成节点特定的时空参数，研究跨城市和跨任务的零样本预测。
+
+  [发表证据](https://arxiv.org/abs/2611.15440) · [代码](https://github.com/weikaiyun/TopoST)（作者/项目仓库已核验）
+
+  版本/使用说明：已检查拓扑编码、参数生成源码与训练说明；零样本与数据隔离结论仍需按源/目标划分独立复核，未训练复现。
+
+<a id="paper-multi-stg"></a>
+
+- **Multi-STG** — Zhu Xiao et al. **[Beyond Sunny Skies: Using Large Language Models to Predict Urban Traffic in Adverse Weather](https://arxiv.org/abs/2611.12635)**. 2026 · arXiv；正式发表状态未核验.
+
+  将天气、POI 和节假日描述转换为语言模型语义先验，通过多模态注意力与门控残差校准辅助恶劣天气下的城市交通预测。
+
+  [发表证据](https://arxiv.org/abs/2611.12635) · 代码：未核验到作者代码
+
+  版本/使用说明：未核验到作者代码。外部上下文和私家车数据设置需与基线对齐；语义表征不等于已识别天气对交通的因果机制。

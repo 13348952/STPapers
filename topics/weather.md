@@ -159,3 +159,53 @@
   [发表证据](https://arxiv.org/abs/2611.03326) · 代码：未核验到作者代码
 
   版本/使用说明：2026-11-02 首发；补录此前待核验候选。属于概率预报后处理，不是仅输入历史雷达观测的外推基线。
+
+<a id="paper-prola"></a>
+
+- **PROLA** — Minseo Yoon et al. **[PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling](https://arxiv.org/abs/2611.11318)**. 2026 · NeurIPS 2026.
+
+  将低秩更新预算分配到预训练权重的主方向及正交补空间，并用于同时预测未来和细化时空分辨率的天气降尺度。
+
+  [发表证据](https://nips.cc/virtual/2026/poster/155892) · [代码](https://github.com/yms020615/PROLA)（作者/项目仓库已核验）
+
+  版本/使用说明：NeurIPS 2026 官方海报页已确认录用；未确认正式论文集卷页。已检查适配器、训练入口和运行说明，未训练复现。
+
+<a id="paper-rescene-esm"></a>
+
+- **Rescene-ESM** — Minjong Cheon et al. **[Rescene-ESM: an Earth system model built around a frozen AI weather model](https://arxiv.org/abs/2611.11066)**. 2026 · arXiv；正式发表状态未核验.
+
+  将冻结的 AI 大气网络与海洋、海冰、陆面、河流及碳能量过程耦合，研究长期地球系统模拟和情景预测。
+
+  [发表证据](https://arxiv.org/abs/2611.11066) · 代码：未核验到作者代码
+
+  版本/使用说明：论文正文称代码、拟合系数和运行记录将在发表时开放；尚未核验公开实现。长期气候情景与短期天气误差不是相同评价任务。
+
+<a id="paper-ai-nwp-fp16"></a>
+
+- **AI-NWP-FP16** — Stefan Siegert **[Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost](https://arxiv.org/abs/2611.09573)**. 2026 · arXiv；正式发表状态未核验.
+
+  比较多个 AI 天气模型的半精度推理，将神经网络计算与保持 FP32 的物理状态、归一化和反归一化区分。
+
+  [发表证据](https://arxiv.org/abs/2611.09573) · [代码](https://github.com/sieste/ai-nwp-fp16)（作者/项目仓库已核验）
+
+  版本/使用说明：目录 ID 为编辑简称。已检查精度转换源码、预测入口和复现实验说明；精度与节能结论受模型、硬件及评估日期限制，未独立运行验证。
+
+<a id="paper-dayu-tc"></a>
+
+- **DaYu-TC** — Runzepu Hou et al. **[DaYu-TC: a global-regional nested AI system for tropical cyclone forecasting](https://arxiv.org/abs/2611.15266)**. 2026 · arXiv；正式发表状态未核验.
+
+  通过全球与区域嵌套模型及极端感知目标，将大尺度预报与局地演变结合以预测热带气旋。
+
+  [发表证据](https://arxiv.org/abs/2611.15266) · [代码](https://github.com/hourzp/DaYu-TC)（作者推理入口已核验（模型为二进制，训练代码未公开））
+
+  版本/使用说明：已核验论文关联和公开推理入口，但模型实现为编译二进制，训练代码未公开；作者注明全分辨率加速器验证仍待完成。本目录未下载权重或运行模型。
+
+<a id="paper-satellite-swr-nowcasting"></a>
+
+- **Satellite-SWR-Nowcasting** — Tianyu Xie et al. **[Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation](https://arxiv.org/abs/2611.12999)**. 2026 · arXiv；正式发表状态未核验.
+
+  从向日葵九号多光谱历史影像和太阳几何信息，直接生成未来四小时的网格地表短波辐射预测。
+
+  [发表证据](https://arxiv.org/abs/2611.12999) · 代码：未核验到作者代码
+
+  版本/使用说明：目录 ID 为编辑简称；首发 2026-11-08，v2 修订 2026-11-11，只计一个条目。未核验到作者代码；外部观测输入需与历史辐射基线区分。

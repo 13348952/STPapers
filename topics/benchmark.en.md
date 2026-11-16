@@ -73,3 +73,13 @@ Task definitions, data processing, metrics, and resources for reproduction.
   Provides data, baselines, and common metrics for data-driven weather forecasting.
 
   [Published version](https://doi.org/10.1029/2020MS002203) · [Publication evidence](https://doi.org/10.1029/2020MS002203) · [Code](https://github.com/pangeo-data/WeatherBench) (author/project repository checked)
+
+<a id="paper-evoxxltraffic"></a>
+
+- **EvoXXLTraffic** — Du Yin et al. **[From XXLTraffic to EvoXXLTraffic: Scaling Traffic Forecasting to Sensor-Evolving Networks](https://arxiv.org/abs/2605.29768)**. 2026 · arXiv; formal publication status not verified.
+
+  Provides yearly changing sensor catalogs, persistent station IDs, and traffic matrices, separating all-sensor forecasting from supervised adaptation to newly appearing nodes.
+
+  [Publication evidence](https://arxiv.org/abs/2605.29768) · [Code](https://github.com/cruiseresearchgroup/TSAS26-EvoXXLTraffic) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-05-28 and revised to v3 on 2026-11-12. An extension of the XXLTraffic benchmark family, not a new forecasting model. Uses retrospective geographic graphs and implementation adaptations; new nodes receive current-year training rather than zero-shot evaluation. Source and instructions were inspected without downloading data or reproducing results.

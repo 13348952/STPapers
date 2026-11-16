@@ -158,13 +158,13 @@
 
 <a id="paper-simbad"></a>
 
-- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv；正式发表状态未核验.
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · NeurIPS 2026.
 
   利用历史周期与近期观测的相似性调节时间信息和节点间作用，增强非周期交通模式下的预测。
 
-  [发表证据](https://arxiv.org/abs/2611.09015) · [代码](https://github.com/theghks3/SIMBAD)（作者/项目仓库已核验）
+  [发表证据](https://nips.cc/virtual/2026/poster/150645) · [代码](https://github.com/theghks3/SIMBAD)（作者/项目仓库已核验）
 
-  版本/使用说明：2026-11-06 首发。作者声明 NeurIPS 2026 录用，尚未独立核验正式论文集，暂按预印本列示。已检查模型、训练入口和使用说明，未训练复现。
+  版本/使用说明：2026-11-06 首发。NeurIPS 2026 官方海报页已确认录用；未确认正式论文集卷页。代码核验沿用 2026-11-12 的源文件及运行说明检查，本次未重跑或复现。
 
 <a id="paper-unist-pred"></a>
 
@@ -175,3 +175,13 @@
   [正式版本](https://doi.org/10.24963/ijcai.2026/834) · [发表证据](https://ijcai.org/proceedings/2026/834) · [代码](https://anonymous.4open.science/r/UniST-Pred-EF27)（论文提供匿名代码，访问未核验）
 
   版本/使用说明：与目录中的 UniST 为不同工作。论文提供匿名代码及数据链接，本次未核验匿名站点内容。
+
+<a id="paper-candor"></a>
+
+- **CANDOR** — Ziqi Wang et al. **[Decompose Dynamics Before Learning Dependencies in Spatiotemporal Systems](https://arxiv.org/abs/2609.36637)**. 2026 · arXiv；正式发表状态未核验.
+
+  先将局部动态拆分为背景、积累释放和稀疏冲击，再融合延迟感知的有向传播与不受拓扑约束的依赖学习，用于交通和水质预测。
+
+  [发表证据](https://arxiv.org/abs/2609.36637) · 代码：未核验到作者代码
+
+  版本/使用说明：首发 2026-09-29，v2 修订 2026-11-07；属于修订触发的目录补录。分支命名不构成因果机制识别证据；未核验到作者代码。

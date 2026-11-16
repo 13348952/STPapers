@@ -71,3 +71,13 @@
   将卷积放入 LSTM 状态转换，为网格序列与降水临近预报提供基础架构。
 
   [正式版本](https://papers.nips.cc/paper_files/paper/2015/hash/07563a3fe3bbe7e3ba84431ad9d055af-Abstract.html) · [发表证据](https://papers.nips.cc/paper_files/paper/2015/hash/07563a3fe3bbe7e3ba84431ad9d055af-Abstract.html) · 代码：未核验到作者代码
+
+<a id="paper-dssd"></a>
+
+- **DSSD** — Woojun Lee et al. **[Dynamical State-Space Diffusion for Spatiotemporal Prediction](https://arxiv.org/abs/2611.06652)**. 2026 · arXiv；正式发表状态未核验.
+
+  用稳定状态空间模型构建时间相关的扩散噪声，并通过平稳协方差的 Cholesky 因子组织未来帧预测。
+
+  [发表证据](https://arxiv.org/abs/2611.06652) · 代码：未核验到作者代码
+
+  版本/使用说明：科学空间场与视频预测的通用方法背景；所学时间算子描述噪声相关性，不据此认定物理因果动力学。未核验到作者代码。

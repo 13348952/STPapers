@@ -65,3 +65,13 @@
   [发表证据](https://arxiv.org/abs/2611.04256) · [代码](https://github.com/Praveg432/OmniST)（作者/项目仓库已核验）
 
   版本/使用说明：覆盖保证依赖校准与测试分数的交换性；局部拓扑不变性有近邻集合不变等条件。已检查模型源码和运行入口，未训练复现。
+
+<a id="paper-evost"></a>
+
+- **EvoST** — Du Yin et al. **[EvoST: Adapting Traffic Forecasters to Evolving Sensor Graphs](https://arxiv.org/abs/2607.25875)**. 2026 · arXiv；正式发表状态未核验.
+
+  保持共享预测权重冻结，用延迟到达的标签刷新节点身份、初始化新传感器并在线校准，以适应持续演化的交通传感器网络。
+
+  [发表证据](https://arxiv.org/abs/2607.25875) · [代码](https://github.com/lixus7/EvoST)（作者/项目仓库已核验）
+
+  版本/使用说明：首发 2026-07-28，v5 修订 2026-11-07；补录一个版本链。该设置使用后续监督反馈，不是无标签零样本迁移。已检查实现与命令；原始实验检查点未随仓库发布，未复现。

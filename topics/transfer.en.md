@@ -65,3 +65,13 @@ Node-specific parameters, cross-domain adaptation, and continual learning are di
   [Publication evidence](https://arxiv.org/abs/2611.04256) · [Code](https://github.com/Praveg432/OmniST) (author/project repository checked)
 
   Version / usage notes: Coverage guarantees depend on exchangeability of calibration and test scores; local topology invariance requires conditions including unchanged neighborhoods. Model source and run instructions were inspected; no training was performed.
+
+<a id="paper-evost"></a>
+
+- **EvoST** — Du Yin et al. **[EvoST: Adapting Traffic Forecasters to Evolving Sensor Graphs](https://arxiv.org/abs/2607.25875)**. 2026 · arXiv; formal publication status not verified.
+
+  Keeps shared forecasting weights frozen while refreshing node identities, initializing new sensors, and calibrating online with delayed labels in evolving traffic sensor networks.
+
+  [Publication evidence](https://arxiv.org/abs/2607.25875) · [Code](https://github.com/lixus7/EvoST) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-07-28 and revised to v5 on 2026-11-07; one version chain is cataloged. Uses subsequent supervised feedback rather than unlabeled zero-shot transfer. Implementation and commands were inspected; original experimental checkpoints are not included, and results were not reproduced.

@@ -8,11 +8,11 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
 Inspired by the topic organization and contribution model of [RSPapers](https://github.com/hongleizhang/RSPapers), this repository collects papers, datasets, and code resources for spatio-temporal forecasting. Method summaries are editorial descriptions written for this catalog; paper titles retain their original English wording.
 
-**Search cutoff: 2026-11-04 (Asia/Shanghai). 114 unique entries across 13 topics, covering 2015–2026; 30 papers are assigned to 2026 under the verified year convention, and 76 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
+**Search cutoff: 2026-11-04 (Asia/Shanghai). 125 unique entries across 13 topics, covering 2015–2026; 41 papers are assigned to 2026 under the verified year convention, and 81 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
 
-Catalog updated: 2026-11-12. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
+Catalog updated: 2026-11-16. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
 
-This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 28 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
+This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 37 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
 
 ## Quick links
 
@@ -54,16 +54,16 @@ These are editorial suggestions, not rankings of model performance.
 | --- | --- | ---: |
 | 01 | [Surveys and introductions](#topic-survey) | 5 |
 | 02 | [Urban grid flow and demand forecasting](#topic-urban) | 6 |
-| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 19 |
+| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 20 |
 | 04 | [Attention, Transformers, and state-space models](#topic-attention) | 8 |
 | 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 14 |
 | 06 | [Self-supervised learning and pretraining](#topic-pretrain) | 5 |
-| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 6 |
-| 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 6 |
+| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 7 |
+| 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 8 |
 | 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 4 |
-| 10 | [General grid and spatio-temporal frame prediction](#topic-grid) | 8 |
-| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 17 |
-| 12 | [Datasets, benchmarks, and tools](#topic-benchmark) | 8 |
+| 10 | [General grid and spatio-temporal frame prediction](#topic-grid) | 9 |
+| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 22 |
+| 12 | [Datasets, benchmarks, and tools](#topic-benchmark) | 9 |
 | 13 | [Related tasks and time-series background](#topic-related) | 8 |
 
 <a id="topic-survey"></a>
@@ -334,13 +334,13 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
 
 <a id="paper-simbad"></a>
 
-- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv; formal publication status not verified.
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · NeurIPS 2026.
 
   Regulates historical temporal signals and spatial interactions using similarity to recent observations, targeting aperiodic traffic patterns.
 
-  [Publication evidence](https://arxiv.org/abs/2611.09015) · [Code](https://github.com/theghks3/SIMBAD) (author/project repository checked)
+  [Publication evidence](https://nips.cc/virtual/2026/poster/150645) · [Code](https://github.com/theghks3/SIMBAD) (author/project repository checked)
 
-  Version / usage notes: First posted on 2026-11-06. Authors report NeurIPS 2026 acceptance; proceedings were not independently verified, so this entry retains preprint status. Model sources, training entry point, and usage instructions were inspected; no training reproduction was performed.
+  Version / usage notes: First posted on 2026-11-06. Acceptance is confirmed by the official NeurIPS 2026 poster page; proceedings volume/pages were not verified. Code evidence remains the source and instruction checks from 2026-11-12; no rerun or reproduction was performed.
 
 <a id="paper-unist-pred"></a>
 
@@ -351,6 +351,16 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
   [Published version](https://doi.org/10.24963/ijcai.2026/834) · [Publication evidence](https://ijcai.org/proceedings/2026/834) · [Code](https://anonymous.4open.science/r/UniST-Pred-EF27) (anonymous code linked by the paper; access not verified)
 
   Version / usage notes: Distinct from the existing UniST entry. The paper provides an anonymous code/data link; its contents were not verified in this pass.
+
+<a id="paper-candor"></a>
+
+- **CANDOR** — Ziqi Wang et al. **[Decompose Dynamics Before Learning Dependencies in Spatiotemporal Systems](https://arxiv.org/abs/2609.36637)**. 2026 · arXiv; formal publication status not verified.
+
+  Decomposes local dynamics into background, accumulation/release, and sparse shocks before fusing delay-aware directed propagation with topology-unconstrained dependency learning for traffic and water-quality forecasting.
+
+  [Publication evidence](https://arxiv.org/abs/2609.36637) · Code: author code not verified
+
+  Version / usage notes: First posted on 2026-09-29 and revised to v2 on 2026-11-07; a revision-triggered catalog backfill. Branch names do not establish causal mechanism identification; author code was not verified.
 
 
 <a id="topic-attention"></a>
@@ -670,6 +680,16 @@ Node-specific parameters, cross-domain adaptation, and continual learning are di
 
   Version / usage notes: Coverage guarantees depend on exchangeability of calibration and test scores; local topology invariance requires conditions including unchanged neighborhoods. Model source and run instructions were inspected; no training was performed.
 
+<a id="paper-evost"></a>
+
+- **EvoST** — Du Yin et al. **[EvoST: Adapting Traffic Forecasters to Evolving Sensor Graphs](https://arxiv.org/abs/2607.25875)**. 2026 · arXiv; formal publication status not verified.
+
+  Keeps shared forecasting weights frozen while refreshing node identities, initializing new sensors, and calibrating online with delayed labels in evolving traffic sensor networks.
+
+  [Publication evidence](https://arxiv.org/abs/2607.25875) · [Code](https://github.com/lixus7/EvoST) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-07-28 and revised to v5 on 2026-11-07; one version chain is cataloged. Uses subsequent supervised feedback rather than unlabeled zero-shot transfer. Implementation and commands were inspected; original experimental checkpoints are not included, and results were not reproduced.
+
 
 <a id="topic-foundation"></a>
 
@@ -728,6 +748,26 @@ Unified pretraining and few-shot or zero-shot adaptation.
   [Publication evidence](https://arxiv.org/abs/2611.02211) · [Code](https://github.com/ucam-eo/e2forecast) (author/project repository checked)
 
   Version / usage notes: Targets Earth-surface embeddings rather than raw pixels. The author repository contains model source and training/evaluation instructions; some GSA embeddings and dated SSL4EO data remain unreleased. No training was performed.
+
+<a id="paper-topost"></a>
+
+- **TopoST** — Kaiyun Wei et al. **[TopoST: Topology-Conditioned Node Specialization for Urban Spatio-Temporal Foundation Models](https://arxiv.org/abs/2611.15440)**. 2026 · arXiv; formal publication status not verified.
+
+  Generates node-specific temporal and spatial parameters through a shared topology-to-parameter mapping for zero-shot forecasting across cities and tasks.
+
+  [Publication evidence](https://arxiv.org/abs/2611.15440) · [Code](https://github.com/weikaiyun/TopoST) (author/project repository checked)
+
+  Version / usage notes: Topology encoding, parameter-generation source, and training instructions were inspected. Zero-shot and data-separation claims require independent source/target protocol checks; no training was performed.
+
+<a id="paper-multi-stg"></a>
+
+- **Multi-STG** — Zhu Xiao et al. **[Beyond Sunny Skies: Using Large Language Models to Predict Urban Traffic in Adverse Weather](https://arxiv.org/abs/2611.12635)**. 2026 · arXiv; formal publication status not verified.
+
+  Combines language-model semantic priors from weather, POIs, and holidays with multimodal attention and gated residual calibration for urban traffic forecasting in adverse weather.
+
+  [Publication evidence](https://arxiv.org/abs/2611.12635) · Code: author code not verified
+
+  Version / usage notes: Author code was not verified. External context and private-car data settings must be aligned across baselines; semantic representations do not establish causal weather effects on traffic.
 
 
 <a id="topic-probabilistic"></a>
@@ -846,6 +886,16 @@ Architectural foundations for weather and urban grid forecasting, including vide
   Introduces convolutions into LSTM state transitions, providing a foundational architecture for grid sequences and precipitation nowcasting.
 
   [Published version](https://papers.nips.cc/paper_files/paper/2015/hash/07563a3fe3bbe7e3ba84431ad9d055af-Abstract.html) · [Publication evidence](https://papers.nips.cc/paper_files/paper/2015/hash/07563a3fe3bbe7e3ba84431ad9d055af-Abstract.html) · Code: author code not verified
+
+<a id="paper-dssd"></a>
+
+- **DSSD** — Woojun Lee et al. **[Dynamical State-Space Diffusion for Spatiotemporal Prediction](https://arxiv.org/abs/2611.06652)**. 2026 · arXiv; formal publication status not verified.
+
+  Builds temporally correlated diffusion noise from a stable state-space model and uses a stationary-covariance Cholesky factor for future-frame prediction.
+
+  [Publication evidence](https://arxiv.org/abs/2611.06652) · Code: author code not verified
+
+  Version / usage notes: A general method for scientific-field and video prediction. The learned temporal operator describes noise correlations rather than establishing physical causal dynamics; author code was not verified.
 
 
 <a id="topic-weather"></a>
@@ -1006,6 +1056,56 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
 
   Version / usage notes: First posted on 2026-11-02; backfills a previously pending candidate. This is probabilistic forecast postprocessing, not a baseline using only historical radar observations.
 
+<a id="paper-prola"></a>
+
+- **PROLA** — Minseo Yoon et al. **[PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling](https://arxiv.org/abs/2611.11318)**. 2026 · NeurIPS 2026.
+
+  Splits a low-rank adaptation budget between pretrained principal directions and their orthogonal complement for future weather prediction with spatial and temporal refinement.
+
+  [Publication evidence](https://nips.cc/virtual/2026/poster/155892) · [Code](https://github.com/yms020615/PROLA) (author/project repository checked)
+
+  Version / usage notes: Acceptance is confirmed by the official NeurIPS 2026 poster page; proceedings volume/pages were not verified. Adapter source, training entry point, and instructions were inspected; no training was performed.
+
+<a id="paper-rescene-esm"></a>
+
+- **Rescene-ESM** — Minjong Cheon et al. **[Rescene-ESM: an Earth system model built around a frozen AI weather model](https://arxiv.org/abs/2611.11066)**. 2026 · arXiv; formal publication status not verified.
+
+  Couples a frozen AI atmosphere to ocean, sea-ice, land, river, carbon, and energy components for long-term Earth-system simulation and scenario projections.
+
+  [Publication evidence](https://arxiv.org/abs/2611.11066) · Code: author code not verified
+
+  Version / usage notes: The paper promises code, fitted coefficients, and run records on publication; a public implementation was not verified. Long-term climate scenarios and short-range weather errors are different evaluation tasks.
+
+<a id="paper-ai-nwp-fp16"></a>
+
+- **AI-NWP-FP16** — Stefan Siegert **[Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost](https://arxiv.org/abs/2611.09573)**. 2026 · arXiv; formal publication status not verified.
+
+  Evaluates half-precision inference across AI weather models while keeping physical states, normalization, and denormalization in FP32.
+
+  [Publication evidence](https://arxiv.org/abs/2611.09573) · [Code](https://github.com/sieste/ai-nwp-fp16) (author/project repository checked)
+
+  Version / usage notes: The ID is an editorial label. Precision conversion, forecast entry point, and experiment instructions were inspected; accuracy and energy findings are model-, hardware-, and evaluation-date-dependent and were not independently reproduced.
+
+<a id="paper-dayu-tc"></a>
+
+- **DaYu-TC** — Runzepu Hou et al. **[DaYu-TC: a global-regional nested AI system for tropical cyclone forecasting](https://arxiv.org/abs/2611.15266)**. 2026 · arXiv; formal publication status not verified.
+
+  Combines global and regional models with extreme-aware objectives, coupling large-scale forecasts to local evolution for tropical cyclone forecasting.
+
+  [Publication evidence](https://arxiv.org/abs/2611.15266) · [Code](https://github.com/hourzp/DaYu-TC) (author inference entry point checked; binary model, no public training code)
+
+  Version / usage notes: Paper attribution and the public inference entry point were checked, but the neural implementation is compiled binary and training code is not public. The authors mark full-resolution accelerator validation as pending; this catalog did not download weights or run the model.
+
+<a id="paper-satellite-swr-nowcasting"></a>
+
+- **Satellite-SWR-Nowcasting** — Tianyu Xie et al. **[Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation](https://arxiv.org/abs/2611.12999)**. 2026 · arXiv; formal publication status not verified.
+
+  Directly predicts gridded surface shortwave radiation over the next four hours from Himawari-9 multispectral histories and solar geometry.
+
+  [Publication evidence](https://arxiv.org/abs/2611.12999) · Code: author code not verified
+
+  Version / usage notes: The ID is an editorial label. First posted on 2026-11-08 and revised to v2 on 2026-11-11; counted once. Author code was not verified; distinguish external satellite observations from historical-radiation-only inputs.
+
 
 <a id="topic-benchmark"></a>
 
@@ -1078,6 +1178,16 @@ Task definitions, data processing, metrics, and resources for reproduction.
   Provides data, baselines, and common metrics for data-driven weather forecasting.
 
   [Published version](https://doi.org/10.1029/2020MS002203) · [Publication evidence](https://doi.org/10.1029/2020MS002203) · [Code](https://github.com/pangeo-data/WeatherBench) (author/project repository checked)
+
+<a id="paper-evoxxltraffic"></a>
+
+- **EvoXXLTraffic** — Du Yin et al. **[From XXLTraffic to EvoXXLTraffic: Scaling Traffic Forecasting to Sensor-Evolving Networks](https://arxiv.org/abs/2605.29768)**. 2026 · arXiv; formal publication status not verified.
+
+  Provides yearly changing sensor catalogs, persistent station IDs, and traffic matrices, separating all-sensor forecasting from supervised adaptation to newly appearing nodes.
+
+  [Publication evidence](https://arxiv.org/abs/2605.29768) · [Code](https://github.com/cruiseresearchgroup/TSAS26-EvoXXLTraffic) (author/project repository checked)
+
+  Version / usage notes: First posted on 2026-05-28 and revised to v3 on 2026-11-12. An extension of the XXLTraffic benchmark family, not a new forecasting model. Uses retrospective geographic graphs and implementation adaptations; new nodes receive current-year training rather than zero-shot evaluation. Source and instructions were inspected without downloading data or reproducing results.
 
 
 <a id="topic-related"></a>

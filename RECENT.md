@@ -4,7 +4,7 @@
 
 年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。
 
-## 2026（30 篇）
+## 2026（41 篇）
 
 - **Vision-ST-Fusion-survey** — Anna Wang et al. **[Towards Vision-Spatiotemporal Fusion in Traffic Forecasting: A Survey on Cross-Modal Alignment](https://ijcai.org/proceedings/2026/891)**. 2026 · IJCAI 2026 (Survey Track).
 
@@ -38,13 +38,13 @@
 
   版本/使用说明：动作条件预测与被动交通预测的输入不同；论文采用仿真走廊评估，不能解释为现场部署验证。未核验到作者代码。
 
-- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · arXiv；正式发表状态未核验.
+- **SIMBAD** — Daniel Y. Lee et al. **[SIMBAD: Spatio-Temporal Traffic Forecasting Robust to Aperiodicity](https://arxiv.org/abs/2611.09015)**. 2026 · NeurIPS 2026.
 
   利用历史周期与近期观测的相似性调节时间信息和节点间作用，增强非周期交通模式下的预测。
 
-  [发表证据](https://arxiv.org/abs/2611.09015) · [代码](https://github.com/theghks3/SIMBAD)（作者/项目仓库已核验）
+  [发表证据](https://nips.cc/virtual/2026/poster/150645) · [代码](https://github.com/theghks3/SIMBAD)（作者/项目仓库已核验）
 
-  版本/使用说明：2026-11-06 首发。作者声明 NeurIPS 2026 录用，尚未独立核验正式论文集，暂按预印本列示。已检查模型、训练入口和使用说明，未训练复现。
+  版本/使用说明：2026-11-06 首发。NeurIPS 2026 官方海报页已确认录用；未确认正式论文集卷页。代码核验沿用 2026-11-12 的源文件及运行说明检查，本次未重跑或复现。
 
 - **UniST-Pred** — Yue Wang et al. **[UniST-Pred: A Robust Unified Framework for Spatio-Temporal Traffic Forecasting in Transportation Networks Under Disruptions](https://ijcai.org/proceedings/2026/834)**. 2026 · IJCAI 2026 (AI and Social Good).
 
@@ -53,6 +53,14 @@
   [正式版本](https://doi.org/10.24963/ijcai.2026/834) · [发表证据](https://ijcai.org/proceedings/2026/834) · [代码](https://anonymous.4open.science/r/UniST-Pred-EF27)（论文提供匿名代码，访问未核验）
 
   版本/使用说明：与目录中的 UniST 为不同工作。论文提供匿名代码及数据链接，本次未核验匿名站点内容。
+
+- **CANDOR** — Ziqi Wang et al. **[Decompose Dynamics Before Learning Dependencies in Spatiotemporal Systems](https://arxiv.org/abs/2609.36637)**. 2026 · arXiv；正式发表状态未核验.
+
+  先将局部动态拆分为背景、积累释放和稀疏冲击，再融合延迟感知的有向传播与不受拓扑约束的依赖学习，用于交通和水质预测。
+
+  [发表证据](https://arxiv.org/abs/2609.36637) · 代码：未核验到作者代码
+
+  版本/使用说明：首发 2026-09-29，v2 修订 2026-11-07；属于修订触发的目录补录。分支命名不构成因果机制识别证据；未核验到作者代码。
 
 - **FAST-SSM** — Xinjin Li et al. **[FAST: A Synergistic Framework of Attention and State-space Models for Spatiotemporal Traffic Prediction](https://arxiv.org/abs/2604.13453)**. 2026 · ICME.
 
@@ -152,6 +160,14 @@
 
   版本/使用说明：覆盖保证依赖校准与测试分数的交换性；局部拓扑不变性有近邻集合不变等条件。已检查模型源码和运行入口，未训练复现。
 
+- **EvoST** — Du Yin et al. **[EvoST: Adapting Traffic Forecasters to Evolving Sensor Graphs](https://arxiv.org/abs/2607.25875)**. 2026 · arXiv；正式发表状态未核验.
+
+  保持共享预测权重冻结，用延迟到达的标签刷新节点身份、初始化新传感器并在线校准，以适应持续演化的交通传感器网络。
+
+  [发表证据](https://arxiv.org/abs/2607.25875) · [代码](https://github.com/lixus7/EvoST)（作者/项目仓库已核验）
+
+  版本/使用说明：首发 2026-07-28，v5 修订 2026-11-07；补录一个版本链。该设置使用后续监督反馈，不是无标签零样本迁移。已检查实现与命令；原始实验检查点未随仓库发布，未复现。
+
 - **FactoST-v2** — Siru Zhong et al. **[Learning to Factorize and Adapt: A Versatile Approach Toward Universal Spatio-Temporal Foundation Models](https://arxiv.org/abs/2601.12083)**. 2026 · arXiv；正式发表状态未核验.
 
   分离通用时间预训练与领域空间适配，扩展至可变长度和概率分位数预测。
@@ -168,6 +184,22 @@
 
   版本/使用说明：预测目标是地表嵌入，不是原始像素。作者仓库含模型、训练和评估说明；部分 GSA 嵌入与带日期 SSL4EO 数据仍待发布，未训练复现。
 
+- **TopoST** — Kaiyun Wei et al. **[TopoST: Topology-Conditioned Node Specialization for Urban Spatio-Temporal Foundation Models](https://arxiv.org/abs/2611.15440)**. 2026 · arXiv；正式发表状态未核验.
+
+  通过共享的拓扑到参数映射生成节点特定的时空参数，研究跨城市和跨任务的零样本预测。
+
+  [发表证据](https://arxiv.org/abs/2611.15440) · [代码](https://github.com/weikaiyun/TopoST)（作者/项目仓库已核验）
+
+  版本/使用说明：已检查拓扑编码、参数生成源码与训练说明；零样本与数据隔离结论仍需按源/目标划分独立复核，未训练复现。
+
+- **Multi-STG** — Zhu Xiao et al. **[Beyond Sunny Skies: Using Large Language Models to Predict Urban Traffic in Adverse Weather](https://arxiv.org/abs/2611.12635)**. 2026 · arXiv；正式发表状态未核验.
+
+  将天气、POI 和节假日描述转换为语言模型语义先验，通过多模态注意力与门控残差校准辅助恶劣天气下的城市交通预测。
+
+  [发表证据](https://arxiv.org/abs/2611.12635) · 代码：未核验到作者代码
+
+  版本/使用说明：未核验到作者代码。外部上下文和私家车数据设置需与基线对齐；语义表征不等于已识别天气对交通的因果机制。
+
 - **CoReFlow** — Pengnan Chi et al. **[CoReFlow: Consistency-Relaxed Flow Maps for Probabilistic Traffic Forecasting](https://arxiv.org/abs/2611.05715)**. 2026 · arXiv；正式发表状态未核验.
 
   通过一致性松弛的流映射学习概率交通预测，以端点训练和条件均值约束支持单步生成。
@@ -175,6 +207,14 @@
   [发表证据](https://arxiv.org/abs/2611.05715) · 代码：未核验到作者代码
 
   版本/使用说明：论文称代码位于补充材料；本次未取得并核验该材料中的实现，未确认公开作者仓库。勿与同名的低秩矩阵生成工作混淆。
+
+- **DSSD** — Woojun Lee et al. **[Dynamical State-Space Diffusion for Spatiotemporal Prediction](https://arxiv.org/abs/2611.06652)**. 2026 · arXiv；正式发表状态未核验.
+
+  用稳定状态空间模型构建时间相关的扩散噪声，并通过平稳协方差的 Cholesky 因子组织未来帧预测。
+
+  [发表证据](https://arxiv.org/abs/2611.06652) · 代码：未核验到作者代码
+
+  版本/使用说明：科学空间场与视频预测的通用方法背景；所学时间算子描述噪声相关性，不据此认定物理因果动力学。未核验到作者代码。
 
 - **FitzRoy** — Ozan Sener et al. **[Skillful and realistic precipitation forecasting with reinforced diffusion](https://arxiv.org/abs/2610.38775)**. 2026 · arXiv；正式发表状态未核验.
 
@@ -231,6 +271,54 @@
   [发表证据](https://arxiv.org/abs/2611.03326) · 代码：未核验到作者代码
 
   版本/使用说明：2026-11-02 首发；补录此前待核验候选。属于概率预报后处理，不是仅输入历史雷达观测的外推基线。
+
+- **PROLA** — Minseo Yoon et al. **[PROLA: Principal-Orthogonal Low-rank Adaptation for Predictive Spatiotemporal Weather Downscaling](https://arxiv.org/abs/2611.11318)**. 2026 · NeurIPS 2026.
+
+  将低秩更新预算分配到预训练权重的主方向及正交补空间，并用于同时预测未来和细化时空分辨率的天气降尺度。
+
+  [发表证据](https://nips.cc/virtual/2026/poster/155892) · [代码](https://github.com/yms020615/PROLA)（作者/项目仓库已核验）
+
+  版本/使用说明：NeurIPS 2026 官方海报页已确认录用；未确认正式论文集卷页。已检查适配器、训练入口和运行说明，未训练复现。
+
+- **Rescene-ESM** — Minjong Cheon et al. **[Rescene-ESM: an Earth system model built around a frozen AI weather model](https://arxiv.org/abs/2611.11066)**. 2026 · arXiv；正式发表状态未核验.
+
+  将冻结的 AI 大气网络与海洋、海冰、陆面、河流及碳能量过程耦合，研究长期地球系统模拟和情景预测。
+
+  [发表证据](https://arxiv.org/abs/2611.11066) · 代码：未核验到作者代码
+
+  版本/使用说明：论文正文称代码、拟合系数和运行记录将在发表时开放；尚未核验公开实现。长期气候情景与短期天气误差不是相同评价任务。
+
+- **AI-NWP-FP16** — Stefan Siegert **[Half-precision inference of AI weather prediction models: negligible loss of skill at a fraction of the cost](https://arxiv.org/abs/2611.09573)**. 2026 · arXiv；正式发表状态未核验.
+
+  比较多个 AI 天气模型的半精度推理，将神经网络计算与保持 FP32 的物理状态、归一化和反归一化区分。
+
+  [发表证据](https://arxiv.org/abs/2611.09573) · [代码](https://github.com/sieste/ai-nwp-fp16)（作者/项目仓库已核验）
+
+  版本/使用说明：目录 ID 为编辑简称。已检查精度转换源码、预测入口和复现实验说明；精度与节能结论受模型、硬件及评估日期限制，未独立运行验证。
+
+- **DaYu-TC** — Runzepu Hou et al. **[DaYu-TC: a global-regional nested AI system for tropical cyclone forecasting](https://arxiv.org/abs/2611.15266)**. 2026 · arXiv；正式发表状态未核验.
+
+  通过全球与区域嵌套模型及极端感知目标，将大尺度预报与局地演变结合以预测热带气旋。
+
+  [发表证据](https://arxiv.org/abs/2611.15266) · [代码](https://github.com/hourzp/DaYu-TC)（作者推理入口已核验（模型为二进制，训练代码未公开））
+
+  版本/使用说明：已核验论文关联和公开推理入口，但模型实现为编译二进制，训练代码未公开；作者注明全分辨率加速器验证仍待完成。本目录未下载权重或运行模型。
+
+- **Satellite-SWR-Nowcasting** — Tianyu Xie et al. **[Direct Multispectral Satellite Nowcasting of Gridded Surface Solar Radiation](https://arxiv.org/abs/2611.12999)**. 2026 · arXiv；正式发表状态未核验.
+
+  从向日葵九号多光谱历史影像和太阳几何信息，直接生成未来四小时的网格地表短波辐射预测。
+
+  [发表证据](https://arxiv.org/abs/2611.12999) · 代码：未核验到作者代码
+
+  版本/使用说明：目录 ID 为编辑简称；首发 2026-11-08，v2 修订 2026-11-11，只计一个条目。未核验到作者代码；外部观测输入需与历史辐射基线区分。
+
+- **EvoXXLTraffic** — Du Yin et al. **[From XXLTraffic to EvoXXLTraffic: Scaling Traffic Forecasting to Sensor-Evolving Networks](https://arxiv.org/abs/2605.29768)**. 2026 · arXiv；正式发表状态未核验.
+
+  提供逐年变化的传感器目录、持续站点标识和交通矩阵，区分全传感器预测与新节点的监督适配。
+
+  [发表证据](https://arxiv.org/abs/2605.29768) · [代码](https://github.com/cruiseresearchgroup/TSAS26-EvoXXLTraffic)（作者/项目仓库已核验）
+
+  版本/使用说明：首发 2026-05-28，v3 修订 2026-11-12；为 XXLTraffic 家族扩展基准，非新预测模型。采用回溯地理图和特定实现适配；新节点接受当年训练，不属于零样本。已检查源码与运行说明，未下载数据或复现。
 
 
 ## 2025（9 篇）
