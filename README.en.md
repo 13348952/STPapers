@@ -8,11 +8,11 @@ A curated paper list for **spatio-temporal forecasting / spatiotemporal predicti
 
 Inspired by the topic organization and contribution model of [RSPapers](https://github.com/hongleizhang/RSPapers), this repository collects papers, datasets, and code resources for spatio-temporal forecasting. Method summaries are editorial descriptions written for this catalog; paper titles retain their original English wording.
 
-**Search cutoff: 2026-11-04 (Asia/Shanghai). 125 unique entries across 13 topics, covering 2015–2026; 41 papers are assigned to 2026 under the verified year convention, and 81 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
+**Search cutoff: 2026-11-04 (Asia/Shanghai). 149 unique entries across 13 topics, covering 2015–2026; 65 papers are assigned to 2026 under the verified year convention, and 88 papers link to inspected author/project repositories.** Repository coverage is counted per paper; one toolkit can serve multiple papers.
 
-Catalog updated: 2026-11-16. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
+Catalog updated: 2026-11-23. Targeted backfills do not advance the complete-search cutoff; see the [update log](updates/README.md) for actual coverage.
 
-This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 37 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
+This is a representative collection centered on traffic and urban graph forecasting, with coverage of grid sequences, precipitation, and weather. It is neither an exhaustive review nor a performance leaderboard. 47 entries use verified preprint records; some may have formally published versions that were not confirmed in this search.
 
 ## Quick links
 
@@ -52,18 +52,18 @@ These are editorial suggestions, not rankings of model performance.
 
 | No. | Topic | Entries |
 | --- | --- | ---: |
-| 01 | [Surveys and introductions](#topic-survey) | 5 |
-| 02 | [Urban grid flow and demand forecasting](#topic-urban) | 6 |
-| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 20 |
-| 04 | [Attention, Transformers, and state-space models](#topic-attention) | 8 |
+| 01 | [Surveys and introductions](#topic-survey) | 6 |
+| 02 | [Urban grid flow and demand forecasting](#topic-urban) | 8 |
+| 03 | [Graph convolutions, dynamic graphs, and continuous-time modeling](#topic-graph) | 23 |
+| 04 | [Attention, Transformers, and state-space models](#topic-attention) | 9 |
 | 05 | [Simple baselines, efficiency, and large-scale forecasting](#topic-efficient) | 14 |
 | 06 | [Self-supervised learning and pretraining](#topic-pretrain) | 5 |
-| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 7 |
-| 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 8 |
-| 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 4 |
+| 07 | [Heterogeneity, meta-learning, and transfer](#topic-transfer) | 9 |
+| 08 | [Foundation models, language models, and cross-modal transfer](#topic-foundation) | 9 |
+| 09 | [Probabilistic spatio-temporal graph forecasting](#topic-probabilistic) | 5 |
 | 10 | [General grid and spatio-temporal frame prediction](#topic-grid) | 9 |
-| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 22 |
-| 12 | [Datasets, benchmarks, and tools](#topic-benchmark) | 9 |
+| 11 | [Precipitation, weather, and Earth-system forecasting](#topic-weather) | 30 |
+| 12 | [Datasets, benchmarks, and tools](#topic-benchmark) | 14 |
 | 13 | [Related tasks and time-series background](#topic-related) | 8 |
 
 <a id="topic-survey"></a>
@@ -115,6 +115,16 @@ Maps of tasks, methods, and resources.
   [Published version](https://doi.org/10.24963/ijcai.2026/891) · [Publication evidence](https://ijcai.org/proceedings/2026/891) · Code: author code not verified
 
   Version / usage notes: Covers traffic state, trajectory, event, and demand forecasting; included as a cross-modal survey, not as evidence that trajectory planning methods are core forecasting baselines. The resource repository was not verified.
+
+<a id="paper-extreme-weather-review"></a>
+
+- **Extreme-Weather-Review** — Gabriele Messori et al. **[Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review](https://arxiv.org/abs/2611.23863)**. 2026 · arXiv; formal publication status not verified.
+
+  Reviews comparisons of data-driven and numerical forecasts by extreme-event type, lead time, and verification method, distinguishing event location, intensity, and record-breaking cases.
+
+  [Publication evidence](https://arxiv.org/abs/2611.23863) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-18.
 
 
 <a id="topic-urban"></a>
@@ -176,6 +186,26 @@ Regional inflows, outflows, and passenger demand, represented as grids or region
   Models recent, periodic, and trend components of urban grid inflows and outflows, integrating external factors.
 
   [Publication evidence](https://arxiv.org/abs/1610.00081) · Code: author code not verified
+
+<a id="paper-care-ems"></a>
+
+- **CARE-EMS** — Md Ali Akber et al. **[CARE-EMS: Towards Reliable Emergency Response Planning through Context-Aware Spatio-Temporal Graph Learning for EMS Demand Forecasting](https://drive.google.com/file/d/19E6d63P6vV4yslVE4D8BE1xbGilNCAAI/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Forecasts next-hour EMS call demand in New York City using hourly calls, neighborhood attributes, and road-network relationships.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/samiikkk/CARE-EMS) (author repository accessible; selected source files checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript. The repository contains hourly aggregation and model modules. Its README links the dashboard. End-to-end forecast execution instructions have yet to be verified.
+
+<a id="paper-actionable-congestion"></a>
+
+- **Actionable-Congestion** — Dizhi Huang et al. **[Congestion Forecasting (Actionably) Revisited: Limitations of Deep Learning and Potential of LLM-as-Data-Scientist](https://drive.google.com/file/d/1cr_PHTQxSpx20HtTE_nPAQyyUUJNR8KF/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Forecasts holiday congestion weeks ahead by representing past events as triangles in space and time and selecting calendar analogues. Evaluation covers two Japanese expressways.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · Code: author code not verified
+
+  Version / usage notes: Verified against the conference program and the author manuscript.
 
 
 <a id="topic-graph"></a>
@@ -362,6 +392,36 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
 
   Version / usage notes: First posted on 2026-09-29 and revised to v2 on 2026-11-07; a revision-triggered catalog backfill. Branch names do not establish causal mechanism identification; author code was not verified.
 
+<a id="paper-dsgn-tmt"></a>
+
+- **DSGN-TMT** — Zuojun Wu et al. **[Dynamic spatiotemporal graph network with a temporal masked transformer for traffic flow forecasting](https://doi.org/10.1038/s41598-026-80267-w)**. 2026 · Scientific Reports.
+
+  Learns spatial and temporal adjacency conditioned on periodic time indices. A graph convolution over historical time slots and a full-history Transformer support traffic flow forecasting.
+
+  [Published version](https://doi.org/10.1038/s41598-026-80267-w) · [Publication evidence](https://www.nature.com/articles/s41598-026-80267-w_reference.pdf) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-09. Accepted November 5. Both training and inference use the complete history, and training optimizes forecasting loss.
+
+<a id="paper-ca-dtnet"></a>
+
+- **CA-DTNet** — Shishir Singh Chauhan et al. **[CA-DTNet: a trace-driven communication-aware digital twin network for robust high-resolution traffic forecasting under heterogeneous V2X conditions](https://doi.org/10.1038/s41598-026-76830-0)**. 2026 · Scientific Reports.
+
+  Replays communication traces against pNEUMA traffic states and gates stale or incomplete observations to forecast speed, vehicle-count, and flow quantiles 5, 10, and 30 seconds ahead.
+
+  [Published version](https://doi.org/10.1038/s41598-026-76830-0) · [Publication evidence](https://www.nature.com/articles/s41598-026-76830-0) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-11. Experiments pair traffic and communication traces through replay.
+
+<a id="paper-st-gt"></a>
+
+- **ST-GT** — Da Wang et al. **[A spatio-temporal graph transformer for multi-horizon urban traffic speed forecasting](https://doi.org/10.1007/s44163-026-02649-3)**. 2026 · Discover Artificial Intelligence.
+
+  Combines distance-based sensor aggregation with temporal self-attention to predict twelve five-minute traffic speeds jointly on METR-LA.
+
+  [Published version](https://doi.org/10.1007/s44163-026-02649-3) · [Publication evidence](https://link.springer.com/article/10.1007/s44163-026-02649-3) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-07. The authors report a single seed, a fixed graph and lightweight comparators, and discuss possible leakage from interpolation.
+
 
 <a id="topic-attention"></a>
 
@@ -436,6 +496,16 @@ Spatio-temporal attention, embeddings, propagation delays, and combinations with
   Combines multiscale temporal channel alignment, temporal and graph-structure prior embeddings, and cross-fusion for traffic forecasting.
 
   [Published version](https://doi.org/10.24963/ijcai.2026/368) · [Publication evidence](https://ijcai.org/proceedings/2026/368) · Code: author code not verified
+
+<a id="paper-ssca-lstm"></a>
+
+- **SSCA-LSTM** — Vishwanath Bidare Ranganath et al. **[A Spatial Skip-Connected Attention-based LSTM for urban traffic forecasting using air quality data](https://doi.org/10.1007/s10791-026-10812-8)**. 2026 · Discover Computing.
+
+  Uses traffic and air-quality observations in a hierarchical LSTM with skip connections and spatial weighting to forecast vehicle counts at multiple horizons.
+
+  [Published version](https://doi.org/10.1007/s10791-026-10812-8) · [Publication evidence](https://link.springer.com/article/10.1007/s10791-026-10812-8) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-21. The paper links the CityPulse data source.
 
 
 <a id="topic-efficient"></a>
@@ -690,6 +760,26 @@ Node-specific parameters, cross-domain adaptation, and continual learning are di
 
   Version / usage notes: First posted on 2026-07-28 and revised to v5 on 2026-11-07; one version chain is cataloged. Uses subsequent supervised feedback rather than unlabeled zero-shot transfer. Implementation and commands were inspected; original experimental checkpoints are not included, and results were not reproduced.
 
+<a id="paper-atlas"></a>
+
+- **ATLAS** — Ryusei Iwasa et al. **[Latent Prediction-Anchored Multi-View Reconstruction for Cross-Network Spatiotemporal Forecasting](https://drive.google.com/file/d/1nLRm3JRLsAaLG4lI9mw0-hDfVli4nI4p/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Pretrains on temporal and spectral reconstruction anchored by latent prediction. During transfer it combines functional and physical graphs to forecast traffic or crowd distribution.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/ryu291/ATLAS) (linked by the paper; returned HTTP 404 during verification)
+
+  Version / usage notes: Verified against the conference program and the author manuscript. The code link in the author manuscript returned HTTP 404.
+
+<a id="paper-icl-traffic"></a>
+
+- **ICL-Traffic** — Parth Ripal Parikh et al. **[ICL-Traffic Forecasting: Lightweight In-Context Learning for Pretrained Spatio-Temporal Foundation Models](https://drive.google.com/file/d/1KT78sWRt6fYkSl5ClilOQt7fayfvxeUc/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Retrieves similar training windows and uses an offline-trained attention module to combine their errors into output corrections for a frozen traffic forecaster.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/Parth291102/Traffic-Forecasting-TSFM) (author/project repository checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript.
+
 
 <a id="topic-foundation"></a>
 
@@ -769,6 +859,16 @@ Unified pretraining and few-shot or zero-shot adaptation.
 
   Version / usage notes: Author code was not verified. External context and private-car data settings must be aligned across baselines; semantic representations do not establish causal weather effects on traffic.
 
+<a id="paper-sceneadapter"></a>
+
+- **SceneAdapter** — Han Fu et al. **[SceneAdapter: Boosting Time Series Foundation Models for Atypical-Scenario Traffic Flow Forecasting](https://drive.google.com/file/d/1FgPjiEYpwuluwosaF36xHqi78DOEMMJq/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Adapts a frozen time-series foundation model with static, past-observed and future-known covariates to forecast traffic during holidays, events and road closures.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · Code: author code not verified
+
+  Version / usage notes: Verified against the conference program and the author manuscript.
+
 
 <a id="topic-probabilistic"></a>
 
@@ -778,13 +878,13 @@ Predicting future distributions or samples rather than only point estimates.
 
 <a id="paper-specstg"></a>
 
-- **SpecSTG** — Lequan Lin et al. **[SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting](https://arxiv.org/abs/2401.08119)**. 2024 · arXiv; formal publication status not verified.
+- **SpecSTG** — Lequan Lin et al. **[SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting](https://arxiv.org/abs/2401.08119)**. 2025 · ICLR 2025 DeLTa Workshop; first arXiv release: 2024.
 
   Generates future sequences in the spectral domain, incorporating spatial dependencies and spectral graph convolutions.
 
-  [Publication evidence](https://arxiv.org/abs/2401.08119) · [Code](https://anonymous.4open.science/r/SpecSTG) (anonymous code linked by the paper; access not verified)
+  [Published version](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [Publication evidence](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [Code](https://github.com/lequanlin/SpecSTG) (author/project repository checked)
 
-  Version / usage notes: The verified arXiv version is listed here; this does not imply that no formally published version exists.
+  Version / usage notes: First posted on arXiv in 2024 and published at the ICLR DeLTa Workshop in 2025. The workshop paper links the author repository. Model sources, the training entry point and README were inspected.
 
 <a id="paper-diffstg"></a>
 
@@ -815,6 +915,16 @@ Predicting future distributions or samples rather than only point estimates.
   [Publication evidence](https://arxiv.org/abs/2611.05715) · Code: author code not verified
 
   Version / usage notes: The paper states that code is in supplementary material; that implementation was not retrieved and inspected, and no public author repository was verified. Distinct from the similarly named low-rank matrix generation work.
+
+<a id="paper-double-diffusion"></a>
+
+- **Double-Diffusion** — Hanlin Dong et al. **[Double-Diffusion: Balancing Speed, Accuracy, and Uncertainty in Probabilistic Forecasting for Urban Sensor Networks](https://arxiv.org/abs/2506.23053)**. 2026 · ACM SIGSPATIAL 2026; first arXiv release: 2025.
+
+  Uses graph heat diffusion to form a low-pass prior and a shortened denoising chain to sample future traffic and air-quality states.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/cruiseresearchgroup/Double-Diffusion) (author/project repository checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript. First posted on arXiv on 2025-06-29.
 
 
 <a id="topic-grid"></a>
@@ -1106,6 +1216,86 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
 
   Version / usage notes: The ID is an editorial label. First posted on 2026-11-08 and revised to v2 on 2026-11-11; counted once. Author code was not verified; distinguish external satellite observations from historical-radiation-only inputs.
 
+<a id="paper-correctcast"></a>
+
+- **CorrectCast** — Henan Wang et al. **[CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting](https://arxiv.org/abs/2611.22178)**. 2026 · arXiv; formal publication status not verified.
+
+  Corrects a frozen nowcaster’s precipitation fields at multiple scales using past precipitation estimates and precipitable water vapor.
+
+  [Publication evidence](https://arxiv.org/abs/2611.22178) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-17.
+
+<a id="paper-foresay"></a>
+
+- **ForeSay** — Xudong Ling et al. **[ForeSay: Tell the Future in Words, Branch the Details in Noise for Precipitation Nowcasting](https://arxiv.org/abs/2611.20815)**. 2026 · arXiv; formal publication status not verified.
+
+  Conditions a flow model on a storm scenario inferred from radar history. Ensemble members share early sampling steps and branch later to model local variability.
+
+  [Publication evidence](https://arxiv.org/abs/2611.20815) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-16.
+
+<a id="paper-protocast"></a>
+
+- **ProtoCast** — Zhixuan Li et al. **[Interpretable Prototype-Conditioned Adaptation for Weather Forecasting](https://arxiv.org/abs/2611.25848)**. 2026 · arXiv; formal publication status not verified.
+
+  Matches local weather histories to group-specific prototypes and applies sparse mixtures of low-rank corrections before exchanging information across variables.
+
+  [Publication evidence](https://arxiv.org/abs/2611.25848) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-19. The [project page](https://zhixuanli.github.io/projects/li2026protocast/) presents forecast examples. Its Code button was disabled.
+
+<a id="paper-weathercraft"></a>
+
+- **WeatherCraft** — Jinhan Li et al. **[Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens](https://arxiv.org/abs/2611.25570)**. 2026 · arXiv; formal publication status not verified.
+
+  Encodes atmospheric fields as multiscale discrete tokens, samples weather ensembles with a Transformer, and adapts the model to downstream rewards with GRPO.
+
+  [Publication evidence](https://arxiv.org/abs/2611.25570) · [Code](https://github.com/Jinhan-Li/WeatherCraft) (author/project repository checked)
+
+  Version / usage notes: First posted on arXiv on 2026-11-19.
+
+<a id="paper-weatherdreamer"></a>
+
+- **WeatherDreamer** — Kate Duffy et al. **[WeatherDreamer: Learning a World Model from Multimodal Earth Observations](https://arxiv.org/abs/2611.18393)**. 2026 · arXiv; formal publication status not verified.
+
+  Learns a latent atmospheric state from 18 observing systems, propagates and updates it hourly, and forecasts future station and instrument observations.
+
+  [Publication evidence](https://arxiv.org/abs/2611.18393) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-13.
+
+<a id="paper-xaurora"></a>
+
+- **Xaurora** — Eliot Walt et al. **[Xaurora: Generative Weather Forecasting with Denoising Stochastic Interpolants from a Foundation Model Prior](https://arxiv.org/abs/2610.06509)**. 2026 · arXiv; formal publication status not verified.
+
+  Adapts the deterministic small Aurora model to ensemble forecasting using denoising stochastic interpolants and replayed stochastic trajectories.
+
+  [Publication evidence](https://arxiv.org/abs/2610.06509) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-10-05. Version 2 was posted on 2026-11-19. A probabilistic extension of the cataloged Aurora model. See the [earlier meeting abstract](https://doi.org/10.5194/ems2026-650).
+
+<a id="paper-tyche"></a>
+
+- **Tyche** — Fan Xu et al. **[Tyche: One Step Flow for Efficient Probabilistic Weather Forecasting](https://arxiv.org/abs/2605.06916)**. 2026 · arXiv; formal publication status not verified.
+
+  Maps noise to a future weather field in a single conditional flow evaluation and calibrates ensembles during autoregressive rollout using CRPS.
+
+  [Publication evidence](https://arxiv.org/abs/2605.06916) · [Code](https://github.com/Markus-xu/Tyche) (linked by the paper; returned HTTP 404 during verification)
+
+  Version / usage notes: First posted on arXiv on 2026-05-07. Version 2 was posted on 2026-11-06. The repository linked in the [paper](https://arxiv.org/html/2605.06916v2) returned HTTP 404.
+
+<a id="paper-uq-aardvark"></a>
+
+- **UQ-Aardvark** — Rodrigo Almeida et al. **[Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions](https://arxiv.org/abs/2608.30795)**. 2026 · arXiv; formal publication status not verified.
+
+  Adds input-dependent encoder noise and Monte Carlo dropout in Aardvark’s dynamics module. Nested ensembles estimate the contributions of both components to forecast spread.
+
+  [Publication evidence](https://arxiv.org/abs/2608.30795) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-08-31. Version 2 was posted on 2026-11-09. The paper links data and evaluation tools. The model implementation has yet to be verified.
+
 
 <a id="topic-benchmark"></a>
 
@@ -1188,6 +1378,56 @@ Task definitions, data processing, metrics, and resources for reproduction.
   [Publication evidence](https://arxiv.org/abs/2605.29768) · [Code](https://github.com/cruiseresearchgroup/TSAS26-EvoXXLTraffic) (author/project repository checked)
 
   Version / usage notes: First posted on 2026-05-28 and revised to v3 on 2026-11-12. An extension of the XXLTraffic benchmark family, not a new forecasting model. Uses retrospective geographic graphs and implementation adaptations; new nodes receive current-year training rather than zero-shot evaluation. Source and instructions were inspected without downloading data or reproducing results.
+
+<a id="paper-conformal-wx"></a>
+
+- **Conformal-WX** — Mariya **[Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence](https://arxiv.org/abs/2611.24329)**. 2026 · arXiv; formal publication status not verified.
+
+  Compares eight interval procedures for gridded temperature forecasts and evaluates per-cell coverage, daily spatial coverage variability, and persistence of misses.
+
+  [Publication evidence](https://arxiv.org/abs/2611.24329) · [Code](https://github.com/Mariyaaleem/conformal-wx) (author/project repository checked)
+
+  Version / usage notes: First posted on arXiv on 2026-11-18. Marginal coverage at individual cells and day-level spatial coverage are evaluated separately for one variable and two forecasters.
+
+<a id="paper-seasonrainbench"></a>
+
+- **SeasonRainBench** — Qiuyan Sun et al. **[SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281)**. 2026 · arXiv; formal publication status not verified.
+
+  Benchmarks global precipitation forecasts one to five months ahead using monthly observations, climate simulations, and operational ensembles. Evaluation includes anomaly strength and rain-belt position.
+
+  [Publication evidence](https://arxiv.org/abs/2611.22281) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-17.
+
+<a id="paper-otter-nyc"></a>
+
+- **OTTER-NYC** — Seongwon Jin et al. **[OTTER-NYC: A Minute-Scale Multimodal Dataset for Urban Flood Event Dynamics and Forecasting](https://doi.org/10.1038/s41597-026-08642-w)**. 2026 · Scientific Data.
+
+  Aligns minute-resolution flood-depth measurements in New York City with rainfall, terrain, and drainage information for sensor-level forecasts and event quality control.
+
+  [Published version](https://doi.org/10.1038/s41597-026-08642-w) · [Publication evidence](https://www.nature.com/articles/s41597-026-08642-w_reference.pdf) · [Code](https://github.com/jinwork00/OTTER-NYC) (author/project repository checked)
+
+  Version / usage notes: Published online on 2026-11-17. The verified author code covers dataset preparation and quality control. Forecast-model training code has yet to be verified.
+
+<a id="paper-traffic-imc"></a>
+
+- **Traffic-IMC** — Seungbin Yim et al. **[Traffic-IMC: An Urban Road-Network Traffic Forecasting Benchmark](https://drive.google.com/file/d/1O5jDSMjIpcYjVg7dfM3LMj0ABRkyP2V5/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Benchmarks hourly volume at 2,013 Incheon road-link sensors with a directed reachability graph, original validity masks, and imputed inputs. Scoring excludes originally invalid targets.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/ysb06/traffic-imc) (author/project repository checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript.
+
+<a id="paper-heatcast"></a>
+
+- **HeatCast** — Jesus Guerrero et al. **[HeatCast: A Benchmark for Neighborhood-Scale LST Forecasting across 124 U.S. Cities](https://arxiv.org/abs/2608.07640)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Benchmarks next-month land surface temperature at 30 m across 124 US cities using Landsat imagery, a fixed temporal split, and local-climate-zone metrics.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · Code: author code not verified
+
+  Version / usage notes: Verified against the conference program and the author manuscript. First posted on arXiv on 2026-08-07. The linked dataset is accessible. Training code has yet to be verified.
 
 
 <a id="topic-related"></a>

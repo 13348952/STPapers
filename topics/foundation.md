@@ -79,3 +79,13 @@
   [发表证据](https://arxiv.org/abs/2611.12635) · 代码：未核验到作者代码
 
   版本/使用说明：未核验到作者代码。外部上下文和私家车数据设置需与基线对齐；语义表征不等于已识别天气对交通的因果机制。
+
+<a id="paper-sceneadapter"></a>
+
+- **SceneAdapter** — Han Fu et al. **[SceneAdapter: Boosting Time Series Foundation Models for Atypical-Scenario Traffic Flow Forecasting](https://drive.google.com/file/d/1FgPjiEYpwuluwosaF36xHqi78DOEMMJq/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  冻结时序基础模型，分别编码静态属性、历史协变量和未来已知事件，在节假日、活动及封路场景下修正交通流预测。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · 代码：未核验到作者代码
+
+  版本/使用说明：会议官网议程与作者稿已核对。

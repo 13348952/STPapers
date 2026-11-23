@@ -51,3 +51,13 @@
   [正式版本](https://doi.org/10.24963/ijcai.2026/891) · [发表证据](https://ijcai.org/proceedings/2026/891) · 代码：未核验到作者代码
 
   版本/使用说明：范围同时涉及交通状态、轨迹、事件与需求；作为跨模态预测综述收录，不将轨迹规划方法列为核心预测基线。资源仓库未核验。
+
+<a id="paper-extreme-weather-review"></a>
+
+- **Extreme-Weather-Review** — Gabriele Messori et al. **[Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review](https://arxiv.org/abs/2611.23863)**. 2026 · arXiv；正式发表状态未核验.
+
+  按事件类型、提前量和评价方法梳理数据驱动与数值天气预报的极端事件对比，分别讨论事件位置、强度和破纪录情形。
+
+  [发表证据](https://arxiv.org/abs/2611.23863) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-18 首发。

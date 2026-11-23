@@ -61,3 +61,23 @@
   对城市网格流入/流出量，分别建模近期、周期、趋势并融合外部因素。
 
   [发表证据](https://arxiv.org/abs/1610.00081) · 代码：未核验到作者代码
+
+<a id="paper-care-ems"></a>
+
+- **CARE-EMS** — Md Ali Akber et al. **[CARE-EMS: Towards Reliable Emergency Response Planning through Context-Aware Spatio-Temporal Graph Learning for EMS Demand Forecasting](https://drive.google.com/file/d/19E6d63P6vV4yslVE4D8BE1xbGilNCAAI/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  将纽约各区逐时急救呼叫、社区属性和路网关系输入时空图模型，预测下一小时的呼叫需求。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/samiikkk/CARE-EMS)（作者仓库可访问，已核验部分源码）
+
+  版本/使用说明：会议官网议程与作者稿已核对。 仓库含按小时聚合数据和模型模块，README 提供仪表板入口，完整预测流程的运行说明待核验。
+
+<a id="paper-actionable-congestion"></a>
+
+- **Actionable-Congestion** — Dizhi Huang et al. **[Congestion Forecasting (Actionably) Revisited: Limitations of Deep Learning and Potential of LLM-as-Data-Scientist](https://drive.google.com/file/d/1cr_PHTQxSpx20HtTE_nPAQyyUUJNR8KF/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  面向提前数周发布的假日拥堵预报，把历史事件表示为时空三角形，按日历选择相似年份，在日本两条高速公路上评估覆盖区域。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · 代码：未核验到作者代码
+
+  版本/使用说明：会议官网议程与作者稿已核对。

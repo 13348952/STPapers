@@ -209,3 +209,83 @@ Nowcasting, medium-range weather forecasting, and Earth-system foundation models
   [Publication evidence](https://arxiv.org/abs/2611.12999) · Code: author code not verified
 
   Version / usage notes: The ID is an editorial label. First posted on 2026-11-08 and revised to v2 on 2026-11-11; counted once. Author code was not verified; distinguish external satellite observations from historical-radiation-only inputs.
+
+<a id="paper-correctcast"></a>
+
+- **CorrectCast** — Henan Wang et al. **[CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting](https://arxiv.org/abs/2611.22178)**. 2026 · arXiv; formal publication status not verified.
+
+  Corrects a frozen nowcaster’s precipitation fields at multiple scales using past precipitation estimates and precipitable water vapor.
+
+  [Publication evidence](https://arxiv.org/abs/2611.22178) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-17.
+
+<a id="paper-foresay"></a>
+
+- **ForeSay** — Xudong Ling et al. **[ForeSay: Tell the Future in Words, Branch the Details in Noise for Precipitation Nowcasting](https://arxiv.org/abs/2611.20815)**. 2026 · arXiv; formal publication status not verified.
+
+  Conditions a flow model on a storm scenario inferred from radar history. Ensemble members share early sampling steps and branch later to model local variability.
+
+  [Publication evidence](https://arxiv.org/abs/2611.20815) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-16.
+
+<a id="paper-protocast"></a>
+
+- **ProtoCast** — Zhixuan Li et al. **[Interpretable Prototype-Conditioned Adaptation for Weather Forecasting](https://arxiv.org/abs/2611.25848)**. 2026 · arXiv; formal publication status not verified.
+
+  Matches local weather histories to group-specific prototypes and applies sparse mixtures of low-rank corrections before exchanging information across variables.
+
+  [Publication evidence](https://arxiv.org/abs/2611.25848) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-19. The [project page](https://zhixuanli.github.io/projects/li2026protocast/) presents forecast examples. Its Code button was disabled.
+
+<a id="paper-weathercraft"></a>
+
+- **WeatherCraft** — Jinhan Li et al. **[Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens](https://arxiv.org/abs/2611.25570)**. 2026 · arXiv; formal publication status not verified.
+
+  Encodes atmospheric fields as multiscale discrete tokens, samples weather ensembles with a Transformer, and adapts the model to downstream rewards with GRPO.
+
+  [Publication evidence](https://arxiv.org/abs/2611.25570) · [Code](https://github.com/Jinhan-Li/WeatherCraft) (author/project repository checked)
+
+  Version / usage notes: First posted on arXiv on 2026-11-19.
+
+<a id="paper-weatherdreamer"></a>
+
+- **WeatherDreamer** — Kate Duffy et al. **[WeatherDreamer: Learning a World Model from Multimodal Earth Observations](https://arxiv.org/abs/2611.18393)**. 2026 · arXiv; formal publication status not verified.
+
+  Learns a latent atmospheric state from 18 observing systems, propagates and updates it hourly, and forecasts future station and instrument observations.
+
+  [Publication evidence](https://arxiv.org/abs/2611.18393) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-13.
+
+<a id="paper-xaurora"></a>
+
+- **Xaurora** — Eliot Walt et al. **[Xaurora: Generative Weather Forecasting with Denoising Stochastic Interpolants from a Foundation Model Prior](https://arxiv.org/abs/2610.06509)**. 2026 · arXiv; formal publication status not verified.
+
+  Adapts the deterministic small Aurora model to ensemble forecasting using denoising stochastic interpolants and replayed stochastic trajectories.
+
+  [Publication evidence](https://arxiv.org/abs/2610.06509) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-10-05. Version 2 was posted on 2026-11-19. A probabilistic extension of the cataloged Aurora model. See the [earlier meeting abstract](https://doi.org/10.5194/ems2026-650).
+
+<a id="paper-tyche"></a>
+
+- **Tyche** — Fan Xu et al. **[Tyche: One Step Flow for Efficient Probabilistic Weather Forecasting](https://arxiv.org/abs/2605.06916)**. 2026 · arXiv; formal publication status not verified.
+
+  Maps noise to a future weather field in a single conditional flow evaluation and calibrates ensembles during autoregressive rollout using CRPS.
+
+  [Publication evidence](https://arxiv.org/abs/2605.06916) · [Code](https://github.com/Markus-xu/Tyche) (linked by the paper; returned HTTP 404 during verification)
+
+  Version / usage notes: First posted on arXiv on 2026-05-07. Version 2 was posted on 2026-11-06. The repository linked in the [paper](https://arxiv.org/html/2605.06916v2) returned HTTP 404.
+
+<a id="paper-uq-aardvark"></a>
+
+- **UQ-Aardvark** — Rodrigo Almeida et al. **[Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions](https://arxiv.org/abs/2608.30795)**. 2026 · arXiv; formal publication status not verified.
+
+  Adds input-dependent encoder noise and Monte Carlo dropout in Aardvark’s dynamics module. Nested ensembles estimate the contributions of both components to forecast spread.
+
+  [Publication evidence](https://arxiv.org/abs/2608.30795) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-08-31. Version 2 was posted on 2026-11-09. The paper links data and evaluation tools. The model implementation has yet to be verified.

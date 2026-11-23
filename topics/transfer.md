@@ -75,3 +75,23 @@
   [发表证据](https://arxiv.org/abs/2607.25875) · [代码](https://github.com/lixus7/EvoST)（作者/项目仓库已核验）
 
   版本/使用说明：首发 2026-07-28，v5 修订 2026-11-07；补录一个版本链。该设置使用后续监督反馈，不是无标签零样本迁移。已检查实现与命令；原始实验检查点未随仓库发布，未复现。
+
+<a id="paper-atlas"></a>
+
+- **ATLAS** — Ryusei Iwasa et al. **[Latent Prediction-Anchored Multi-View Reconstruction for Cross-Network Spatiotemporal Forecasting](https://drive.google.com/file/d/1nLRm3JRLsAaLG4lI9mw0-hDfVli4nI4p/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  在源网络重建时间序列及两种频谱视图，以潜空间预测约束预训练；迁移时融合功能图与物理图，预测新网络的交通或人群分布。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/ryu291/ATLAS)（论文提供链接，本次返回 404）
+
+  版本/使用说明：会议官网议程与作者稿已核对。 作者稿给出的代码链接本次返回 404。
+
+<a id="paper-icl-traffic"></a>
+
+- **ICL-Traffic** — Parth Ripal Parikh et al. **[ICL-Traffic Forecasting: Lightweight In-Context Learning for Pretrained Spatio-Temporal Foundation Models](https://drive.google.com/file/d/1KT78sWRt6fYkSl5ClilOQt7fayfvxeUc/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  冻结交通预测主干，从训练窗口检索近邻样本，以离线训练的注意力模块聚合近邻预测误差，修正目标城市的输出。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/Parth291102/Traffic-Forecasting-TSFM)（作者/项目仓库已核验）
+
+  版本/使用说明：会议官网议程与作者稿已核对。

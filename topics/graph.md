@@ -185,3 +185,33 @@
   [发表证据](https://arxiv.org/abs/2609.36637) · 代码：未核验到作者代码
 
   版本/使用说明：首发 2026-09-29，v2 修订 2026-11-07；属于修订触发的目录补录。分支命名不构成因果机制识别证据；未核验到作者代码。
+
+<a id="paper-dsgn-tmt"></a>
+
+- **DSGN-TMT** — Zuojun Wu et al. **[Dynamic spatiotemporal graph network with a temporal masked transformer for traffic flow forecasting](https://doi.org/10.1038/s41598-026-80267-w)**. 2026 · Scientific Reports.
+
+  按周期时间索引学习空间与时间邻接矩阵，在历史时间片之间做图卷积，并由 Transformer 编码完整历史以预测交通流。
+
+  [正式版本](https://doi.org/10.1038/s41598-026-80267-w) · [发表证据](https://www.nature.com/articles/s41598-026-80267-w_reference.pdf) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-09 在线发表。 11 月 5 日录用。论文报告的训练和推理均输入完整历史，训练目标为预测损失。
+
+<a id="paper-ca-dtnet"></a>
+
+- **CA-DTNet** — Shishir Singh Chauhan et al. **[CA-DTNet: a trace-driven communication-aware digital twin network for robust high-resolution traffic forecasting under heterogeneous V2X conditions](https://doi.org/10.1038/s41598-026-76830-0)**. 2026 · Scientific Reports.
+
+  将 pNEUMA 交通状态与通信记录按确定协议回放，用可靠性门控处理过时或缺失的观测，预测未来 5、10、30 秒的速度、车辆数和流量分位数。
+
+  [正式版本](https://doi.org/10.1038/s41598-026-76830-0) · [发表证据](https://www.nature.com/articles/s41598-026-76830-0) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-11 在线发表。 实验将交通与通信记录配对回放。
+
+<a id="paper-st-gt"></a>
+
+- **ST-GT** — Da Wang et al. **[A spatio-temporal graph transformer for multi-horizon urban traffic speed forecasting](https://doi.org/10.1007/s44163-026-02649-3)**. 2026 · Discover Artificial Intelligence.
+
+  在 METR-LA 上结合按距离聚合的传感器图与时间自注意力，一次输出未来十二个五分钟步长的交通速度。
+
+  [正式版本](https://doi.org/10.1007/s44163-026-02649-3) · [发表证据](https://link.springer.com/article/10.1007/s44163-026-02649-3) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-07 在线发表。 作者说明实验使用单种子、固定图和轻量对照，并讨论插值可能造成的信息泄漏。

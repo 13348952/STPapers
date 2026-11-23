@@ -4,7 +4,7 @@
 
 年份依据与代码标记见主目录。以下复用同一结构化数据，不额外增加论文数。
 
-## 2026（41 篇）
+## 2026（65 篇）
 
 - **Vision-ST-Fusion-survey** — Anna Wang et al. **[Towards Vision-Spatiotemporal Fusion in Traffic Forecasting: A Survey on Cross-Modal Alignment](https://ijcai.org/proceedings/2026/891)**. 2026 · IJCAI 2026 (Survey Track).
 
@@ -13,6 +13,30 @@
   [正式版本](https://doi.org/10.24963/ijcai.2026/891) · [发表证据](https://ijcai.org/proceedings/2026/891) · 代码：未核验到作者代码
 
   版本/使用说明：范围同时涉及交通状态、轨迹、事件与需求；作为跨模态预测综述收录，不将轨迹规划方法列为核心预测基线。资源仓库未核验。
+
+- **Extreme-Weather-Review** — Gabriele Messori et al. **[Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review](https://arxiv.org/abs/2611.23863)**. 2026 · arXiv；正式发表状态未核验.
+
+  按事件类型、提前量和评价方法梳理数据驱动与数值天气预报的极端事件对比，分别讨论事件位置、强度和破纪录情形。
+
+  [发表证据](https://arxiv.org/abs/2611.23863) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-18 首发。
+
+- **CARE-EMS** — Md Ali Akber et al. **[CARE-EMS: Towards Reliable Emergency Response Planning through Context-Aware Spatio-Temporal Graph Learning for EMS Demand Forecasting](https://drive.google.com/file/d/19E6d63P6vV4yslVE4D8BE1xbGilNCAAI/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  将纽约各区逐时急救呼叫、社区属性和路网关系输入时空图模型，预测下一小时的呼叫需求。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/samiikkk/CARE-EMS)（作者仓库可访问，已核验部分源码）
+
+  版本/使用说明：会议官网议程与作者稿已核对。 仓库含按小时聚合数据和模型模块，README 提供仪表板入口，完整预测流程的运行说明待核验。
+
+- **Actionable-Congestion** — Dizhi Huang et al. **[Congestion Forecasting (Actionably) Revisited: Limitations of Deep Learning and Potential of LLM-as-Data-Scientist](https://drive.google.com/file/d/1cr_PHTQxSpx20HtTE_nPAQyyUUJNR8KF/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  面向提前数周发布的假日拥堵预报，把历史事件表示为时空三角形，按日历选择相似年份，在日本两条高速公路上评估覆盖区域。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · 代码：未核验到作者代码
+
+  版本/使用说明：会议官网议程与作者稿已核对。
 
 - **STRP** — Shuhao Li et al. **[From Coarse to Fine: Managing Temporal Granularity in Spatio-Temporal Data for Fine-Grained Traffic Prediction](https://arxiv.org/abs/2606.09392)**. 2026 · arXiv；正式发表状态未核验.
 
@@ -62,6 +86,30 @@
 
   版本/使用说明：首发 2026-09-29，v2 修订 2026-11-07；属于修订触发的目录补录。分支命名不构成因果机制识别证据；未核验到作者代码。
 
+- **DSGN-TMT** — Zuojun Wu et al. **[Dynamic spatiotemporal graph network with a temporal masked transformer for traffic flow forecasting](https://doi.org/10.1038/s41598-026-80267-w)**. 2026 · Scientific Reports.
+
+  按周期时间索引学习空间与时间邻接矩阵，在历史时间片之间做图卷积，并由 Transformer 编码完整历史以预测交通流。
+
+  [正式版本](https://doi.org/10.1038/s41598-026-80267-w) · [发表证据](https://www.nature.com/articles/s41598-026-80267-w_reference.pdf) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-09 在线发表。 11 月 5 日录用。论文报告的训练和推理均输入完整历史，训练目标为预测损失。
+
+- **CA-DTNet** — Shishir Singh Chauhan et al. **[CA-DTNet: a trace-driven communication-aware digital twin network for robust high-resolution traffic forecasting under heterogeneous V2X conditions](https://doi.org/10.1038/s41598-026-76830-0)**. 2026 · Scientific Reports.
+
+  将 pNEUMA 交通状态与通信记录按确定协议回放，用可靠性门控处理过时或缺失的观测，预测未来 5、10、30 秒的速度、车辆数和流量分位数。
+
+  [正式版本](https://doi.org/10.1038/s41598-026-76830-0) · [发表证据](https://www.nature.com/articles/s41598-026-76830-0) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-11 在线发表。 实验将交通与通信记录配对回放。
+
+- **ST-GT** — Da Wang et al. **[A spatio-temporal graph transformer for multi-horizon urban traffic speed forecasting](https://doi.org/10.1007/s44163-026-02649-3)**. 2026 · Discover Artificial Intelligence.
+
+  在 METR-LA 上结合按距离聚合的传感器图与时间自注意力，一次输出未来十二个五分钟步长的交通速度。
+
+  [正式版本](https://doi.org/10.1007/s44163-026-02649-3) · [发表证据](https://link.springer.com/article/10.1007/s44163-026-02649-3) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-07 在线发表。 作者说明实验使用单种子、固定图和轻量对照，并讨论插值可能造成的信息泄漏。
+
 - **FAST-SSM** — Xinjin Li et al. **[FAST: A Synergistic Framework of Attention and State-space Models for Spatiotemporal Traffic Prediction](https://arxiv.org/abs/2604.13453)**. 2026 · ICME.
 
   结合时间注意力与 Mamba 空间模块；与 KDD 2026 的 FaST 是不同论文。
@@ -79,6 +127,14 @@
   结合多尺度时间通道对齐、时间与图结构先验嵌入及交叉融合，建模交通时空依赖。
 
   [正式版本](https://doi.org/10.24963/ijcai.2026/368) · [发表证据](https://ijcai.org/proceedings/2026/368) · 代码：未核验到作者代码
+
+- **SSCA-LSTM** — Vishwanath Bidare Ranganath et al. **[A Spatial Skip-Connected Attention-based LSTM for urban traffic forecasting using air quality data](https://doi.org/10.1007/s10791-026-10812-8)**. 2026 · Discover Computing.
+
+  将交通与空气质量观测输入带跳连和空间加权的层级 LSTM，直接预测多个提前量的车辆数。
+
+  [正式版本](https://doi.org/10.1007/s10791-026-10812-8) · [发表证据](https://link.springer.com/article/10.1007/s10791-026-10812-8) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-21 在线发表。 论文指向 CityPulse 数据来源。
 
 - **FaST** — Yiji Zhao et al. **[FaST: Efficient and Effective Long-Horizon Forecasting for Large-Scale Spatial-Temporal Graphs via Mixture-of-Experts](https://arxiv.org/abs/2601.05174)**. 2026 · KDD.
 
@@ -168,6 +224,22 @@
 
   版本/使用说明：首发 2026-07-28，v5 修订 2026-11-07；补录一个版本链。该设置使用后续监督反馈，不是无标签零样本迁移。已检查实现与命令；原始实验检查点未随仓库发布，未复现。
 
+- **ATLAS** — Ryusei Iwasa et al. **[Latent Prediction-Anchored Multi-View Reconstruction for Cross-Network Spatiotemporal Forecasting](https://drive.google.com/file/d/1nLRm3JRLsAaLG4lI9mw0-hDfVli4nI4p/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  在源网络重建时间序列及两种频谱视图，以潜空间预测约束预训练；迁移时融合功能图与物理图，预测新网络的交通或人群分布。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/ryu291/ATLAS)（论文提供链接，本次返回 404）
+
+  版本/使用说明：会议官网议程与作者稿已核对。 作者稿给出的代码链接本次返回 404。
+
+- **ICL-Traffic** — Parth Ripal Parikh et al. **[ICL-Traffic Forecasting: Lightweight In-Context Learning for Pretrained Spatio-Temporal Foundation Models](https://drive.google.com/file/d/1KT78sWRt6fYkSl5ClilOQt7fayfvxeUc/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  冻结交通预测主干，从训练窗口检索近邻样本，以离线训练的注意力模块聚合近邻预测误差，修正目标城市的输出。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/Parth291102/Traffic-Forecasting-TSFM)（作者/项目仓库已核验）
+
+  版本/使用说明：会议官网议程与作者稿已核对。
+
 - **FactoST-v2** — Siru Zhong et al. **[Learning to Factorize and Adapt: A Versatile Approach Toward Universal Spatio-Temporal Foundation Models](https://arxiv.org/abs/2601.12083)**. 2026 · arXiv；正式发表状态未核验.
 
   分离通用时间预训练与领域空间适配，扩展至可变长度和概率分位数预测。
@@ -200,6 +272,14 @@
 
   版本/使用说明：未核验到作者代码。外部上下文和私家车数据设置需与基线对齐；语义表征不等于已识别天气对交通的因果机制。
 
+- **SceneAdapter** — Han Fu et al. **[SceneAdapter: Boosting Time Series Foundation Models for Atypical-Scenario Traffic Flow Forecasting](https://drive.google.com/file/d/1FgPjiEYpwuluwosaF36xHqi78DOEMMJq/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  冻结时序基础模型，分别编码静态属性、历史协变量和未来已知事件，在节假日、活动及封路场景下修正交通流预测。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · 代码：未核验到作者代码
+
+  版本/使用说明：会议官网议程与作者稿已核对。
+
 - **CoReFlow** — Pengnan Chi et al. **[CoReFlow: Consistency-Relaxed Flow Maps for Probabilistic Traffic Forecasting](https://arxiv.org/abs/2611.05715)**. 2026 · arXiv；正式发表状态未核验.
 
   通过一致性松弛的流映射学习概率交通预测，以端点训练和条件均值约束支持单步生成。
@@ -207,6 +287,14 @@
   [发表证据](https://arxiv.org/abs/2611.05715) · 代码：未核验到作者代码
 
   版本/使用说明：论文称代码位于补充材料；本次未取得并核验该材料中的实现，未确认公开作者仓库。勿与同名的低秩矩阵生成工作混淆。
+
+- **Double-Diffusion** — Hanlin Dong et al. **[Double-Diffusion: Balancing Speed, Accuracy, and Uncertainty in Probabilistic Forecasting for Urban Sensor Networks](https://arxiv.org/abs/2506.23053)**. 2026 · ACM SIGSPATIAL 2026；arXiv 首发 2025.
+
+  以传感器图的热扩散产生低通先验，再由截短的去噪扩散链采样交通与空气质量的未来分布。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/cruiseresearchgroup/Double-Diffusion)（作者/项目仓库已核验）
+
+  版本/使用说明：会议官网议程与作者稿已核对。 arXiv 首发 2025-06-29。
 
 - **DSSD** — Woojun Lee et al. **[Dynamical State-Space Diffusion for Spatiotemporal Prediction](https://arxiv.org/abs/2611.06652)**. 2026 · arXiv；正式发表状态未核验.
 
@@ -312,6 +400,70 @@
 
   版本/使用说明：目录 ID 为编辑简称；首发 2026-11-08，v2 修订 2026-11-11，只计一个条目。未核验到作者代码；外部观测输入需与历史辐射基线区分。
 
+- **CorrectCast** — Henan Wang et al. **[CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting](https://arxiv.org/abs/2611.22178)**. 2026 · arXiv；正式发表状态未核验.
+
+  冻结基础降水临近预报模型，结合历史降水估计与可降水量，分尺度修正已生成预报的残差。
+
+  [发表证据](https://arxiv.org/abs/2611.22178) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-17 首发。
+
+- **ForeSay** — Xudong Ling et al. **[ForeSay: Tell the Future in Words, Branch the Details in Noise for Precipitation Nowcasting](https://arxiv.org/abs/2611.20815)**. 2026 · arXiv；正式发表状态未核验.
+
+  从历史雷达图生成风暴演变的文字条件，让集合成员共享早期流采样步骤，后期再分支生成局地降水细节。
+
+  [发表证据](https://arxiv.org/abs/2611.20815) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-16 首发。
+
+- **ProtoCast** — Zhixuan Li et al. **[Interpretable Prototype-Conditioned Adaptation for Weather Forecasting](https://arxiv.org/abs/2611.25848)**. 2026 · arXiv；正式发表状态未核验.
+
+  按变量组和位置匹配天气演变原型，用稀疏加权的低秩算子修正局部特征，再融合变量组信息。
+
+  [发表证据](https://arxiv.org/abs/2611.25848) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-19 首发。 [作者项目页](https://zhixuanli.github.io/projects/li2026protocast/)展示了预报样例，Code 按钮未启用。
+
+- **WeatherCraft** — Jinhan Li et al. **[Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens](https://arxiv.org/abs/2611.25570)**. 2026 · arXiv；正式发表状态未核验.
+
+  将大气状态编码为多尺度离散 token，用 Transformer 生成集合预报，并用 GRPO 按下游预报目标调整模型。
+
+  [发表证据](https://arxiv.org/abs/2611.25570) · [代码](https://github.com/Jinhan-Li/WeatherCraft)（作者/项目仓库已核验）
+
+  版本/使用说明：arXiv 2026-11-19 首发。
+
+- **WeatherDreamer** — Kate Duffy et al. **[WeatherDreamer: Learning a World Model from Multimodal Earth Observations](https://arxiv.org/abs/2611.18393)**. 2026 · arXiv；正式发表状态未核验.
+
+  从 18 类地球观测学习潜在大气状态，每小时推进并用新观测更新，生成后续站点及仪器观测的集合预报。
+
+  [发表证据](https://arxiv.org/abs/2611.18393) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-13 首发。
+
+- **Xaurora** — Eliot Walt et al. **[Xaurora: Generative Weather Forecasting with Denoising Stochastic Interpolants from a Foundation Model Prior](https://arxiv.org/abs/2610.06509)**. 2026 · arXiv；正式发表状态未核验.
+
+  从确定性的 Aurora 小模型出发，用去噪随机插值和轨迹回放训练随机动力学，生成中期天气集合预报。
+
+  [发表证据](https://arxiv.org/abs/2610.06509) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-10-05 首发。 v2 于 2026-11-19 修订，本次补录。 与目录中 Aurora 的关系为下游概率扩展，另见[早期会议摘要](https://doi.org/10.5194/ems2026-650)。
+
+- **Tyche** — Fan Xu et al. **[Tyche: One Step Flow for Efficient Probabilistic Weather Forecasting](https://arxiv.org/abs/2605.06916)**. 2026 · arXiv；正式发表状态未核验.
+
+  用单次条件流映射将噪声转换为未来天气场，并在自回归滚动阶段用 CRPS 校准集合。
+
+  [发表证据](https://arxiv.org/abs/2605.06916) · [代码](https://github.com/Markus-xu/Tyche)（论文提供链接，本次返回 404）
+
+  版本/使用说明：arXiv 2026-05-07 首发。 v2 于 2026-11-06 修订，本次补录。 [论文正文](https://arxiv.org/html/2605.06916v2)给出的仓库本次公开访问返回 404。
+
+- **UQ-Aardvark** — Rodrigo Almeida et al. **[Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions](https://arxiv.org/abs/2608.30795)**. 2026 · arXiv；正式发表状态未核验.
+
+  在 Aardvark 的观测编码器引入输入相关噪声，在动力学模块使用 Monte Carlo dropout，通过嵌套集合估计两部分对预报离散度的贡献。
+
+  [发表证据](https://arxiv.org/abs/2608.30795) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-08-31 首发。 v2 于 2026-11-09 修订，本次补录。 正文链接到数据和评估工具，模型实现尚待核验。
+
 - **EvoXXLTraffic** — Du Yin et al. **[From XXLTraffic to EvoXXLTraffic: Scaling Traffic Forecasting to Sensor-Evolving Networks](https://arxiv.org/abs/2605.29768)**. 2026 · arXiv；正式发表状态未核验.
 
   提供逐年变化的传感器目录、持续站点标识和交通矩阵，区分全传感器预测与新节点的监督适配。
@@ -320,8 +472,48 @@
 
   版本/使用说明：首发 2026-05-28，v3 修订 2026-11-12；为 XXLTraffic 家族扩展基准，非新预测模型。采用回溯地理图和特定实现适配；新节点接受当年训练，不属于零样本。已检查源码与运行说明，未下载数据或复现。
 
+- **Conformal-WX** — Mariya **[Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence](https://arxiv.org/abs/2611.24329)**. 2026 · arXiv；正式发表状态未核验.
 
-## 2025（9 篇）
+  在 ERA5 网格气温预测上比较八种区间估计程序，同时衡量逐格覆盖率、每日空间覆盖波动和连续漏报。
+
+  [发表证据](https://arxiv.org/abs/2611.24329) · [代码](https://github.com/Mariyaaleem/conformal-wx)（作者/项目仓库已核验）
+
+  版本/使用说明：arXiv 2026-11-18 首发。 逐格边际覆盖与同一天各格点联合覆盖分别评估。研究范围为一种变量、两种预报器。
+
+- **SeasonRainBench** — Qiuyan Sun et al. **[SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281)**. 2026 · arXiv；正式发表状态未核验.
+
+  用全球逐月降水、气候模拟和业务集合预报构建提前 1 至 5 个月的预测基准，并评估异常强度和雨带位置。
+
+  [发表证据](https://arxiv.org/abs/2611.22281) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-17 首发。
+
+- **OTTER-NYC** — Seongwon Jin et al. **[OTTER-NYC: A Minute-Scale Multimodal Dataset for Urban Flood Event Dynamics and Forecasting](https://doi.org/10.1038/s41597-026-08642-w)**. 2026 · Scientific Data.
+
+  将纽约积水传感器的分钟级深度与降水、地形和排水设施对齐，支持站点积水预测及事件质量控制。
+
+  [正式版本](https://doi.org/10.1038/s41597-026-08642-w) · [发表证据](https://www.nature.com/articles/s41597-026-08642-w_reference.pdf) · [代码](https://github.com/jinwork00/OTTER-NYC)（作者/项目仓库已核验）
+
+  版本/使用说明：2026-11-17 在线发表。 已核验作者公开的数据处理与质控流水线，预测训练实现需另行核验。
+
+- **Traffic-IMC** — Seungbin Yim et al. **[Traffic-IMC: An Urban Road-Network Traffic Forecasting Benchmark](https://drive.google.com/file/d/1O5jDSMjIpcYjVg7dfM3LMj0ABRkyP2V5/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  仁川 2,013 个路段传感器的逐时流量基准同时提供有向可达图、原始有效性掩码和插补输入。评分排除原本无效的目标。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/ysb06/traffic-imc)（作者/项目仓库已核验）
+
+  版本/使用说明：会议官网议程与作者稿已核对。
+
+- **HeatCast** — Jesus Guerrero et al. **[HeatCast: A Benchmark for Neighborhood-Scale LST Forecasting across 124 U.S. Cities](https://arxiv.org/abs/2608.07640)**. 2026 · ACM SIGSPATIAL 2026.
+
+  用 124 个美国城市的 Landsat 月度影像进行 30 米地表温度的次月预测，按固定时间切分并按局地气候区评价。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · 代码：未核验到作者代码
+
+  版本/使用说明：会议官网议程与作者稿已核对。 arXiv 首发 2026-08-07。 作者链接的数据集可访问，尚未独立核验训练实现。
+
+
+## 2025（10 篇）
 
 - **STFM-survey** — Yuxuan Liang et al. **[Foundation Models for Spatio-Temporal Data Science: A Tutorial and Survey](https://arxiv.org/abs/2503.13502)**. 2025 · arXiv；正式发表状态未核验.
 
@@ -354,6 +546,14 @@
   通过时序适配与双分支提示协调，将冻结视觉基础模型用于时空预测。
 
   [发表证据](https://arxiv.org/abs/2507.11558) · 代码：未核验到作者代码
+
+- **SpecSTG** — Lequan Lin et al. **[SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting](https://arxiv.org/abs/2401.08119)**. 2025 · ICLR 2025 DeLTa Workshop；arXiv 首发 2024.
+
+  在频谱域生成未来序列，并结合空间依赖与频谱图卷积。
+
+  [正式版本](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [发表证据](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [代码](https://github.com/lequanlin/SpecSTG)（作者/项目仓库已核验）
+
+  版本/使用说明：2024 年 arXiv 首发，2025 年作为 ICLR DeLTa 工作坊论文发表。工作坊稿直接链接作者仓库，已检查模型、训练入口和 README。
 
 - **Aurora** — Cristian Bodnar et al. **[A foundation model for the Earth system](https://arxiv.org/abs/2405.13063)**. 2025 · Nature；arXiv 首发 2024.
 

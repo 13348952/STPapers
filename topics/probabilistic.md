@@ -10,13 +10,13 @@
 
 <a id="paper-specstg"></a>
 
-- **SpecSTG** — Lequan Lin et al. **[SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting](https://arxiv.org/abs/2401.08119)**. 2024 · arXiv；正式发表状态未核验.
+- **SpecSTG** — Lequan Lin et al. **[SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting](https://arxiv.org/abs/2401.08119)**. 2025 · ICLR 2025 DeLTa Workshop；arXiv 首发 2024.
 
   在频谱域生成未来序列，并结合空间依赖与频谱图卷积。
 
-  [发表证据](https://arxiv.org/abs/2401.08119) · [代码](https://anonymous.4open.science/r/SpecSTG)（论文提供匿名代码，访问未核验）
+  [正式版本](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [发表证据](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [代码](https://github.com/lequanlin/SpecSTG)（作者/项目仓库已核验）
 
-  版本/使用说明： 当前列出已核验的 arXiv 版本；不据此断言没有正式发表版本。
+  版本/使用说明：2024 年 arXiv 首发，2025 年作为 ICLR DeLTa 工作坊论文发表。工作坊稿直接链接作者仓库，已检查模型、训练入口和 README。
 
 <a id="paper-diffstg"></a>
 
@@ -47,3 +47,13 @@
   [发表证据](https://arxiv.org/abs/2611.05715) · 代码：未核验到作者代码
 
   版本/使用说明：论文称代码位于补充材料；本次未取得并核验该材料中的实现，未确认公开作者仓库。勿与同名的低秩矩阵生成工作混淆。
+
+<a id="paper-double-diffusion"></a>
+
+- **Double-Diffusion** — Hanlin Dong et al. **[Double-Diffusion: Balancing Speed, Accuracy, and Uncertainty in Probabilistic Forecasting for Urban Sensor Networks](https://arxiv.org/abs/2506.23053)**. 2026 · ACM SIGSPATIAL 2026；arXiv 首发 2025.
+
+  以传感器图的热扩散产生低通先验，再由截短的去噪扩散链采样交通与空气质量的未来分布。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/cruiseresearchgroup/Double-Diffusion)（作者/项目仓库已核验）
+
+  版本/使用说明：会议官网议程与作者稿已核对。 arXiv 首发 2025-06-29。

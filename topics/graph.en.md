@@ -185,3 +185,33 @@ Spatial dependencies and temporal dynamics of road or sensor nodes.
   [Publication evidence](https://arxiv.org/abs/2609.36637) · Code: author code not verified
 
   Version / usage notes: First posted on 2026-09-29 and revised to v2 on 2026-11-07; a revision-triggered catalog backfill. Branch names do not establish causal mechanism identification; author code was not verified.
+
+<a id="paper-dsgn-tmt"></a>
+
+- **DSGN-TMT** — Zuojun Wu et al. **[Dynamic spatiotemporal graph network with a temporal masked transformer for traffic flow forecasting](https://doi.org/10.1038/s41598-026-80267-w)**. 2026 · Scientific Reports.
+
+  Learns spatial and temporal adjacency conditioned on periodic time indices. A graph convolution over historical time slots and a full-history Transformer support traffic flow forecasting.
+
+  [Published version](https://doi.org/10.1038/s41598-026-80267-w) · [Publication evidence](https://www.nature.com/articles/s41598-026-80267-w_reference.pdf) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-09. Accepted November 5. Both training and inference use the complete history, and training optimizes forecasting loss.
+
+<a id="paper-ca-dtnet"></a>
+
+- **CA-DTNet** — Shishir Singh Chauhan et al. **[CA-DTNet: a trace-driven communication-aware digital twin network for robust high-resolution traffic forecasting under heterogeneous V2X conditions](https://doi.org/10.1038/s41598-026-76830-0)**. 2026 · Scientific Reports.
+
+  Replays communication traces against pNEUMA traffic states and gates stale or incomplete observations to forecast speed, vehicle-count, and flow quantiles 5, 10, and 30 seconds ahead.
+
+  [Published version](https://doi.org/10.1038/s41598-026-76830-0) · [Publication evidence](https://www.nature.com/articles/s41598-026-76830-0) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-11. Experiments pair traffic and communication traces through replay.
+
+<a id="paper-st-gt"></a>
+
+- **ST-GT** — Da Wang et al. **[A spatio-temporal graph transformer for multi-horizon urban traffic speed forecasting](https://doi.org/10.1007/s44163-026-02649-3)**. 2026 · Discover Artificial Intelligence.
+
+  Combines distance-based sensor aggregation with temporal self-attention to predict twelve five-minute traffic speeds jointly on METR-LA.
+
+  [Published version](https://doi.org/10.1007/s44163-026-02649-3) · [Publication evidence](https://link.springer.com/article/10.1007/s44163-026-02649-3) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-07. The authors report a single seed, a fixed graph and lightweight comparators, and discuss possible leakage from interpolation.

@@ -17,6 +17,7 @@ CATEGORIES = {
     'related': ('Related tasks and time-series background', 'Time-series baselines, imputation, and spatial extrapolation; task definitions and physical-space assumptions are distinguished.'),
 }
 CODE_STATUSES = {
+    '作者仓库可访问，已核验部分源码': 'author repository accessible; selected source files checked',
     '作者推理入口已核验（模型为二进制，训练代码未公开）': 'author inference entry point checked; binary model, no public training code',
     '作者/项目仓库已核验': 'author/project repository checked',
     '作者团队工具库实现已核验': "implementation in the authors' toolkit checked",

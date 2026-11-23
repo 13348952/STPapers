@@ -75,3 +75,13 @@ Spatio-temporal attention, embeddings, propagation delays, and combinations with
   Combines multiscale temporal channel alignment, temporal and graph-structure prior embeddings, and cross-fusion for traffic forecasting.
 
   [Published version](https://doi.org/10.24963/ijcai.2026/368) · [Publication evidence](https://ijcai.org/proceedings/2026/368) · Code: author code not verified
+
+<a id="paper-ssca-lstm"></a>
+
+- **SSCA-LSTM** — Vishwanath Bidare Ranganath et al. **[A Spatial Skip-Connected Attention-based LSTM for urban traffic forecasting using air quality data](https://doi.org/10.1007/s10791-026-10812-8)**. 2026 · Discover Computing.
+
+  Uses traffic and air-quality observations in a hierarchical LSTM with skip connections and spatial weighting to forecast vehicle counts at multiple horizons.
+
+  [Published version](https://doi.org/10.1007/s10791-026-10812-8) · [Publication evidence](https://link.springer.com/article/10.1007/s10791-026-10812-8) · Code: author code not verified
+
+  Version / usage notes: Published online on 2026-11-21. The paper links the CityPulse data source.

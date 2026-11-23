@@ -75,3 +75,13 @@
   结合多尺度时间通道对齐、时间与图结构先验嵌入及交叉融合，建模交通时空依赖。
 
   [正式版本](https://doi.org/10.24963/ijcai.2026/368) · [发表证据](https://ijcai.org/proceedings/2026/368) · 代码：未核验到作者代码
+
+<a id="paper-ssca-lstm"></a>
+
+- **SSCA-LSTM** — Vishwanath Bidare Ranganath et al. **[A Spatial Skip-Connected Attention-based LSTM for urban traffic forecasting using air quality data](https://doi.org/10.1007/s10791-026-10812-8)**. 2026 · Discover Computing.
+
+  将交通与空气质量观测输入带跳连和空间加权的层级 LSTM，直接预测多个提前量的车辆数。
+
+  [正式版本](https://doi.org/10.1007/s10791-026-10812-8) · [发表证据](https://link.springer.com/article/10.1007/s10791-026-10812-8) · 代码：未核验到作者代码
+
+  版本/使用说明：2026-11-21 在线发表。 论文指向 CityPulse 数据来源。

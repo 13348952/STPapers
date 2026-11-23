@@ -10,13 +10,13 @@ Predicting future distributions or samples rather than only point estimates.
 
 <a id="paper-specstg"></a>
 
-- **SpecSTG** — Lequan Lin et al. **[SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting](https://arxiv.org/abs/2401.08119)**. 2024 · arXiv; formal publication status not verified.
+- **SpecSTG** — Lequan Lin et al. **[SpecSTG: A Fast Spectral Diffusion Framework for Probabilistic Spatio-Temporal Traffic Forecasting](https://arxiv.org/abs/2401.08119)**. 2025 · ICLR 2025 DeLTa Workshop; first arXiv release: 2024.
 
   Generates future sequences in the spectral domain, incorporating spatial dependencies and spectral graph convolutions.
 
-  [Publication evidence](https://arxiv.org/abs/2401.08119) · [Code](https://anonymous.4open.science/r/SpecSTG) (anonymous code linked by the paper; access not verified)
+  [Published version](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [Publication evidence](https://openreview.net/pdf/8bc5f3850ffa6d0159499622645a1bc63f21165c.pdf) · [Code](https://github.com/lequanlin/SpecSTG) (author/project repository checked)
 
-  Version / usage notes: The verified arXiv version is listed here; this does not imply that no formally published version exists.
+  Version / usage notes: First posted on arXiv in 2024 and published at the ICLR DeLTa Workshop in 2025. The workshop paper links the author repository. Model sources, the training entry point and README were inspected.
 
 <a id="paper-diffstg"></a>
 
@@ -47,3 +47,13 @@ Predicting future distributions or samples rather than only point estimates.
   [Publication evidence](https://arxiv.org/abs/2611.05715) · Code: author code not verified
 
   Version / usage notes: The paper states that code is in supplementary material; that implementation was not retrieved and inspected, and no public author repository was verified. Distinct from the similarly named low-rank matrix generation work.
+
+<a id="paper-double-diffusion"></a>
+
+- **Double-Diffusion** — Hanlin Dong et al. **[Double-Diffusion: Balancing Speed, Accuracy, and Uncertainty in Probabilistic Forecasting for Urban Sensor Networks](https://arxiv.org/abs/2506.23053)**. 2026 · ACM SIGSPATIAL 2026; first arXiv release: 2025.
+
+  Uses graph heat diffusion to form a low-pass prior and a shortened denoising chain to sample future traffic and air-quality states.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/cruiseresearchgroup/Double-Diffusion) (author/project repository checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript. First posted on arXiv on 2025-06-29.

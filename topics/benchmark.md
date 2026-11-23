@@ -83,3 +83,53 @@
   [发表证据](https://arxiv.org/abs/2605.29768) · [代码](https://github.com/cruiseresearchgroup/TSAS26-EvoXXLTraffic)（作者/项目仓库已核验）
 
   版本/使用说明：首发 2026-05-28，v3 修订 2026-11-12；为 XXLTraffic 家族扩展基准，非新预测模型。采用回溯地理图和特定实现适配；新节点接受当年训练，不属于零样本。已检查源码与运行说明，未下载数据或复现。
+
+<a id="paper-conformal-wx"></a>
+
+- **Conformal-WX** — Mariya **[Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence](https://arxiv.org/abs/2611.24329)**. 2026 · arXiv；正式发表状态未核验.
+
+  在 ERA5 网格气温预测上比较八种区间估计程序，同时衡量逐格覆盖率、每日空间覆盖波动和连续漏报。
+
+  [发表证据](https://arxiv.org/abs/2611.24329) · [代码](https://github.com/Mariyaaleem/conformal-wx)（作者/项目仓库已核验）
+
+  版本/使用说明：arXiv 2026-11-18 首发。 逐格边际覆盖与同一天各格点联合覆盖分别评估。研究范围为一种变量、两种预报器。
+
+<a id="paper-seasonrainbench"></a>
+
+- **SeasonRainBench** — Qiuyan Sun et al. **[SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281)**. 2026 · arXiv；正式发表状态未核验.
+
+  用全球逐月降水、气候模拟和业务集合预报构建提前 1 至 5 个月的预测基准，并评估异常强度和雨带位置。
+
+  [发表证据](https://arxiv.org/abs/2611.22281) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-17 首发。
+
+<a id="paper-otter-nyc"></a>
+
+- **OTTER-NYC** — Seongwon Jin et al. **[OTTER-NYC: A Minute-Scale Multimodal Dataset for Urban Flood Event Dynamics and Forecasting](https://doi.org/10.1038/s41597-026-08642-w)**. 2026 · Scientific Data.
+
+  将纽约积水传感器的分钟级深度与降水、地形和排水设施对齐，支持站点积水预测及事件质量控制。
+
+  [正式版本](https://doi.org/10.1038/s41597-026-08642-w) · [发表证据](https://www.nature.com/articles/s41597-026-08642-w_reference.pdf) · [代码](https://github.com/jinwork00/OTTER-NYC)（作者/项目仓库已核验）
+
+  版本/使用说明：2026-11-17 在线发表。 已核验作者公开的数据处理与质控流水线，预测训练实现需另行核验。
+
+<a id="paper-traffic-imc"></a>
+
+- **Traffic-IMC** — Seungbin Yim et al. **[Traffic-IMC: An Urban Road-Network Traffic Forecasting Benchmark](https://drive.google.com/file/d/1O5jDSMjIpcYjVg7dfM3LMj0ABRkyP2V5/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  仁川 2,013 个路段传感器的逐时流量基准同时提供有向可达图、原始有效性掩码和插补输入。评分排除原本无效的目标。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · [代码](https://github.com/ysb06/traffic-imc)（作者/项目仓库已核验）
+
+  版本/使用说明：会议官网议程与作者稿已核对。
+
+<a id="paper-heatcast"></a>
+
+- **HeatCast** — Jesus Guerrero et al. **[HeatCast: A Benchmark for Neighborhood-Scale LST Forecasting across 124 U.S. Cities](https://arxiv.org/abs/2608.07640)**. 2026 · ACM SIGSPATIAL 2026.
+
+  用 124 个美国城市的 Landsat 月度影像进行 30 米地表温度的次月预测，按固定时间切分并按局地气候区评价。
+
+  [发表证据](https://sigspatial2026.sigspatial.org/detailed-program.html) · 代码：未核验到作者代码
+
+  版本/使用说明：会议官网议程与作者稿已核对。 arXiv 首发 2026-08-07。 作者链接的数据集可访问，尚未独立核验训练实现。

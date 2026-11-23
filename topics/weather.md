@@ -209,3 +209,83 @@
   [发表证据](https://arxiv.org/abs/2611.12999) · 代码：未核验到作者代码
 
   版本/使用说明：目录 ID 为编辑简称；首发 2026-11-08，v2 修订 2026-11-11，只计一个条目。未核验到作者代码；外部观测输入需与历史辐射基线区分。
+
+<a id="paper-correctcast"></a>
+
+- **CorrectCast** — Henan Wang et al. **[CorrectCast: Selective Multimodal Context for Scale-Aware Residual Correction in Precipitation Nowcasting](https://arxiv.org/abs/2611.22178)**. 2026 · arXiv；正式发表状态未核验.
+
+  冻结基础降水临近预报模型，结合历史降水估计与可降水量，分尺度修正已生成预报的残差。
+
+  [发表证据](https://arxiv.org/abs/2611.22178) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-17 首发。
+
+<a id="paper-foresay"></a>
+
+- **ForeSay** — Xudong Ling et al. **[ForeSay: Tell the Future in Words, Branch the Details in Noise for Precipitation Nowcasting](https://arxiv.org/abs/2611.20815)**. 2026 · arXiv；正式发表状态未核验.
+
+  从历史雷达图生成风暴演变的文字条件，让集合成员共享早期流采样步骤，后期再分支生成局地降水细节。
+
+  [发表证据](https://arxiv.org/abs/2611.20815) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-16 首发。
+
+<a id="paper-protocast"></a>
+
+- **ProtoCast** — Zhixuan Li et al. **[Interpretable Prototype-Conditioned Adaptation for Weather Forecasting](https://arxiv.org/abs/2611.25848)**. 2026 · arXiv；正式发表状态未核验.
+
+  按变量组和位置匹配天气演变原型，用稀疏加权的低秩算子修正局部特征，再融合变量组信息。
+
+  [发表证据](https://arxiv.org/abs/2611.25848) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-19 首发。 [作者项目页](https://zhixuanli.github.io/projects/li2026protocast/)展示了预报样例，Code 按钮未启用。
+
+<a id="paper-weathercraft"></a>
+
+- **WeatherCraft** — Jinhan Li et al. **[Reinforcement-Aligned Probabilistic Weather Forecasting with Discrete Tokens](https://arxiv.org/abs/2611.25570)**. 2026 · arXiv；正式发表状态未核验.
+
+  将大气状态编码为多尺度离散 token，用 Transformer 生成集合预报，并用 GRPO 按下游预报目标调整模型。
+
+  [发表证据](https://arxiv.org/abs/2611.25570) · [代码](https://github.com/Jinhan-Li/WeatherCraft)（作者/项目仓库已核验）
+
+  版本/使用说明：arXiv 2026-11-19 首发。
+
+<a id="paper-weatherdreamer"></a>
+
+- **WeatherDreamer** — Kate Duffy et al. **[WeatherDreamer: Learning a World Model from Multimodal Earth Observations](https://arxiv.org/abs/2611.18393)**. 2026 · arXiv；正式发表状态未核验.
+
+  从 18 类地球观测学习潜在大气状态，每小时推进并用新观测更新，生成后续站点及仪器观测的集合预报。
+
+  [发表证据](https://arxiv.org/abs/2611.18393) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-11-13 首发。
+
+<a id="paper-xaurora"></a>
+
+- **Xaurora** — Eliot Walt et al. **[Xaurora: Generative Weather Forecasting with Denoising Stochastic Interpolants from a Foundation Model Prior](https://arxiv.org/abs/2610.06509)**. 2026 · arXiv；正式发表状态未核验.
+
+  从确定性的 Aurora 小模型出发，用去噪随机插值和轨迹回放训练随机动力学，生成中期天气集合预报。
+
+  [发表证据](https://arxiv.org/abs/2610.06509) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-10-05 首发。 v2 于 2026-11-19 修订，本次补录。 与目录中 Aurora 的关系为下游概率扩展，另见[早期会议摘要](https://doi.org/10.5194/ems2026-650)。
+
+<a id="paper-tyche"></a>
+
+- **Tyche** — Fan Xu et al. **[Tyche: One Step Flow for Efficient Probabilistic Weather Forecasting](https://arxiv.org/abs/2605.06916)**. 2026 · arXiv；正式发表状态未核验.
+
+  用单次条件流映射将噪声转换为未来天气场，并在自回归滚动阶段用 CRPS 校准集合。
+
+  [发表证据](https://arxiv.org/abs/2605.06916) · [代码](https://github.com/Markus-xu/Tyche)（论文提供链接，本次返回 404）
+
+  版本/使用说明：arXiv 2026-05-07 首发。 v2 于 2026-11-06 修订，本次补录。 [论文正文](https://arxiv.org/html/2605.06916v2)给出的仓库本次公开访问返回 404。
+
+<a id="paper-uq-aardvark"></a>
+
+- **UQ-Aardvark** — Rodrigo Almeida et al. **[Uncertainty-Aware End-to-End AI Weather Forecasting: Disentangling Observation and Model Contributions](https://arxiv.org/abs/2608.30795)**. 2026 · arXiv；正式发表状态未核验.
+
+  在 Aardvark 的观测编码器引入输入相关噪声，在动力学模块使用 Monte Carlo dropout，通过嵌套集合估计两部分对预报离散度的贡献。
+
+  [发表证据](https://arxiv.org/abs/2608.30795) · 代码：未核验到作者代码
+
+  版本/使用说明：arXiv 2026-08-31 首发。 v2 于 2026-11-09 修订，本次补录。 正文链接到数据和评估工具，模型实现尚待核验。

@@ -51,3 +51,13 @@ Maps of tasks, methods, and resources.
   [Published version](https://doi.org/10.24963/ijcai.2026/891) · [Publication evidence](https://ijcai.org/proceedings/2026/891) · Code: author code not verified
 
   Version / usage notes: Covers traffic state, trajectory, event, and demand forecasting; included as a cross-modal survey, not as evidence that trajectory planning methods are core forecasting baselines. The resource repository was not verified.
+
+<a id="paper-extreme-weather-review"></a>
+
+- **Extreme-Weather-Review** — Gabriele Messori et al. **[Comparing Data-Driven and Numerical Weather Prediction Forecasts of Extreme Weather: A Review](https://arxiv.org/abs/2611.23863)**. 2026 · arXiv; formal publication status not verified.
+
+  Reviews comparisons of data-driven and numerical forecasts by extreme-event type, lead time, and verification method, distinguishing event location, intensity, and record-breaking cases.
+
+  [Publication evidence](https://arxiv.org/abs/2611.23863) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-18.

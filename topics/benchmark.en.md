@@ -83,3 +83,53 @@ Task definitions, data processing, metrics, and resources for reproduction.
   [Publication evidence](https://arxiv.org/abs/2605.29768) · [Code](https://github.com/cruiseresearchgroup/TSAS26-EvoXXLTraffic) (author/project repository checked)
 
   Version / usage notes: First posted on 2026-05-28 and revised to v3 on 2026-11-12. An extension of the XXLTraffic benchmark family, not a new forecasting model. Uses retrospective geographic graphs and implementation adaptations; new nodes receive current-year training rather than zero-shot evaluation. Source and instructions were inspected without downloading data or reproducing results.
+
+<a id="paper-conformal-wx"></a>
+
+- **Conformal-WX** — Mariya **[Distribution-Free Uncertainty Quantification for Weather Forecasting: Conformal Prediction Under Spatiotemporal Dependence](https://arxiv.org/abs/2611.24329)**. 2026 · arXiv; formal publication status not verified.
+
+  Compares eight interval procedures for gridded temperature forecasts and evaluates per-cell coverage, daily spatial coverage variability, and persistence of misses.
+
+  [Publication evidence](https://arxiv.org/abs/2611.24329) · [Code](https://github.com/Mariyaaleem/conformal-wx) (author/project repository checked)
+
+  Version / usage notes: First posted on arXiv on 2026-11-18. Marginal coverage at individual cells and day-level spatial coverage are evaluated separately for one variable and two forecasters.
+
+<a id="paper-seasonrainbench"></a>
+
+- **SeasonRainBench** — Qiuyan Sun et al. **[SeasonRainBench: Global Seasonal Precipitation](https://arxiv.org/abs/2611.22281)**. 2026 · arXiv; formal publication status not verified.
+
+  Benchmarks global precipitation forecasts one to five months ahead using monthly observations, climate simulations, and operational ensembles. Evaluation includes anomaly strength and rain-belt position.
+
+  [Publication evidence](https://arxiv.org/abs/2611.22281) · Code: author code not verified
+
+  Version / usage notes: First posted on arXiv on 2026-11-17.
+
+<a id="paper-otter-nyc"></a>
+
+- **OTTER-NYC** — Seongwon Jin et al. **[OTTER-NYC: A Minute-Scale Multimodal Dataset for Urban Flood Event Dynamics and Forecasting](https://doi.org/10.1038/s41597-026-08642-w)**. 2026 · Scientific Data.
+
+  Aligns minute-resolution flood-depth measurements in New York City with rainfall, terrain, and drainage information for sensor-level forecasts and event quality control.
+
+  [Published version](https://doi.org/10.1038/s41597-026-08642-w) · [Publication evidence](https://www.nature.com/articles/s41597-026-08642-w_reference.pdf) · [Code](https://github.com/jinwork00/OTTER-NYC) (author/project repository checked)
+
+  Version / usage notes: Published online on 2026-11-17. The verified author code covers dataset preparation and quality control. Forecast-model training code has yet to be verified.
+
+<a id="paper-traffic-imc"></a>
+
+- **Traffic-IMC** — Seungbin Yim et al. **[Traffic-IMC: An Urban Road-Network Traffic Forecasting Benchmark](https://drive.google.com/file/d/1O5jDSMjIpcYjVg7dfM3LMj0ABRkyP2V5/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Benchmarks hourly volume at 2,013 Incheon road-link sensors with a directed reachability graph, original validity masks, and imputed inputs. Scoring excludes originally invalid targets.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/ysb06/traffic-imc) (author/project repository checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript.
+
+<a id="paper-heatcast"></a>
+
+- **HeatCast** — Jesus Guerrero et al. **[HeatCast: A Benchmark for Neighborhood-Scale LST Forecasting across 124 U.S. Cities](https://arxiv.org/abs/2608.07640)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Benchmarks next-month land surface temperature at 30 m across 124 US cities using Landsat imagery, a fixed temporal split, and local-climate-zone metrics.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · Code: author code not verified
+
+  Version / usage notes: Verified against the conference program and the author manuscript. First posted on arXiv on 2026-08-07. The linked dataset is accessible. Training code has yet to be verified.

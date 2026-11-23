@@ -79,3 +79,13 @@ Unified pretraining and few-shot or zero-shot adaptation.
   [Publication evidence](https://arxiv.org/abs/2611.12635) · Code: author code not verified
 
   Version / usage notes: Author code was not verified. External context and private-car data settings must be aligned across baselines; semantic representations do not establish causal weather effects on traffic.
+
+<a id="paper-sceneadapter"></a>
+
+- **SceneAdapter** — Han Fu et al. **[SceneAdapter: Boosting Time Series Foundation Models for Atypical-Scenario Traffic Flow Forecasting](https://drive.google.com/file/d/1FgPjiEYpwuluwosaF36xHqi78DOEMMJq/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Adapts a frozen time-series foundation model with static, past-observed and future-known covariates to forecast traffic during holidays, events and road closures.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · Code: author code not verified
+
+  Version / usage notes: Verified against the conference program and the author manuscript.

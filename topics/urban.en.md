@@ -61,3 +61,23 @@ Regional inflows, outflows, and passenger demand, represented as grids or region
   Models recent, periodic, and trend components of urban grid inflows and outflows, integrating external factors.
 
   [Publication evidence](https://arxiv.org/abs/1610.00081) · Code: author code not verified
+
+<a id="paper-care-ems"></a>
+
+- **CARE-EMS** — Md Ali Akber et al. **[CARE-EMS: Towards Reliable Emergency Response Planning through Context-Aware Spatio-Temporal Graph Learning for EMS Demand Forecasting](https://drive.google.com/file/d/19E6d63P6vV4yslVE4D8BE1xbGilNCAAI/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Forecasts next-hour EMS call demand in New York City using hourly calls, neighborhood attributes, and road-network relationships.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/samiikkk/CARE-EMS) (author repository accessible; selected source files checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript. The repository contains hourly aggregation and model modules. Its README links the dashboard. End-to-end forecast execution instructions have yet to be verified.
+
+<a id="paper-actionable-congestion"></a>
+
+- **Actionable-Congestion** — Dizhi Huang et al. **[Congestion Forecasting (Actionably) Revisited: Limitations of Deep Learning and Potential of LLM-as-Data-Scientist](https://drive.google.com/file/d/1cr_PHTQxSpx20HtTE_nPAQyyUUJNR8KF/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Forecasts holiday congestion weeks ahead by representing past events as triangles in space and time and selecting calendar analogues. Evaluation covers two Japanese expressways.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · Code: author code not verified
+
+  Version / usage notes: Verified against the conference program and the author manuscript.

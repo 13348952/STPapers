@@ -75,3 +75,23 @@ Node-specific parameters, cross-domain adaptation, and continual learning are di
   [Publication evidence](https://arxiv.org/abs/2607.25875) · [Code](https://github.com/lixus7/EvoST) (author/project repository checked)
 
   Version / usage notes: First posted on 2026-07-28 and revised to v5 on 2026-11-07; one version chain is cataloged. Uses subsequent supervised feedback rather than unlabeled zero-shot transfer. Implementation and commands were inspected; original experimental checkpoints are not included, and results were not reproduced.
+
+<a id="paper-atlas"></a>
+
+- **ATLAS** — Ryusei Iwasa et al. **[Latent Prediction-Anchored Multi-View Reconstruction for Cross-Network Spatiotemporal Forecasting](https://drive.google.com/file/d/1nLRm3JRLsAaLG4lI9mw0-hDfVli4nI4p/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Pretrains on temporal and spectral reconstruction anchored by latent prediction. During transfer it combines functional and physical graphs to forecast traffic or crowd distribution.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/ryu291/ATLAS) (linked by the paper; returned HTTP 404 during verification)
+
+  Version / usage notes: Verified against the conference program and the author manuscript. The code link in the author manuscript returned HTTP 404.
+
+<a id="paper-icl-traffic"></a>
+
+- **ICL-Traffic** — Parth Ripal Parikh et al. **[ICL-Traffic Forecasting: Lightweight In-Context Learning for Pretrained Spatio-Temporal Foundation Models](https://drive.google.com/file/d/1KT78sWRt6fYkSl5ClilOQt7fayfvxeUc/view?usp=drivesdk)**. 2026 · ACM SIGSPATIAL 2026.
+
+  Retrieves similar training windows and uses an offline-trained attention module to combine their errors into output corrections for a frozen traffic forecaster.
+
+  [Publication evidence](https://sigspatial2026.sigspatial.org/detailed-program.html) · [Code](https://github.com/Parth291102/Traffic-Forecasting-TSFM) (author/project repository checked)
+
+  Version / usage notes: Verified against the conference program and the author manuscript.
